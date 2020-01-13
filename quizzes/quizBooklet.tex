@@ -1,0 +1,232 @@
+\documentclass[10pt]{article}
+\usepackage[top=1in,bottom=1in,left=0.75in,right=0.75in,centering]{geometry}
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{palatino}
+\usepackage{wrapfig}
+\usepackage{lastpage}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{graphicx,type1cm,eso-pic,color}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{array}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{listings}
+\lstset{
+	language=Java
+}
+\usepackage{subcaption}
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0 pt}@{}}
+
+\makeatletter
+% Reinsert missing \algbackskip
+\def\algbackskip{\hskip-\ALG@thistlm}
+\makeatother
+
+\def\course{CS 2501: DSA2}
+\def\exam{Quiz Booklet}
+\def\semester{Spring 2020}
+
+\newboolean{solution}
+\setboolean{solution}{false}
+
+% add watermark if it's a solution exam
+% see http://jeanmartina.blogspot.com/2008/07/latex-goodie-how-to-watermark-things-in.html
+\makeatletter
+\AddToShipoutPicture{%
+\setlength{\@tempdimb}{.5\paperwidth}%
+\setlength{\@tempdimc}{.5\paperheight}%
+\setlength{\unitlength}{1pt}%
+\put(\strip@pt\@tempdimb,\strip@pt\@tempdimc){%
+\ifthenelse{\boolean{solution}}{
+\makebox(0,0){\rotatebox{45}{\textcolor[gray]{0.95}%
+{\fontsize{5cm}{3cm}\selectfont{\textsf{Solution}}}}}%
+}{}
+}}
+\makeatother
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\lhead{\course\ \exam, \semester}
+\chead{Page \thepage\ of \pageref{LastPage}}
+\rhead{UVa userid: \hspace{0.75in}}
+\cfoot{}
+
+\setlength{\headheight}{14.5pt}
+
+\newenvironment{itemlist}{
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{itemize}}
+
+\newenvironment{numlist}{
+\begin{enumerate}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{enumerate}}
+
+\newcounter{pagenum}
+\setcounter{pagenum}{2}
+\newcommand{\pageheader}[1]{
+\clearpage\vspace*{-0.4in}\noindent{\large\bf{{#1}}}
+\addtocounter{pagenum}{1}
+\cfoot{}
+}
+
+\newcounter{quesnum}
+\setcounter{quesnum}{1}
+\newcommand{\question}[2][??]{
+\begin{list}{\labelitemi}{\leftmargin=2em}
+\item [\arabic{quesnum}.] {[}{#1} points{]} {#2}
+\end{list}
+\addtocounter{quesnum}{1}
+}
+
+\definecolor{red}{rgb}{1.0,0.0,0.0}
+\newcommand{\answer}[2][??]{
+%\begin{tabular}{p{0.25in}p{6in}}
+
+\ifthenelse{\boolean{solution}}{
+\color{red} #2 \color{black}}
+{\vspace*{#1} }
+%\end{tabular}
+}
+
+\begin{document}
+
+\section*{\course\ \exam}
+
+\vspace{0.1in}
+
+\begin{tabular}{ll}
+\Large\bf\hspace{-0.125in} Name & \hspace*{5in} \\ \cline{2-2}
+\end{tabular}
+
+\vspace{0.35in}
+
+\noindent This booklet contains question pools for the quizzes for this course. You should use this resource to study potential questions that will be asked on the quizzes.
+
+\vspace{12pt}
+
+\noindent There are \pageref{LastPage} pages to this quiz booklet.
+
+\vspace{12pt}
+
+\begin{center}
+\noindent \begin{tabular}{c} \hline
+\hspace*{6in}\vspace{0.25in}\\ \hline
+\hspace*{6in}\vspace{0.25in}\\ \hline
+\hspace*{6in}\vspace{0.25in}\\ \hline
+\hspace*{6in}\vspace{0.25in}\\ \hline
+\end{tabular}
+\end{center}
+
+\vspace{0.15in}
+
+\begin{quotation}
+\begin{centering}
+%\noindent {\em In theory, there is no difference between theory and practice.\\But, in practice, there is.\\}
+%\noindent {\em The Tao that is seen \\ Is not the true Tao, \\ until You bring fresh toner.\\}
+\noindent {\em A crash reduces\\Your expensive computer\\To a simple stone.\\}
+%\noindent {\em Three things are certain:\\Death, taxes, and lost data.\\Guess which has occurred.\\}
+%\noindent {\em You step in the stream,\\But the water has moved on.\\This page is not here.\\}
+%\noindent {\em Serious error.\\All shortcuts have disappeared.\\Screen. Mind. Both are blank.\\}
+\end{centering}
+\end{quotation}
+
+
+%----------------------------------------------------------------------
+
+\pageheader{Graphs - Basic}
+
+\noindent \\
+\textbf{Short Answer Questions}
+
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Given an undirected graph with $V$ nodes (no loops allowed). What is the maximum number of edges the graph can have?
+	\item Given a directed graph with $V$ nodes (no loops allowed). What is the maximum number of edges the graph can have?
+	\item Name one advantage and one disadvantage of storing a graph as an adjacency matrix.
+	\item Name on advantage and one disadvantage of storing a graph as an adjacency list.
+	\item Describe one way we can handle storing costs of graph edges. Make sure to answer for an adjacency list AND an adjacency matrix.
+	\item Does breadth-first search always find the shortest path between two nodes for an undirected, unweighted graph?
+	\item Which has better time-complexity? BFS or DFS?
+	\item Which has better space-complexity? BFS or DFS?
+	\item What is the run-time of BFS? Explain your answer.
+	\item What is the run-time of DFS? Explain your answer.
+	\item Briefly describe how you might use DFS to count the number of disconnected components (disconnected sub-graphs) in a graph.
+	\item What is the run-time of topological sort?
+	\item What is the run-time of Dijkstra's Algorithm?
+	\item Dijkstra's Algorithm may not work if given negative cost edges. Provide a counter-example to illustrate this.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\textbf{Coding Questions}
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Psuedo-code a method that performs a breadth-first search on a graph. Assume each node stores a number num. Print out each num as you visit each node.
+	\item Psuedo-code a method that performs a depth-first search on a graph. Assume each node stores a number num. Print out each num as you visit each node.
+	\item Pseudo-code the topological sort algorithm.
+	\item Psuedo-code Dijkstra's Algorithm.
+\end{enumerate}
+
+
+\newif\ifcomment
+\commentfalse
+\ifcomment
+
+\fi
+
+%----------------------------------------------------------------------
+
+\pageheader{Graphs - Advanced}
+
+\noindent \\
+\textbf{Short Answer Questions}
+
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Given a flow network and current flow values, produce the residual graph. A network to use will be drawn on the board.
+	\item When discussing flow networks, what is backflow? Explain why it is necessary.
+	\item Describe how the Ford-Fulkerson algorithm uses depth-first search. What purpose does it serve? Why not use breadth-first search?
+	\item What is the run-time of the Ford-Fulkerson Algorithm? Explain your answer.
+	\item Define the following terms regarding flow networks: Cut, capacity of a cut, and net-flow of a cut.
+	\item What does the max-flow, min-cut theorem state? What does this say about algorithms for the two problems?
+	\item What is a reduction? Why is it useful when comparing algorithms?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\textbf{Coding Questions}
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Psuedo-code the Ford-Fulkerson Algorithm.
+	\item Prove the flow-value lemma: The the net-flow across any cut is always equal to the flow $f$
+	\item Psuedo-code an algorithm that solves the Bipartite matching problem.
+	\item Describe how you would solve for the maximum-flow of a network that has multiple sources and multiple sinks.
+\end{enumerate}
+
+
+\newif\ifcomment
+\commentfalse
+\ifcomment
+
+\fi
+
+%----------------------------------------------------------------------
+
+\end{document}

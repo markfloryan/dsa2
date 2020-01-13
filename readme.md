@@ -18,7 +18,7 @@ repository first**
 
 - [Course Logistics](courseLogistics/index.html): The syllabus, introductory slide deck, etc.
 - [Homeworks](homeworks/index.html) ([md](homeworks/index.md)): the homeworks are the main assignments in the course. For each course module, there are 1 or more homeworks. 
-- [Quizzes](quizzes/quizzes.pdf): A published booklet of the bi-weekly quizzes you will take for each module.
+- [Quiz Booklet](quizzes/quizBooklet.pdf) ([answer sheet](quizzes/quizAnswerSheet.pdf)): A published booklet of the bi-weekly quizzes you will take for each module.
 - [Slides](slides/index.html) ([md](slides/index.md)): Contains the slides used in the course.
 
 
