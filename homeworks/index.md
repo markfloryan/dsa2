@@ -35,7 +35,7 @@ NONE YET
 | Module | Homework 1 | Homework 2 | Homework 3 | 
 |--------------|------------------|------------------|------------------|
 | Graphs - Basic  | <a href="./graphs-basic/graphs-basic-01.pdf">Graph Implementation</a> | <a href="./graphs-basic/tasks.pdf">Topological Sort</a> | <a href="./graphs-basic/slidepuzzle.pdf">Slide Puzzle</a> | 
-| Graphs - Advanced | <a href="./graphs-advanced/scheduling.pdf">Network Flow</a> | Graph Problems | Graph Proofs |
+| Graphs - Advanced | <a href="./graphs-advanced/scheduling.pdf">Network Flow</a> | <a href="./graphs-advanced/securityClearance.pdf">Security Clearance</a> | Graph Proofs |
 | Find-Union: Prims & Kruskals | Kruskals Algo | Prims Algo | |
 | Greedy Algorithms - Basic  | Making Change | Nursery Problem | |
 | Greedy Algorithms - Advanced | Greedy Problems | Greedy Proofs | |

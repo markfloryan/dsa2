@@ -1,4 +1,4 @@
-CS2501 - Data Structures and Algorithms I Course Logistics
+CS2501 - Data Structures and Algorithms II Course Logistics
 ===============================
 
 [Back to course main page](../index.html)
