@@ -16,11 +16,18 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 ---------------------------------------
 
 - Graduate TA:
--- Chuanhao Li [cl5ev@virginia.edu](mailto:cl5ev@virginia.edu)
+	- Chuanhao Li [cl5ev@virginia.edu](mailto:cl5ev@virginia.edu)
 
 - Undergraduate TAs:
--- Cassie Quach [cq5yc@virginia.edu](mailto:cq5yc@virginia.edu)
--- George Taliaferro [wgt7xp@virginia.edu](mailto:wgt7xp@virginia.edu)
--- Annie Chapman [amc6wf@virginia.edu](mailto:amc6wf@virginia.edu)
--- Daniel Patel [dp7sv@virginia.edu](mailto:dp7sv@virginia.edu)
--- Branden Kim [bk2dh@virginia.edu](mailto:bk2dh@virginia.edu)
+	- Cassie Quach [cq5yc@virginia.edu](mailto:cq5yc@virginia.edu)
+	- George Taliaferro [wgt7xp@virginia.edu](mailto:wgt7xp@virginia.edu)
+	- Annie Chapman [amc6wf@virginia.edu](mailto:amc6wf@virginia.edu)
+	- Daniel Patel [dp7sv@virginia.edu](mailto:dp7sv@virginia.edu)
+	- Gustavo Moreira [gm2qb@virginia.edu](mailto:gm2qb@virginia.edu)
+
+<a name="TAs"></a>Office Hours (Still being updated)
+---------------------------------------
+
+- Thornton Stacks:
+	- Annie: Wednesday 6:30-8:30pm
+	- Cassie: Monday 6:00-9:00pm
