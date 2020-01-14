@@ -36,7 +36,7 @@ NONE YET
 |--------------|------------------|------------------|------------------|
 | Graphs - Basic  | <a href="./graphs-basic/graphs-basic-01.pdf">Graph Implementation</a> | <a href="./graphs-basic/tasks.pdf">Topological Sort</a> | <a href="./graphs-basic/slidepuzzle.pdf">Slide Puzzle</a> | 
 | Graphs - Advanced | <a href="./graphs-advanced/scheduling.pdf">Network Flow</a> | <a href="./graphs-advanced/securityClearance.pdf">Security Clearance</a> | Graph Proofs |
-| Find-Union: Prims & Kruskals | Kruskals Algo | Prims Algo | |
+| Find-Union: Prims & Kruskals | Kruskals Algo | <a href="./find-union/prims.pdf">Prims Algo</a> | |
 | Greedy Algorithms - Basic  | Making Change | Nursery Problem | |
 | Greedy Algorithms - Advanced | Greedy Problems | Greedy Proofs | |
 | Divide and Conquer - Basic  | Pairs of Points | Recurrence Relations | |
