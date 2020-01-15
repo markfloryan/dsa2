@@ -28,6 +28,9 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 <a name="TAs"></a>Office Hours (Still being updated)
 ---------------------------------------
 
+- Rice 203
+	- Floryan: Mon and Wed 1-2:30pm
+
 - Thornton Stacks:
 	- Annie: Wednesday 6:30-8:30pm
 	- Cassie: Monday 6:00-9:00pm
