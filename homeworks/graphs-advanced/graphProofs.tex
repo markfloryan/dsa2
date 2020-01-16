@@ -1,0 +1,193 @@
+\documentclass[12pt]{article}
+\usepackage[top=1in,bottom=1in,left=0.75in,right=0.75in,centering]{geometry}
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{palatino}
+\usepackage{wrapfig}
+\usepackage{lastpage}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{graphicx,type1cm,eso-pic,color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+
+\def\course{CS 2501: DSA 2}
+\def\homework{Graphs - Advanced: Graph Proofs}
+\def\semester{Spring 2020}
+
+\newboolean{solution}
+\setboolean{solution}{false}
+
+% add watermark if it's a solution exam
+% see http://jeanmartina.blogspot.com/2008/07/latex-goodie-how-to-watermark-things-in.html
+\makeatletter
+\AddToShipoutPicture{%
+\setlength{\@tempdimb}{.5\paperwidth}%
+\setlength{\@tempdimc}{.5\paperheight}%
+\setlength{\unitlength}{1pt}%
+\put(\strip@pt\@tempdimb,\strip@pt\@tempdimc){%
+\ifthenelse{\boolean{solution}}{
+\makebox(0,0){\rotatebox{45}{\textcolor[gray]{0.95}%
+{\fontsize{5cm}{3cm}\selectfont{\textsf{Solution}}}}}%
+}{}
+}}
+\makeatother
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\lhead{\course}
+\chead{Page \thepage\ of \pageref{LastPage}}
+\rhead{\semester}
+%\cfoot{\Large (the bubble footer is automatically inserted into this space)}
+
+\setlength{\headheight}{14.5pt}
+
+\newenvironment{itemlist}{
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{itemize}}
+
+\newenvironment{numlist}{
+\begin{enumerate}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{enumerate}}
+
+\newcounter{pagenum}
+\setcounter{pagenum}{1}
+\newcommand{\pageheader}[1]{
+\clearpage\vspace*{-0.4in}\noindent{\large\bf{Page \arabic{pagenum}: {#1}}}
+\addtocounter{pagenum}{1}
+\cfoot{}
+}
+
+\newcounter{quesnum}
+\setcounter{quesnum}{1}
+\newcommand{\question}[2][??]{
+\begin{list}{\labelitemi}{\leftmargin=2em}
+\item [\arabic{quesnum}.] {#2}
+\end{list}
+\addtocounter{quesnum}{1}
+}
+
+
+\definecolor{red}{rgb}{1.0,0.0,0.0}
+\newcommand{\answer}[2][??]{ 
+\ifthenelse{\boolean{solution}}{
+\color{red} #2 \color{black}}
+{\vspace*{#1}}
+}
+
+\definecolor{blue}{rgb}{0.0,0.0,1.0}
+
+\begin{document}
+
+\section*{\homework}
+
+
+%----------------------------------------------------------------------
+
+\question[3]{
+\textbf{Warm Up:} Let $G$ be an undirected graph with $n$ nodes (let's assume $n$ is even). Prove or provide a counterexample for the following claim: If every node of $G$ has a degree of at least $\frac{n}{2}$, then $G$ must be connected.
+}
+
+\answer[0 in]{
+Do this by contradiction. Assume that $\forall_{v \in V}{indegree(v) \geq \frac{n}{2}}$ and $G$ is not connected. This means $G$ can be split into two sets of nodes $A$ and $B$ that are disjoint. We don't know the size of these set so we'll say $|A| = a \leq \frac{n}{2}$ and $|B| = b \geq \frac{n}{2}$. Suppose that both $A$ and $B$ are fully connected. This means that each node in $A$ has degree $a-1$ and every node in $B$ has degree $b-1$. But now the nodes in $A$ don't have degree $\frac{n}{2}$ and would need to be connected to the nodes in $B$ to reach the requirement set out by our assumption. Thus, it must be the case that $G$ is connected.
+}
+
+\question[3]{
+Prove that the edge $e$ that Prim's algorithm selects at each point in the algorithm must be in the minimum spanning tree. Specifically, assume the $e$ is not in the minimum spanning tree and use and exchange argument to show that it must be.
+}
+
+\answer[0 in]{
+Assume it isn't, but it is the lowest cost edge. So, you can swap it back in and get a better spanning tree.
+}
+
+%----------------------------------------------------------------------
+
+\question[1]{
+Formally prove that the \emph{Bi-Partite Matching} algorithm we saw in class is optimal (i.e, it always find the optimal matching between nodes in the bi-partite graph). \emph{HINT: Assume the algorithm is not optimal and show that you must be able to still find an augmenting path through the network, contradicting your assumption that max-flow terminated.}
+}
+
+\answer[0 in]{
+This is basically a rebranding of the max-flow min-cut theorem proof. Suppose the algorithm is not optimal. This means that max flow has completed but has NOT found the optimal matching. Thus we know that the optimal matching has not been reached AND there is no augmenting path through the flow network.
+\\
+\\
+However, it turns out that under these conditions, we can construct an augmenting path, leading to a contradiction. We know that some edge $(u,v)$ has residual capacity $1$ and is part of this augmenting path (this is the additional edge that our un-optimal solution doesn't use). We then consider the following cases:
+
+\begin{enumerate}
+\item Both $u$ and $v$ are not already paired: This is trivial. The augmenting path exists from $P=[s,u,v,t]$.
+\item $u$ is not paired, but $v$ is: Because our solution is not optimal $v$ is erroneously paired with some different node $u'$. Thus our path will be $P=[s,u,v,u',...]$. At this point $u'$ is not paired and we apply our logic recursively until we get to $t$. Thus finding our augmenting path. Eventually we MUST hit some un-paired node $v'$ (because our new solution must add one new $u$ and one new $v'$ overall) and once this happens we finish the augmenting path to $t$.
+\item $u$ is paired and $v$ is not. Similar logic but the other way. There is some un-paired node $u'$ that should be in the optimal solution and it should be paired with some node $v'$. Our path begins as $P=[s,u',v',u''..]$ (where $u''$ is the node erroneously paired with $v'$). At this point we pair the left nodes with their correct right nodes recursively, if that right node is already paired, we travel back to the left and repeat. Eventually, we MUST hit $u$. Once we do we travel from $u$ to $v$ and then to $t$ to complete the augmenting path.
+\end{enumerate} 
+
+Thus, we can always find an augmenting path and increase the matching if somehow the algorithm is not optimal, contradicting our assumption that ford-fulkerson terminated correctly as specified.
+}
+
+%----------------------------------------------------------------------
+
+\question[3]{
+Suppose you are given a list of potential flights $F=\{f_1,f_2,...,f_n\}$ that your airline wishes to serve. You can think of these as flight objects. Each flight has several fields including starting airport, ending airport, departure time, and arrival time. Develop an algorithm that, given flights $F$ and a value $k$, determines whether it is possible to serve all of the flights in $F$ with at most $k$ planes. You must adhere to the following additional constraints:
+
+\begin{enumerate}
+\item Plane maintenance takes $m$ minutes. No plane can depart less than $m$ minutes after arriving at an airport.
+\item A plane can fly between any two airports. For example, if you have two flights you want to serve in $F$ (LA to BOS, NYC to DC) then we might choose to fly a plane from LA to BOS, then fly from BOS to NYC (even though that leg isn't in $F$) so that this plane can then serve NYC to DC.
+\item  You are given another parameter $l$. If you are splicing in an extra flight (see item above) then you must have at least $m$ time for maintenance and $l$ time for the other flight (yes, this is a pretty simple and unrealistic assumption, but is fine for our purposes).
+\item A plane does not need to end its day at the same airport from which it started. You can assume that all flights are during the day (between 6am and 12 midnight), and that there is an overnight flight at the end of the schedule back to the first departing airport before the next day begins.
+\end{enumerate}
+
+}
+
+\answer[0 in]{
+%In Kleinberg pg. 388
+Setup the graph $G$ as follows:
+
+\begin{enumerate}
+\item $G$ has a specific source $s$ (thought of as a cargo bay where planes come from) and $t$ (thought of as an ending cargo bay)
+\item $G$ will have nodes for every airport, and an edge from each $u_i$ to $v_i$ (for every flight $i$) with a lower bound of $1$ (i.e., those flights MUST be served).
+\item if the starting point of a flight is reachable from the ending point of any other flight, we add an edge with capacity $1$ and lower bound of $0$ (i.e., a plane might service both flights but doesn't have to).
+\item For each flight starting city, there is an edge with capacity $1$ to that city from $s$ (i.e., every plane can start the day in any required starting city).
+\item Same for ending cities and $t$
+\item There is a capacity $k$ edge from $s$ directly to $t$ (i.e., any flights we don't need can be directly funneled around the network)
+\item $s$ has demand $-k$ and $t$ has demand $k$.
+\end{enumerate}
+
+We then simply find a circulation in this network with increasing $k$ until it is feasible.
+}
+
+%----------------------------------------------------------------------
+
+
+
+\question[3]{
+This problem is about robots that need to reach a particular destination. Suppose that you have an area represented by a graph $G = (V,E)$ and two robots with starting nodes $s_1, s_2 \in V$. Each robot also has a destination node $d_1,d_2 \in V$. Your task is to design a schedule of movements along edges in $G$ that move both robots to their respective destination nodes. You have the following constraints:
+
+\begin{enumerate}
+\item You must design a schedule for the robots. A schedule is a list of steps, where each step is an instruction for a single robot to move along a single edge.
+\item If the two robots ever get close, then they will interfere with one another (perhaps start an epic robot fight?). Thus, you must design a schedule so that the robots, at no point in time, exist on the same or adjacent nodes.
+\item You can assume that $s_1$ and $s_2$ are not the same or adjacent, and that the same is true for $d_1$ and $d_2$.
+\end{enumerate}
+
+Design an algorithm that produces an optimal schedule for the two robots. What is the runtime of your algorithm? How would the runtime change as the number of robots grows?
+}
+
+\answer[0 in]{
+We do this by creating a super graph $G'$. Nodes in $G'$ representing the various states that the two robots can be in. Thus, for every pair of unique nodes in $G$, we create a single node in $G'$. Formally, $G' = (V',E')$ and $V' = \{v' = (u,v) | u,v \in V \wedge u \neq v \wedge (u,v),(v,u) \notin E\}$. Note that both $(u,v)$ and $(v,u)$ are valid nodes (one for each configuration of the two robots on those two nodes).\\
+\\
+The edges $E'$ are defined as states that can be reached from previous states. Thus for two nodes in $G'$ called $n_1 = (u_1,v_1)$ and $n_2 = (u_2,v_2)$, there exists an edge between $n_1$ and $n_2$ if one of the following two is true. Either $u_1 = u_2$ and $(v_1,v_2) \in E$ OR $v_1 = v_2$ and $(u_1,u_2) \in E$.\\
+\\
+Once this graph is created, our algorithm simply uses a breadth first search to find a path between the start state $(s_1,s_2)$ and the final state $(d_1,d_2)$. Our runtime is $O(V' + E')$ for the depth first search. The size of $V'$ is bounded by $V^2$ and the size of $E'$ is bounded by $V^3$.\\
+\\
+As the number of robots $r$ grows, we actually have less states that are valid. The worst case scenario occurs when the nodes are split into exactly $r$ disconnected, but fully connected (within their own segments) pieces and each robot exists on it's own "island". Each of the $r$ islands has $\frac{n}{r}$ nodes and the max number of nodes in our hypergraph is thus every combination across these segments. There are thus $(\frac{n}{r})^r$ nodes in the hypergraph (as $r$ grows there are actually less and less valid states for the hypergraph). The number of edges in the hypergraph would be the number of ways a robot can move on one island. On each island, every robot could move to one of the other $\frac{n}{r}-1$ states. Thus the number of edges is bounded by $r*(\frac{n}{r}-1)$. Thus, the total worst case runtime is number of nodes plus number of edges which is: $\Theta((\frac{n}{r})^r + r*(\frac{n}{r}-1))$.
+}
+
+
+
+\end{document}
