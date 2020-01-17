@@ -16,7 +16,7 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 ---------------------------------------
 
 - Graduate TA:
-	- Chuanhao Li [cl5ev@virginia.edu](mailto:cl5ev@virginia.edu)
+	- Trey West <rew7y@virginia.edu>
 
 - Undergraduate TAs:
 	- Cassie Quach [cq5yc@virginia.edu](mailto:cq5yc@virginia.edu)
@@ -24,13 +24,17 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 	- Annie Chapman [amc6wf@virginia.edu](mailto:amc6wf@virginia.edu)
 	- Daniel Patel [dp7sv@virginia.edu](mailto:dp7sv@virginia.edu)
 	- Gustavo Moreira [gm2qb@virginia.edu](mailto:gm2qb@virginia.edu)
+	- Daniel Prohaska [dwp7kp@virginia.edu](mailto:dwp7kp@virginia.edu)
 
-<a name="TAs"></a>Office Hours (Still being updated)
+<a name="TAs"></a>Office Hours
 ---------------------------------------
 
 - Rice 203
-	- Floryan: Mon and Wed 1-2:30pm
+	- Floryan: Mon and Tue 1-2:30pm
 
 - Thornton Stacks:
 	- Annie: Wednesday 6:30-8:30pm
 	- Cassie: Monday 6:00-9:00pm
+	- Gustavo: Mon, Tue, Wed, Fri 1:00-1:50pm
+	- Daniel: Tuesday 2:00-5:00pm
+	- George: Wednesday 3:00-5:30pm; Thursday 3:00-5:00pm
