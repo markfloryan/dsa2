@@ -10,7 +10,8 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 - [Schedule](./schedule.html): The lecture schedule for the course.
 - [Grading Policy](./grading.html): A summary of the somewhat non-conventional grading policy for this course.
 - [Syllabus](./syllabus.html): Contains the same information as the slide deck above, but with more detail.
-
+- [Gradescope Info](./gradescope.html): Contains information on submitting homeworks to gradescope.
+	- [Gradescope Link](https://gradescope.com): Direct link to Gradescope for submitting work.
 
 <a name="TAs"></a>Teaching Assistants
 ---------------------------------------

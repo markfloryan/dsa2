@@ -20,6 +20,8 @@ repository first**
 - [Homeworks](homeworks/index.html) ([md](homeworks/index.md)): the homeworks are the main assignments in the course. For each course module, there are 1 or more homeworks. 
 - [Quiz Booklet](quizzes/quizBooklet.pdf) ([answer sheet](quizzes/quizAnswerSheet.pdf)): A published booklet of the bi-weekly quizzes you will take for each module.
 - [Slides](slides/index.html) ([md](slides/index.md)): Contains the slides used in the course.
+- [Gradescope Info](./courseLogistics/gradescope.html): Contains information on submitting homeworks to gradescope.
+	- [Gradescope Link](https://gradescope.com): Direct link to Gradescope for submitting work.
 
 
 <a name="contributing"></a>Contributing to this Repository
