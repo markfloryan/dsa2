@@ -41,12 +41,11 @@ Given the layout of the different junction points and the cost of wiring them to
 	\item Your wired house must be a spanning tree (there can be no cycles)
 	\item Lights can be wired to one another if they have the same desired switch, as long as the switch is between both of them and the breaker.
 	\item Every type of junction point (breaker, switch, boxes, etc.) must be connected into your wiring. 
-	\item It is guaranteed that removing any switch will bifurcate the graph (i.e., split the graph into two disconnected components). 
-	\item All inputs will be solvable. For example, no input will put an outlet behind a switch making the wiring impossible to accomplish.
+	\item junction boxes (and outlets) should never be behind switches in your spanning tree. Thus, once your spanning tree reaches a switch, only lights (though many of them potentially) will be behind the switch.
 \end{itemize}
 
 \subsection*{Input}
-The input file will begin with one line containing integers $J$ and $C$, the number of junction points and the number of possible connections respectively. The next $J$ lines will each specify the name of a junction point along with the type (breaker, switch, light, outlet, box). There will only be one breaker box. The next $C$ lines specify the connections by providing the name of two junction points and the cost between them.
+The input file will begin with one line containing integers $J$ and $C$, the number of junction points and the number of possible connections respectively. The next $J$ lines will each specify the name of a junction point along with the type (breaker, switch, light, outlet, box). When a switch is listed, the lights that need to be behind that switch will be always listed next to indicate this dependency. There will only be one breaker box. The next $C$ lines specify the connections by providing the name of two junction points and the cost between them.
 
 \subsection*{Output}
 
@@ -60,17 +59,18 @@ Output the cost of the minimum wiring for the house that adheres to all of the c
 \vspace{0.15in}
 
 {\tt 
-6 7\linebreak
+6 8\linebreak
 b1 breaker\linebreak
 j1 box\linebreak
 s1 switch\linebreak
-o1 outlet\linebreak
 l1 light\linebreak
 l2 light\linebreak
+o1 outlet\linebreak
 b1 j1 5\linebreak
 b1 o1 1\linebreak
 j1 s1 1\linebreak
 j1 o1 2\linebreak
+o1 l1 1\linebreak
 l1 l2 2\linebreak
 s1 l1 6\linebreak
 s1 l2 1\linebreak
