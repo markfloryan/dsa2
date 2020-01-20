@@ -6,12 +6,12 @@ CS2501 - Information about Gradescope and submitting assignments
 <a name="introduction"></a>Gradescope
 ---------------------------------------
 
-For this course, we will be using [Gradescope](https://gradescope.com), a platform for submitting programming assignments, grading paper-based exams, and other similar things. You should have an account on Gradescope, linked to your UVa computing id shortly. This page summarizes notes related to getting your code submitted correctly on Gradescope.
+For this course, we will be using [Gradescope](https://gradescope.com), a platform for submitting programming assignments, grading paper-based exams, and other similar things. You should have an account on Gradescope, linked to your UVa email address. This page summarizes notes related to getting your code submitted correctly on Gradescope.
 
 <a name="introduction"></a>Programming Assignments
 ---------------------------------------
 
-Your assignments can be completed in one of three programming assignments: Java, C++, or Python. When you submit your code, you MUST submit the following:
+Your assignments can be completed in one of three programming languages: Java, C++, or Python. When you submit your code, you MUST submit the following:
 
 - **Individual Code Files:** You must submit all of your code as individual code files with no folder structure. You can submit multiple files, but they cannot be in folders (no Java packages for example).
 - **Makefile:** Gradescope will expect you to submit a Makefile. Don't be frightened by this. They are very simple and there are examples provided below. The makefile MUST be named "Makefile" exactly (capital M). 
