@@ -41,6 +41,8 @@ Given the layout of the different junction points and the cost of wiring them to
 	\item Your wired house must be a spanning tree (there can be no cycles)
 	\item Lights can be wired to one another if they have the same desired switch, as long as the switch is between both of them and the breaker.
 	\item Every type of junction point (breaker, switch, boxes, etc.) must be connected into your wiring. 
+	\item It is guaranteed that removing any switch will bifurcate the graph (i.e., split the graph into two disconnected components). 
+	\item All inputs will be solvable. For example, no input will put an outlet behind a switch making the wiring impossible to accomplish.
 \end{itemize}
 
 \subsection*{Input}
@@ -58,7 +60,7 @@ Output the cost of the minimum wiring for the house that adheres to all of the c
 \vspace{0.15in}
 
 {\tt 
-6 8\linebreak
+6 7\linebreak
 b1 breaker\linebreak
 j1 box\linebreak
 s1 switch\linebreak
@@ -69,7 +71,6 @@ b1 j1 5\linebreak
 b1 o1 1\linebreak
 j1 s1 1\linebreak
 j1 o1 2\linebreak
-o1 l1 1\linebreak
 l1 l2 2\linebreak
 s1 l1 6\linebreak
 s1 l2 1\linebreak
