@@ -24,4 +24,4 @@ CS2501 - Data Structures and Algorithms II
 <a name="introduction"></a>Other
 --------------------------------------- 
 
-- [Daily Announcements](./dailyAnnouncements.html): Daily Announcement Slides
+- [Daily Announcements](./dailyAnnouncements.pptx): Daily Announcement Slides
