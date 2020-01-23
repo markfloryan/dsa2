@@ -8,8 +8,7 @@ TIER 1 : Core Concepts
 
 | Module | Homework 1 | Homework 2 | Homework 3 |
 |--------------|------------------|------------------|------------------|
-
-NONE YET
+| Graphs - Basic  | <a href="./graphs-basic/graphs-basic-01.pdf">Graph Implementation</a> | <a href="./graphs-basic/tasks.pdf">Topological Sort</a> | <a href="./graphs-basic/slidepuzzle.pdf">Slide Puzzle</a> |
 
 TIER 2 : Advanced Algorithms
 
@@ -18,12 +17,7 @@ TIER 2 : Advanced Algorithms
 
 NONE YET
 
-TIER 3 : Reductions and Complexity Classes
 
-| Module | Homework 1 | Homework 2 | Homework 3 |
-|--------------|------------------|------------------|------------------|
-
-NONE YET
 
 
 
@@ -31,8 +25,7 @@ NONE YET
 ---------------------------------------
 
 | Module | Homework 1 | Homework 2 | Homework 3 | 
-|--------------|------------------|------------------|------------------|
-| Graphs - Basic  | <a href="./graphs-basic/graphs-basic-01.pdf">Graph Implementation</a> | <a href="./graphs-basic/tasks.pdf">Topological Sort</a> | <a href="./graphs-basic/slidepuzzle.pdf">Slide Puzzle</a> | 
+|--------------|------------------|------------------|------------------| 
 | Graphs - Advanced | <a href="./graphs-advanced/scheduling.pdf">Network Flow</a> | <a href="./graphs-advanced/securityClearance.pdf">Security Clearance</a> | <a href="./graphs-advanced/graphProofs.pdf">Graph Proofs</a> |
 | Find-Union: Prims & Kruskals | <a href="./find-union/kruskals.pdf">Kruskals Algo | <a href="./find-union/prims.pdf">Prims Algo</a> | |
 | Greedy Algorithms - Basic  | <a href="./greedy-basic/makingChange.pdf">Making Change</a> | <a href="./greedy-basic/movingBoxes.pdf">Moving Boxes</a> | |
