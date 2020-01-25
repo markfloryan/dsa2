@@ -3,6 +3,6 @@ all :
 	#makesure the a.out in the line matches the one under the run target if you change it
 	g++ -std=c++11 -o a.out *.cpp
 
-run :
 	#Simply run the executable that was compiled. Needs to match the name after the -o flag above.
+run :	
 	./a.out

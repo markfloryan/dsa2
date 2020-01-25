@@ -221,11 +221,41 @@
 \end{enumerate}
 
 
-\newif\ifcomment
-\commentfalse
-\ifcomment
+%----------------------------------------------------------------------
 
-\fi
+\pageheader{Find-Union: Prims and Kruskals}
+
+\noindent \\
+\textbf{Short Answer Questions}
+
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Give an example of a graph (with edge costs) that has more than one minimum spanning tree.
+	\item How many edges does a minimum spanning tree have as a function of the original connected graph $G=(V,E)$? Explain why.
+	\item True or False: If the edge weights of a graph are all unique, then the minimum spanning tree is unique as well. Explain your answer.
+	\item Given a graph (drawn on the board) and a starting node, step through Prim's algorithm. Draw the MST and list the order in which the nodes are added to the tree.
+	\item What do we mean when we say that the Minimum Spanning Tree problem has optimal substructure?
+	\item What is the runtime of Prim's algorithm?
+	\item What is the runtime of Kruskal's algorithm?
+	\item Describe how the findSet(int i) method works for a find-union data structure? What is the runtime?
+	\item Describe how the union(int i, int j) method works for a find-union data structure. What is the runtime?
+	\item When implementing a find-union structure, what is union by rank? Why is it useful?
+	\item When implementing a find-union structure, what is path compression? Why is it useful?
+
+\end{enumerate}
+
+\vspace{0.5in}
+
+\textbf{Coding Questions}
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Write pseudo-code for Prim's algorithm
+	\item Write pseudo-code for Kruskal's algorithm
+	\item Pseudo-code the findSet(int i) method of a find-union structure.
+	\item Pseudo-code the union(int i, int j) method of a find-union structure.
+
+\end{enumerate}
+
 
 %----------------------------------------------------------------------
 

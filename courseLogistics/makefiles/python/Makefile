@@ -3,6 +3,6 @@ all :
 	#So we just output a placeholder message to the terminal
 	echo "Python does not need to compile!"
 
-run :
 	#runs your code. You can change main.py to the name of your main python file if you need to.
+run :
 	python3 main.py

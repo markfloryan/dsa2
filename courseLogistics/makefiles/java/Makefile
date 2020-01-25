@@ -3,7 +3,7 @@ all :
 	#You shouldn't need to change this.
 	javac -cp lib/*:. *.java
 
-run :
-	#Change this line to match the name of your java file that contains your main() method.
+	#Change line below to match the name of your java file that contains your main() method.
 	#OR just make sure to call your main file Main.java
+run :
 	java Main
