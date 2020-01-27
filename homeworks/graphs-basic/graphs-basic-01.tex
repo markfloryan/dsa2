@@ -32,7 +32,7 @@ The input file contains one test case. Your program will be run multiple times o
 
 \subsection*{Output}
 
-For each test case, display ALL possible paths through the neighborhood that are guaranteed to be safe. Each path is a sequence of integers with a single hyphen between each intersection. If there is more than one path, you should print them out in lexicrographic order.
+For each test case, display ALL possible paths through the neighborhood that are guaranteed to be safe. Each path is a sequence of integers with a single hyphen between each intersection. If there is more than one path, you should print them out in lexicrographic order, with the exception that node ids be considered a single character. For example, 0-2-15 would precede 0-13-15. Even though 13 comes before 2 lexicographically, we are considering 13 to be a single character. Because $2 < 13$, we print 0-2-15 before 0-13-15. You can achieve this ordering quite easily by using a DFS, and always searching smaller numbered nodes before larger numbered ones.
 
 \subsection*{Submission}
 
