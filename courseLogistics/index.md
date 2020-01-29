@@ -26,12 +26,16 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 	- Daniel Patel [dp7sv@virginia.edu](mailto:dp7sv@virginia.edu)
 	- Gustavo Moreira [gm2qb@virginia.edu](mailto:gm2qb@virginia.edu)
 	- Daniel Prohaska [dwp7kp@virginia.edu](mailto:dwp7kp@virginia.edu)
+	- Brandon Bremer [beb8nj@virginia.edu](mailto:beb8nj@virginia.edu)
 
 <a name="TAs"></a>Office Hours
 ---------------------------------------
 
 - Rice 203
 	- Floryan: Mon and Tue 1-2:30pm
+
+- Rice 324
+	- Trey: Tue 11-12 and Thu 10-12.
 
 - Thornton Stacks:
 	- Annie: Wednesday 6:30-8:30pm
@@ -40,3 +44,4 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 	- Daniel Patel: Tuesday 2:00-5:00pm
 	- George: Monday 3-5pm; Wednesday 3:00-5:30pm; Thursday 3:00-5:00pm
 	- Daniel Prohaska: Thu 11-12, Fri 1-2 and 3-4
+	- Brandon: Tue, Thu 6-8:30
