@@ -29,7 +29,7 @@ NONE YET
 | Graphs - Advanced | <a href="./graphs-advanced/scheduling.pdf">Network Flow</a> | <a href="./graphs-advanced/securityClearance.pdf">Security Clearance</a> | <a href="./graphs-advanced/graphProofs.pdf">Graph Proofs</a> |
 | Find-Union: Prims & Kruskals | <a href="./find-union/kruskals.pdf">Kruskals Algo | <a href="./find-union/prims.pdf">Prims Algo</a> | |
 | Greedy Algorithms - Basic  | <a href="./greedy-basic/makingChange.pdf">Making Change</a> | <a href="./greedy-basic/movingBoxes.pdf">Moving Boxes</a> | |
-| Greedy Algorithms - Advanced | <a href="./greedy-advanced/daycare.pdf">Nursery</a> | Greedy Proofs | |
+| Greedy Algorithms - Advanced | <a href="./greedy-advanced/daycare.pdf">Nursery</a> | <a href="./greedy-advanced/greedyProofs.pdf">Greedy Proofs</a> | |
 | Divide and Conquer - Basic  | <a href="./divideconq-basic/trading.pdf">Trading</a> | Recurrence Relations | |
 | Divide and Conquer - Advanced  | DivCon Problems | Proofs | | 
 | Dynamic Programming - Basic  | <a href="./dynamic-basic/drainage.pdf">Drainage</a> | <a href="./dynamic-basic/purplerain.pdf">Purple Rain</a> | | 
