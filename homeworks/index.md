@@ -14,8 +14,7 @@ TIER 2 : Advanced Algorithms
 
 | Module | Homework 1 | Homework 2 | Homework 3 |
 |--------------|------------------|------------------|------------------|
-
-NONE YET
+| Graphs - Advanced | <a href="./graphs-advanced/scheduling.pdf">Network Flow</a> | <a href="./graphs-advanced/securityClearance.pdf">Security Clearance</a> | <a href="./graphs-advanced/graphProofs.pdf">Graph Proofs</a> |
 
 
 
@@ -26,7 +25,6 @@ NONE YET
 
 | Module | Homework 1 | Homework 2 | Homework 3 | 
 |--------------|------------------|------------------|------------------| 
-| Graphs - Advanced | <a href="./graphs-advanced/scheduling.pdf">Network Flow</a> | <a href="./graphs-advanced/securityClearance.pdf">Security Clearance</a> | <a href="./graphs-advanced/graphProofs.pdf">Graph Proofs</a> |
 | Find-Union: Prims & Kruskals | <a href="./find-union/kruskals.pdf">Kruskals Algo | <a href="./find-union/prims.pdf">Prims Algo</a> | |
 | Greedy Algorithms - Basic  | <a href="./greedy-basic/makingChange.pdf">Making Change</a> | <a href="./greedy-basic/movingBoxes.pdf">Moving Boxes</a> | |
 | Greedy Algorithms - Advanced | <a href="./greedy-advanced/daycare.pdf">Nursery</a> | <a href="./greedy-advanced/greedyProofs.pdf">Greedy Proofs</a> | |
