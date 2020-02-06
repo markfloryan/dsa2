@@ -249,6 +249,114 @@
 
 \end{enumerate}
 
+%----------------------------------------------------------------------
+
+\pageheader{Greedy Algorithms: Basic}
+
+\noindent \\
+\textbf{Short Answer Questions}
+
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item What is a \emph{feasible solution}, when discussing optimization problems?
+	\item What is an \emph{objective function} when discussing optimization problems?
+	\item Briefly describe why greedy algorithms are typically easy to implement.
+	\item What was the runtime of the greedy change making algorithm from class? Make sure to explain your variables and explain your answer.
+	\item When describing greedy algorithms, what is \emph{optimal substructure}? Why is it useful?
+	\item Describe the greedy algorithm from class for solving the \emph{continuous knapsack problem}.
+	\item What is the runtime of the greedy algorithm for the \emph{continuous knapsack problem}.
+	\item Describe the greedy algorithm we used in class for the \emph{interval selection problem}.
+	\item What was the runtime of the \emph{interval selection} greedy algorithm from class? Explain your answer.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\textbf{Coding Questions}
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Pseudo-code the \emph{making change} algorithm from class.
+	\item Pseudo-code the \emph{continuous knapsack} algorithm from class.
+	\item Pseudo-code the \emph{interval selection} algorithm from class.
+\end{enumerate}
+
+%----------------------------------------------------------------------
+
+\pageheader{Greedy Algorithms: Advanced}
+
+\noindent \\
+\textbf{Short Answer Questions}
+
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Consider a brute-force solution to the \emph{making change} problem. What would the runtime of this algorithm be?
+	\item Given a coin-set of 1,6,10; provide a counter-example showing that the greedy algorithm no longer works.
+	\item Consider the \emph{discrete knapsack problem}. For this problem, you must take the entire item and its full cost and weight. Provide a counter-example to show that the greedy selection rule for continuous knapsack won't work for this variant of the problem.
+	\item Consider a greedy algorithm for \emph{interval selection} that selects the interval with the fewest conflicts (i.e., the fewest other intervals that are overlapping with this one). Provide a counter-example showing that this will not always produce the optimal solution.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\textbf{Coding/Proof Questions}
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Argue the the \emph{making change} problem has \emph{optimal substructure}.
+	\item Argue that \emph{making change} has the \emph{greedy choice property} (i.e., the largest coin must be in the optimal solution.). Use 1,5,10,25 as your coin set and only argue for change amounts of 25 or higher.
+	\item Prove by induction that the \emph{interval selection} greedy algorithm from class is optimal.
+\end{enumerate}
+
+
+%----------------------------------------------------------------------
+
+\pageheader{Divide and Conquer: Basic}
+
+\noindent \\
+\textbf{Short Answer Questions}
+
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item In class, we saw a Div. and Conq. algorithm for \emph{closest pair of points} that divided the list of points in half, recursively solved, then checked points across the dividing line before returning a solution. Describe what the runtime of this algorithm (be precise / prove it) and describe why this approach is not ideal.
+	\item Once we came up with a more clever algorithm for \emph{closest pair of points}, what was the recurrence relation and runtime of this algorithm? Explain your answer.
+	\item Briefly describe how we more cleverly combined solutions to subproblems of the \emph{closest pair of points} problem.
+	\item Describe the solution we produced for the \emph{trominoes} problem.
+	\item What was the runtime of our solution to the \emph{trominoes} problem. Explain your answer.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\textbf{Coding/Proof Questions}
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Directly solve the following recurrence that we did in class: $T(n) = 2T(\frac{n}{2})+n$.
+	\item Use the substitution method to solve the following recurrence that we did in class: $T(n) = 2T(\frac{n}{2})+n$.
+	\item Use the substitution method to solve the following recurrence that we did in class: $T(n) = 2T(\frac{n}{2})+1$.
+\end{enumerate}
+
+
+%----------------------------------------------------------------------
+
+\pageheader{Divide and Conquer: Advanced}
+
+\noindent \\
+\textbf{Short Answer Questions}
+
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Strassen's matrix multiplication algorithm is a clever way to reduce the runtime of this problem. What is the recurrence relation for the naive divide-and-conquer and also for Strassen's approach? Use the Master Theorem to present the runtimes of these two approaches.
+	\item When discussing the Master Theorem, what is the intuitive explanation of case 1? If your recurrence is $T(n)=aT(\frac{n}{b})+f(n)$, then let $k=log_b(a)$. Case 1 states that if $f(n) \in O(n^{k-\epsilon}$ for some positive $\epsilon$, then $T(n) \in \Theta(n^k)$.
+	\item When discussing the Master Theorem, what is intuitive explanation of case 2? Remember that case 2 states that if $f(n) \in \Theta(n^k)$ then $T(n) \in \Theta(f(n)log(n)) = \Theta(n^klog(n))$.
+	\item When discussing the Master Theorem, what is the purpose of the \emph{regularity condition} (part of case 3). It states that $af(\frac{n}{b}) \leq cf(n)$ for some $c<1$ and sufficiently large $n$.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\textbf{Coding/Proof Questions}
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Pseudo-code a Div. and Conq. algorithm that finds the smallest and largest index of a given integer in a sorted array. If the element is not in the array, report that as well. State the runtime of your algorithm. Notice, that the element might be in the array multiple times.
+	\item Pseudo-code a Div. and Conq. algorithm that finds the largest and smallest elements in an array (not sorted). What is the runtime of your algorithm? Is it better than doing a linear scan?
+	\item Write a recursive divide and conquer algorithm that takes an unsorted array and turns it into a min-heap. You may assume you have access to \emph{percolateDown(node)}.
+\end{enumerate}
+
 
 %----------------------------------------------------------------------
 
