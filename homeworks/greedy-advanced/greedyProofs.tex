@@ -95,10 +95,6 @@
 You are given a set of points $P=\{ p_1, p_2, ... , p_n \}$ on the real line (you may assume these are given to you in sorted order). Describe an algorithm that determines the smallest set of unit-length closed intervals that contains all of the given points. For example, the points $\{ 0.9, 1.2, 1.3, 2.1, 3.0 \}$ can be covered by $[ 0.7, 1.7 ]$ and $[ 2.0, 3.0 ]$. State the runtime of your algorithm.
 }
 
-\answer[0 in]{
-Greedy. Start with smallest point $p_1$ and place an interval at $[p_1,p_1+1]$. Go to the next $p_i>p_1+1$ and repeat until done.
-}
-
 %----------------------------------------------------------------------
 
 
@@ -107,11 +103,7 @@ Prove that your algorithm always returns the optimal result.
 }
 
 \answer[0 in]{
-Look at the pdf on collab resources. Proof is almost exact same as interval scheduling, so I'll paraphrase here.\\
-\\
-First prove a lemma showing the every greedy interval MUST have a higher (or equal) starting value compared to the corresponding interval in an arbitrary optimal solution. We are proving that $\forall_{i\geq1}g_i \geq o_i$. This is pretty easily shown by induction. The inductive step essentially argues that if somehow $o_k$ is now ending strictly later than the greedy, then the greedy must have chosen an interval further left than it needed to because $o_k$ definitely works with the greedy solution (or the greedy must have missed a point, meaning it isn't a correct algorithm). \\
-\\
-You then use this result to show that if somehow the optimal is better than greedy, a similar thing must have happened. Greedy had more intervals but they are all completely to the right of the entire optimal solution, which makes no sense.
+...
 }
 
 %----------------------------------------------------------------------
@@ -135,7 +127,7 @@ One of these greedy algorithms is correct. You must do three things: Prove this 
 }
 
 \answer[0.25 in]{
-
+...
 }
 
 
@@ -160,38 +152,7 @@ First, provide a brute-force algorithm that solves this problem. What is the run
 }
 
 \answer[0.25 in]{
-\begin{enumerate}
-    \item \textbf{Brute Force Algorithm:} Iterate over each subset of $[1, n]$ 
-    and compute the cost for each, preserving the minimum.
-
-    \item \textbf{Brute Force Analysis:}
-    For each subset $L\subseteq {1, \ldots, n}$: 
-    \begin{itemize}
-      \item Given $L$ and $j$, computing $u_j$ is a $\Theta(n)$ operation 
-      (as the $\operatorname{min}$ operation may iterate over all elements of 
-      $L$, which has a maximum size $n$.  
-
-      \item Thus, the cost for a given subset may be computed naively in 
-      $\Theta(n^2)$ (as we are summing a linear operation $n$ times).
-    \end{itemize}
-
-    Therefore, the runtime for a ``brute force'' approach to computing the 
-    minimum cost is $\Theta(n^2 2^n)$.
-
-    \item \textbf{Better Algorithm:}
-    The trick here is that we ``walk backwards'' through the servers, deciding 
-    at each step whether or not to store the file on that server.  If we are 
-    on the $k$th server, we compare $c_k$ (cost of getting immediately to the 
-    file) and $\ell - k$, where $\ell$ is the index of the most recent server 
-    where you stored the file. 
-
-    In plain language, at each step we either spend $c_k$ to get immediately to
-    the file, or we spend $\ell-k$ travel to the $\ell$th server where you 
-    stored the file last time.
-
-    This actually runs in $\Theta(n)$ time, as we only perform one pass through
-    the input.
-  \end{enumerate}
+...
 }
 
 %----------------------------------------------------------------------
