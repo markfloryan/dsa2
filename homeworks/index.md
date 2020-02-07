@@ -28,7 +28,7 @@ TIER 2 : Advanced Algorithms
 |--------------|------------------|------------------|------------------| 
 | Greedy Algorithms - Basic  | <a href="./greedy-basic/makingChange.pdf">Making Change</a> | <a href="./greedy-basic/movingBoxes.pdf">Moving Boxes</a> | |
 | Greedy Algorithms - Advanced | <a href="./greedy-advanced/daycare.pdf">Nursery</a> | <a href="./greedy-advanced/greedyProofs.pdf">Greedy Proofs</a> | |
-| Divide and Conquer - Basic  | <a href="./divideconq-basic/trading.pdf">Trading</a> | Recurrence Relations | |
+| Divide and Conquer - Basic  | <a href="./divideconq-basic/trading.pdf">Trading</a> | <a href="./divideconq-basic/recurrenceRelations.pdf">Recurrence Relations</a> | |
 | Divide and Conquer - Advanced  | DivCon Problems | Proofs | | 
 | Dynamic Programming - Basic  | <a href="./dynamic-basic/drainage.pdf">Drainage</a> | <a href="./dynamic-basic/purplerain.pdf">Purple Rain</a> | | 
 | Dynamic Programming - Advanced | DP Problems | Proofs | |

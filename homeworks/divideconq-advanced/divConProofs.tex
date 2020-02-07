@@ -1,0 +1,172 @@
+\documentclass[12pt]{article}
+\usepackage[top=1in,bottom=1in,left=0.75in,right=0.75in,centering]{geometry}
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{palatino}
+\usepackage{wrapfig}
+\usepackage{lastpage}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{graphicx,type1cm,eso-pic,color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{wasysym}
+
+\def\course{CS 2501: DSA2}
+\def\homework{Divide and Conquer: Advanced - Written Problems}
+\def\semester{Spring 2020}
+
+\newboolean{solution}
+\setboolean{solution}{false}
+
+% add watermark if it's a solution exam
+% see http://jeanmartina.blogspot.com/2008/07/latex-goodie-how-to-watermark-things-in.html
+\makeatletter
+\AddToShipoutPicture{%
+\setlength{\@tempdimb}{.5\paperwidth}%
+\setlength{\@tempdimc}{.5\paperheight}%
+\setlength{\unitlength}{1pt}%
+\put(\strip@pt\@tempdimb,\strip@pt\@tempdimc){%
+\ifthenelse{\boolean{solution}}{
+\makebox(0,0){\rotatebox{45}{\textcolor[gray]{0.95}%
+{\fontsize{5cm}{3cm}\selectfont{\textsf{Solution}}}}}%
+}{}
+}}
+\makeatother
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\lhead{\course}
+\chead{Page \thepage\ of \pageref{LastPage}}
+\rhead{\semester}
+%\cfoot{\Large (the bubble footer is automatically inserted into this space)}
+
+\setlength{\headheight}{14.5pt}
+
+\newenvironment{itemlist}{
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{itemize}}
+
+\newenvironment{numlist}{
+\begin{enumerate}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{enumerate}}
+
+\newcounter{pagenum}
+\setcounter{pagenum}{1}
+\newcommand{\pageheader}[1]{
+\clearpage\vspace*{-0.4in}\noindent{\large\bf{Page \arabic{pagenum}: {#1}}}
+\addtocounter{pagenum}{1}
+\cfoot{}
+}
+
+\newcounter{quesnum}
+\setcounter{quesnum}{1}
+\newcommand{\question}[2][??]{
+\begin{list}{\labelitemi}{\leftmargin=2em}
+\item [\arabic{quesnum}.] {} {#2}
+\end{list}
+\addtocounter{quesnum}{1}
+}
+
+
+\definecolor{red}{rgb}{1.0,0.0,0.0}
+\newcommand{\answer}[2][??]{ 
+\ifthenelse{\boolean{solution}}{
+\color{red} #2 \color{black}}
+{\vspace*{#1}}
+}
+
+\definecolor{blue}{rgb}{0.0,0.0,1.0}
+
+\begin{document}
+
+\section*{\homework}
+
+%----------------------------------------------------------------------
+
+\question[3]{
+You are a hacker, trying to gain information on a secret array of size $n$. This array contains $n-1$ ones and exactly $1$ two; you want to determine the index of the two in the array.\\
+\\
+Unfortunately, you don't have access to the array directly; instead, you have access to a function $f(l1, l2)$ that compares the sum of the elements of the secret array whose indices are in $l1$ to those in $l2$. This function returns $-1$ if the $l1$ sum is smaller, $0$ if they are equal, and $1$ if the sum corresponding to $l2$ is smaller.\\
+\\
+For example, if the array is $a=[1,1,1,2,1,1]$ and you call $f([1,3,5],[2,4,6])$ then the return value is $1$ because $a[1]+a[3]+a[5]=3<4=a[2]+a[4]+a[6]$. Design an algorithm to find the index of the $2$ in the array using the least number of calls to $f()$. Suppose you discover that $f()$ runs in $\Theta(max(|l1|,|l2|))$, what is the overall runtime of your algorithm? 
+}
+
+
+
+\question[3]{
+You are interested in finding the median salary in \emph{Polarized County}. The county has two towns, \emph{Happyville} and \emph{Sadtown}. Each town mantains a database of all of the salaries for that particular town, but there is no central database.\\
+\\
+Each town has given you the ability to access their particular data by executing \emph{queries}. For each query, you provide a particular database with a value $k$ such that $1 \leq k \leq n$, and the database returns to you the $k^{th}$ smallest salary in that town.
+\\
+You may assume the following:
+
+\begin{enumerate}
+\item Each town has exactly $n$ residents (so $2n$ total residents across both towns)
+\item Every salary is unique (i.e., no two residents, regardless of town, have the same salary) 
+\item We define the \emph{median} as the $n^{th}$ highest salary across both towns
+\end{enumerate}
+
+Design an algorithm that finds the median salary across both towns in $\Theta(log(n))$ total queries.
+}
+
+
+
+\question[3]{
+State the complete recurrence for your algorithm. You may put your $f(n)$ in big-theta notation. Use the master theorem to show the solution for your recurrence is $\Theta(log(n))$. If your algorithm is slower, give us the actual running time.
+}
+
+
+\question[3]{
+Prove that your algorithm above finds the correct answer. \emph{Hint: Do induction on the size of the input.}
+}
+
+
+
+%----------------------------------------------------------------------
+%Commenting these out for now, will use them on future assignment.
+\iffalse
+\question[3]{
+Suppose you've been given the power to reschedule every major holiday of the year (and spread them out as you please). To aid with this process, you want to construct an algorithm that calculates how \emph{balanced} a given schedule is. Let a schedule $S$ be a list of $n$ holidays given in chronological order they will be scheduled (For now, we only care about the relative order of the holidays, not the exact dates). Additionally, the list contains integers such that each $S[i]$ represents how many people love that holiday.\\
+\\
+You decide to define the \emph{balance} of a schedule $S$ as follows: Let $H_{L}$ be the number of times a holiday is more popular than a holiday before it (or to the left of it in the list $S$). Likewise, let $H_{R}$ be the number of times a holiday is more popular than a holiday after it (or to the right of it in $S$). Notice that a schedule in which all the most popular holidays are at the end of the year (like our calendar) has a large $H_{left}$ value and a small $H_{right}$ value. Balanced schedules have $H_{left}$ and $H_{right}$ values that are close to one another. Below is an example schedule and solutions:
+
+\begin{align*}
+S &= [10, 2, 8, 4, 12]\\
+H_L &= 6\\
+H_R &= 4
+\end{align*}
+
+$H_L$ is 6 because 12 is larger than everything to its left, 4 is larger than 2, and 8 is larger than 2 (totaling 6). Likewise, $H_R$ is 4 because 10 is higher than three things to its right plus 8 is larger than 4.\\
+\\
+Construct an algorithm that is given a schedule $S$ as input, and returns the $H_{L}$ and $H_{R}$ scores for that particular holiday schedule. Your algorithm must run in $o(n^2)$ time (that is little-oh, so your algorithm must be strictly more efficient than $n^2$). State your algorithm's running time.
+}
+
+
+
+%----------------------------------------------------------------------
+
+
+\fi
+
+\question[3]{
+Suppose that \emph{Netflix}, for some reason, is worried about account sharing and comes to you with $n$ total login instances. Suppose also that \emph{Netflix} provides you with the means only to compare the login info of two of the items in the list. By this, we mean that you can select any two logins from the list and pass them into an \emph{equivalence tester} which tells you, in constant time, if the logins were produced from the same account.\\
+\\
+You are asked to find out if there exists a set of at least $\frac{n}{2}$ logins that were from the same account. Design an algorithm that solves this problem in $\Theta(nlog(n))$ total invocations of the \emph{equivalence tester}.
+}
+
+
+
+
+%----------------------------------------------------------------------
+
+
+
+\end{document}
