@@ -38,7 +38,7 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 	- Trey: Tue 11-12 and Thu 10-12.
 
 - Thornton Stacks:
-	- Annie: Wednesday 6:30-8:30pm
+	- Annie: Wednesday 6:30-8:30pm; Sunday 7:00-9:00pm
 	- Cassie: Monday 6:00-9:00pm
 	- Gustavo: Mon, Tue, Wed, Fri 1:00-1:50pm
 	- Daniel Patel: Tuesday 2:00-5:00pm
