@@ -1,0 +1,98 @@
+\documentclass[11pt]{article}
+%\usepackage{fancyheadings}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+\setlength{\headheight}{0pt}
+%\setlength{\footheight}{0pt}
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7truein}
+\setlength{\textheight}{9truein}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\section*{Purple Rain}
+%\subsection*{Description}
+
+\begin{wrapfigure}{r}{3in}
+\vspace{-10pt}
+\epsfig{figure=greenrain,width=3in}
+\vspace{-30pt}
+\end{wrapfigure}
+
+Sometimes (during the summer when students are away), purple rain falls in the magical kingdom of the engineering school, which is a straight and thin row walkway surrounded by engineering buildings.
+
+On close observation however, Prof. Floryan finds that actually
+it is a mix of red and blue drops.
+
+In his zeal, he records the location and color of the raindrops in
+different locations along the e-school.
+Looking at the data, Professor Floryan wants to know which part of
+the e-school had the ``least'' purple rain.
+
+After some thought, he decides to model this problem as follows.
+Divide the e-school into $n$ sections and number them West to East
+from $1$ to $n$.  Then, describe the raindrops as a sequence of {\tt
+R} and {\tt B}, depending on whether the rainfall in each section is
+primarily red or blue.  Finally, find a subsequence of where the
+difference between the number of {\tt R} and the number of {\tt B} is
+maximized.
+
+\subsection*{Input}
+
+The input consists of a single line containing a string of $n$
+characters ($1 \le n \le 10^5$), describing the color of the raindrops
+in sections $1$ to $n$.
+
+It is guaranteed that the string consists of uppercase ASCII letters
+`{\tt R}' and `{\tt B}' only.
+
+\subsection*{Output}
+
+Print, on a single line, two space-separated integers that describe
+the starting and ending positions of the part of the e-school that had
+the least purple rain.
+
+If there are multiple possible answers, print the one that has the
+Westernmost (smallest-numbered) starting section.  If there are multiple
+answers with the same Westernmost starting section, print the one with
+the Westernmost ending section.
+
+
+\vspace{0.25in}\hspace{-0.3in}\begin{tabular}{ll}
+
+%\subsection*{Sample Input}
+\parbox{3in}{{\large\bf Sample Input}
+
+\vspace{0.15in}
+
+{\tt 
+//example 1\linebreak
+BBRRBRRBRB\linebreak
+\linebreak
+//example 2\linebreak
+BBRBBRRB
+}
+}
+
+&
+
+\parbox{3in}{{\large\bf Sample Output}
+
+\vspace{0.15in}
+
+{\tt
+3 7\linebreak
+\linebreak
+1 5
+}
+
+
+}
+
+\\
+\end{tabular}
+
+\end{document}
