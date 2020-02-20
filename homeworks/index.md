@@ -29,7 +29,7 @@ TIER 2 : Advanced Algorithms
 | Divide and Conquer - Advanced  | <a href="./divideconq-advanced/seating.pdf">Seating</a> | <a href="./divideconq-advanced/divConProofs.pdf">Proofs</a> | | 
 | Dynamic Programming - Basic  | <a href="./dynamic-basic/drainage.pdf">Drainage</a> | <a href="./dynamic-basic/purplerain.pdf">Purple Rain</a> | | 
 | Dynamic Programming - Advanced | <a href="./dynamic-advanced/palindromes.pdf">Palindromes</a> | <a href="./dynamic-advanced/proofs.pdf">Written Problems</a> | |
-| Reductions  | Reduction Problems | | |
+| Reductions  | <a href="./reductions/reductions.pdf">Reductions</a> | | |
 
 <a name="other"></a>Other Useful Stuff
 ---------------------------------------
