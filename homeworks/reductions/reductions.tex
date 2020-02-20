@@ -1,0 +1,147 @@
+\documentclass[12pt]{article}
+\usepackage[top=1in,bottom=1in,left=0.75in,right=0.75in,centering]{geometry}
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{palatino}
+\usepackage{wrapfig}
+\usepackage{lastpage}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{graphicx,type1cm,eso-pic,color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+
+\def\course{CS 2501: Data Structures and Algorithms II}
+\def\homework{Reductions: Written Problems}
+\def\semester{Spring 2020}
+
+\newboolean{solution}
+\setboolean{solution}{false}
+
+% add watermark if it's a solution exam
+% see http://jeanmartina.blogspot.com/2008/07/latex-goodie-how-to-watermark-things-in.html
+\makeatletter
+\AddToShipoutPicture{%
+\setlength{\@tempdimb}{.5\paperwidth}%
+\setlength{\@tempdimc}{.5\paperheight}%
+\setlength{\unitlength}{1pt}%
+\put(\strip@pt\@tempdimb,\strip@pt\@tempdimc){%
+\ifthenelse{\boolean{solution}}{
+\makebox(0,0){\rotatebox{45}{\textcolor[gray]{0.95}%
+{\fontsize{5cm}{3cm}\selectfont{\textsf{Solution}}}}}%
+}{}
+}}
+\makeatother
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\lhead{\course}
+\chead{Page \thepage\ of \pageref{LastPage}}
+\rhead{\semester}
+%\cfoot{\Large (the bubble footer is automatically inserted into this space)}
+
+\setlength{\headheight}{14.5pt}
+
+\newenvironment{itemlist}{
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{itemize}}
+
+\newenvironment{numlist}{
+\begin{enumerate}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{enumerate}}
+
+\newcounter{pagenum}
+\setcounter{pagenum}{1}
+\newcommand{\pageheader}[1]{
+\clearpage\vspace*{-0.4in}\noindent{\large\bf{Page \arabic{pagenum}: {#1}}}
+\addtocounter{pagenum}{1}
+\cfoot{}
+}
+
+\newcounter{quesnum}
+\setcounter{quesnum}{1}
+\newcommand{\question}[2][??]{
+\begin{list}{\labelitemi}{\leftmargin=2em}
+\item [\arabic{quesnum}.] {#2}
+\end{list}
+\addtocounter{quesnum}{1}
+}
+
+
+\definecolor{red}{rgb}{1.0,0.0,0.0}
+\newcommand{\answer}[2][??]{ 
+\ifthenelse{\boolean{solution}}{
+\color{red} #2 \color{black}}
+{\vspace*{#1}}
+}
+
+\definecolor{blue}{rgb}{0.0,0.0,1.0}
+
+\begin{document}
+
+\section*{\homework}
+
+%----------------------------------------------------------------------
+
+
+\question[1]{
+In class, we learned about the complexity classes $P$, $NP$, and others. There is another complexity called $PSPACE$, which is the set of problems that can be solved using a polynomial amount of space (with a deterministic turing machine). What is the relationship between $NP$ and $PSPACE$? Is one a subset of the other? Are they different sets? Prove your answer.
+}
+
+\answer[0 in]{
+...
+}
+
+%----------------------------------------------------------------------
+
+
+\question[3]{
+The slides present (but do not solve) a problem called \emph{Lecture Planning}. For this question, you will prove that the \emph{Lecture Planning} problem is NP-Complete. The problem is re-stated here for your convenience:\\
+\\
+Suppose for a course, that there are $n$ total (unique) guest lecturers that can visit the class to present. One guest lecture will be given for each of the first $l$ weeks of the course. For each of these weeks, you are given a subset of the $n$ guest lecturers who are available that week (notice that most of these lecturers will have multiple free weeks).\\
+\\
+During the second half of the course, there are $p$ projects that must be completed. For each project, there is a list of guest lectures that will allow the students to be able to complete that project successfully (These lists might overlap, i.e., one guest lecture might allow multiple projects to be completed). The problem, thus, is to choose a schedule of $l$ guest lecturers, one per week, that will ensure the students can successfully complete each project.\\
+\\
+Prove that this problem is in $NP$. Describe the verification algorithm.
+}
+
+\answer[0 in]{
+...
+}
+
+\question[3]{
+Prove that lecture-planning is in \emph{NP-HARD} by showing that $\text{3-SAT} \leq_p \text{LP}$ where $LP$ is the lecture-planning problem. Prove that the outputs of the two problems is always the same (notice this is a bi-conditional).
+}
+
+\answer[0 in]{
+...
+}
+
+%----------------------------------------------------------------------
+
+\question[3]{
+For this problem, we will prove that the \emph{knapsack problem} from class is NP-Complete. First, consider the \emph{ethical knapsack problem} (which is NP-Complete) and states the following: Given an array of the value of items $a$ that can be stolen, a thief wants to steal a combination of items such that the total value is exactly some sum $s$ (the thief is "ethical" in the sense that they only want to steal enough to pay off their debts, but no more. Also, the thief has no restriction on how much they can carry). Any algorithm would return yes or no: whether or not it is possible to steal the exact value $s$ worth of items.\\
+\\
+Also, recall the \emph{knapsack problem} from class in which a thief has a knapsack capacity $C$ and the items have corresponding values and weights. Show the following:
+
+\begin{itemize}
+\item formulate the decision problem for the \emph{knapsack problem} (from class).
+\item show that the \emph{knapsack problem} is in NP by providing a verification algorithm.
+\item show that the \emph{knapsack problem} is NP-Hard by producing a reduction from the \emph{ethical knapsack problem}.
+\end{itemize}
+}
+
+
+%----------------------------------------------------------------------
+
+\end{document}
