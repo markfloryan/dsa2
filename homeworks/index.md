@@ -26,10 +26,10 @@ TIER 2 : Advanced Algorithms
 | Module | Homework 1 | Homework 2 | Homework 3 | 
 |--------------|------------------|------------------|------------------| 
 | Divide and Conquer - Basic  | <a href="./divideconq-basic/trading.pdf">Trading</a> | <a href="./divideconq-basic/recurrenceRelations.pdf">Recurrence Relations</a> | |
-| Divide and Conquer - Advanced  | <a href="./divideconq-advanced/seating.pdf">Seating</a> | <a href="./divideconq-advanced/divConProofs.pdf">Proofs</a> | | 
+| Divide and Conquer - Advanced  | <a href="./divideconq-advanced/seating.pdf">Seating</a> | <a href="./divideconq-advanced/divConProofs.pdf">Written Problems</a> | | 
 | Dynamic Programming - Basic  | <a href="./dynamic-basic/drainage.pdf">Drainage</a> | <a href="./dynamic-basic/purplerain.pdf">Purple Rain</a> | | 
 | Dynamic Programming - Advanced | <a href="./dynamic-advanced/palindromes.pdf">Palindromes</a> | <a href="./dynamic-advanced/proofs.pdf">Written Problems</a> | |
-| Reductions  | <a href="./reductions/reductions.pdf">Reductions</a> | | |
+| Reductions  | <a href="./reductions/reductions.pdf">Written Problems</a> | | |
 
 <a name="other"></a>Other Useful Stuff
 ---------------------------------------
