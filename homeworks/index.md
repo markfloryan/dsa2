@@ -34,4 +34,4 @@ TIER 2 : Advanced Algorithms
 <a name="other"></a>Other Useful Stuff
 ---------------------------------------
 
-- [Template for reports](./WordPaperTemplate.zip) 
+- [Latex Tutorial](./latexTutorial.pdf) 

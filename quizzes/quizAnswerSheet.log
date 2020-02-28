@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  11 FEB 2020 11:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.5.23)  27 FEB 2020 11:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -975,24 +975,28 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 
 ] [7
 
+] [8
+
+] [9
+
 ] 
 AED: lastpage setting LastPage
-[8
+[10
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
  (./quizAnswerSheet.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 273.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
 Package rerunfilecheck Info: File `quizAnswerSheet.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 273.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 302.
  ) 
 Here is how much of TeX's memory you used:
- 11628 strings out of 492995
- 168224 string characters out of 6132704
- 284641 words of memory out of 5000000
+ 11630 strings out of 492995
+ 168237 string characters out of 6132704
+ 284645 words of memory out of 5000000
  14993 multiletter control sequences out of 15000+600000
  14866 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1001,10 +1005,10 @@ Here is how much of TeX's memory you used:
 exlive/2017/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2017/te
 xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on quizAnswerSheet.pdf (8 pages, 54467 bytes).
+Output written on quizAnswerSheet.pdf (10 pages, 55403 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
+ 78 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

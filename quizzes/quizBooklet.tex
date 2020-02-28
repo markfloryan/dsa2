@@ -332,6 +332,7 @@
 \end{enumerate}
 
 
+
 %----------------------------------------------------------------------
 
 \pageheader{Divide and Conquer: Advanced}
@@ -357,6 +358,95 @@
 	\item Write a recursive divide and conquer algorithm that takes an unsorted array and turns it into a min-heap. You may assume you have access to \emph{percolateDown(node)}.
 \end{enumerate}
 
+%----------------------------------------------------------------------
+
+\pageheader{Dynamic Programming: Basic}
+
+\noindent \\
+\textbf{Short Answer Questions}
+
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Dynamic programming often works when problems have \emph{overlapping subproblems}. What exactly does this mean? Provide an example from class.
+	\item When using dynamic programming, what is \emph{memoization}? Describe why it is useful for solving problems.
+	\item When using \emph{memoization}, why do we typically use an array instead of some other data structure?
+	\item When solving the \emph{discrete knapasack problem}, what was the recurrence for our recursive case for solving this problem in terms of smaller subproblems?
+	\item When solving the \emph{discrete knapsack problem}, what was the size of the array we used to store solutions? Briefly describe why.
+	\item When solving the \emph{weighted interval scheduling} problem, what was the function $p(j)$. Briefly describe why it is useful.
+	\item When solving the \emph{weighted interval scheduling} problem, what was the recursive function we used for our dynamic programming solution? Briefly explain the intuition behind the formula.
+	\item What is the runtime of our dynamic programming solution to \emph{weighted interval scheduling}? Briefly explain.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\textbf{Coding/Proof Questions}
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Write psuedo-code for a simple dynamic programming solution to \emph{fib(n)}, a function that returns the nth fibonacci number.
+	\item Write a method that given a list of weighted intervals, computes the array $p(j)$ that we need to run the dynamic programming algorithm from class. Your algorithm must be $O(nlog_2(n))$.
+	\item Write psudo-code for our solution to the \emph{weighted interval scheduling} problem. You may assume $p(j)$ is already calculated for each interval $j$.
+\end{enumerate}
+%----------------------------------------------------------------------
+
+%----------------------------------------------------------------------
+
+\pageheader{Dynamic Programming: Advanced}
+
+\noindent \\
+\textbf{Short Answer Questions}
+
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Briefly describe why our runtime for \emph{discrete knapsack} from class is not actually a polynomial time algorithm.
+	\item When solving the \emph{longest common subsequence (LCS)} problem, what was the runtime of a brute-force solution? Briefly describe why.
+	\item When solving the \emph{LCS} problem, what was our recursive solution in the case that the last two characters match? Briefly describe the intuition behind this.
+	\item When solving the \emph{LCS} problem, what was our recursive solution in the case that the last two characters \textbf{DO NOT} match? Briefly describe the intuition behind this.
+	\item When solving the \emph{LCS} problem, what was the size of the array we used to store the subproblems?
+	\item When solving the \emph{making change} problem, what was the recursive case when the highest coin was too high for the amount of change to be made? Explain why?
+	\item When solving the \emph{making change} problem, what was the recursive case when the highest coin could be used for the given amount of change? Explain why?
+\end{enumerate}
+
+\vspace{0.5in}
+
+\textbf{Coding/Proof Questions}
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Psuedocode a method that, given an array produced by our \emph{LCS} algorithm, performs backtracking to determine the actual string that is the longest common subsequence.
+	\item Psudocode a method that, given an array produced by our dynamic programming algorithm for \emph{making change}, produces the actual coins to use in the solution.
+\end{enumerate}
+%----------------------------------------------------------------------
+
+\pageheader{Reductions}
+
+\noindent \\
+\textbf{Short Answer Questions}
+
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Given a problem $A$ and another problem $B$, explain what $A \leq_p B$ means. What about $A \leq_{n^2} B$? In this case, which of the two problems looks harder to solve?
+	\item In class we saw both the Independent Set (IS) and Vertex Cover (VC) problems. What does it mean that $IS \leq_p VC$ and $VC \leq_p IS$? Briefly explain why?
+	\item Describe the difference between decision problems, verification problems, and function problems.
+	\item What is the decision problem version of the \emph{traveling salesperson problem}?
+	\item What is the complexity class $P$? Why is this class important?
+	\item What is the complexity class $NP$? Why is this class important?
+	\item What does it mean for a problem to be \emph{NP-Hard}?
+	\item What does it mean for a problem to be \emph{NP-Complete}?
+	\item Briefly describe the significance of the \emph{Cook-Levin Theorem}. Make sure to list what the theorem states as well as its significance.
+\end{enumerate}
+
+\vspace{0.5in}
+
+\textbf{Coding/Proof Questions}
+\begin{enumerate}
+	\setlength\itemsep{0.25em}
+	\item Give a short informal proof that the runtime a problem's functional version is the same as the runtime of its decision version.
+	\item Give a short proof of the following: A problem is verifiable in polynomial time by a deterministic turing machine if and only if it is solvable in polynomial time by a non-deterministic turing machine.
+	\item Argue that $P \subseteq NP$
+	\item Give an overview of the reduction from \emph{3-SAT} to \emph{Clique} that we saw in class. You do not need to provide every detail of this reduction, but enough that we see you understand the approach.
+	\item Give an overview of the reduction from \emph{Clique} to \emph{Vertex Cover} that we saw in class. You do not need to provide every detail of this reduction, but enough that we see you understand the approach.
+
+
+\end{enumerate}
 %----------------------------------------------------------------------
 
 \end{document}
