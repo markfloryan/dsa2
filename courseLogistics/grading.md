@@ -6,13 +6,16 @@ CS2501 - Grading Policy
 The grading policy in this course is somewhat unconventional, but you should be familiar with the format from DSA1. This page will attempt to clarify how grades are determined in this course. The course contains 14 **modules**. 10 of these modules are topic based (i.e., there is a topic and associated homeworks/quiz) and 4 of them are blind assessments (two midterm exams and two assessments that together make up the final exam). Each of the 10 topic modules contain the following:
 
 - **quizzes:** The 10 topic-based modules each contains a quiz. Quizzes are taken during lecture bi-weekly (see schedule) and can be retried if not passed. Every quiz is fully pass/fail. You can attempt up to two quizzes per session.
+	- **EDIT: Quizzes are currently suspended while the University is online only. We will reasses should face-to-face meetings be allowed before the end of the semester.**
 - **homeworks:** The 10 topic-based modules each contain at least two homework assignments. Some are programming assignments while others are written (proofs, problem-sets, etc.).
 
 For each module, your grade will be in one of three states:
 
 - **Incomplete:** The student has not fulfilled the requirements for competency or mastery. This means that it is NOT the case that the quiz has been passed AND one homework has been passed.
 - **Competency:** The student has passed the module quiz AND at least one homework assignment.
+	- **EDIT: Competency is now defined as simply passing one homework assignment (because quizzes are suspended). This may change again should face-to-face meetings be reinstated.**
 - **Mastery:** All parts of this module have been passed. It seems as if you understand this topic.
+	- **EDIT: Quizzes are temporarily NOT required to achieve mastery.**
 
 Aside from the 10 topic-based modules, there are also 4 blind assessment (exam) modules. These are midterm 1, midterm 2, and the final exam (split into two sub-exams but taken at the same time). Each of these exams can only be taken once. However, if passed, the exam will lift your final grade by one half-letter grade. 
 
