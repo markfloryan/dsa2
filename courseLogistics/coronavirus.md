@@ -1,4 +1,4 @@
-CS2501 - Information on Coronovirus and Online Course Changes
+CS2501 - Information on Coronavirus and Online Course Changes
 ===============================
 
 [Main Logistics Page](index.html) ([md](index.md))
