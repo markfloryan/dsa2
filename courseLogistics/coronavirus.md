@@ -6,7 +6,7 @@ CS2501 - Information on Coronovirus and Online Course Changes
 <a name="introduction"></a>Online Courses
 ---------------------------------------
 
-As you all probably know, the University is transitioning to [online courses](https://www.virginia.edu/coronavirus/faq#students) for the foreseeable future. As we navigate this challenging time, we will do our best to continue learning as best we can. This page provides information on how the course will proceed beginning Thursday, March 16.
+As you all probably know, the University is transitioning to [online courses](https://www.virginia.edu/coronavirus/faq#students) for the foreseeable future. As we navigate this challenging time, we will do our best to continue learning as best we can. This page provides information on how the course will proceed beginning Thursday, March 19.
 
 <a name="introduction"></a>Lectures
 ---------------------------------------
