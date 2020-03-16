@@ -6,6 +6,9 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 <a name="introduction"></a>Course Logistics
 ---------------------------------------
 
+- **[CORONAVIRUS COURSE UPDATES](./coronavirus.html): Updates regarding how our course will move online.**
+
+
 - [Introductory Slide Deck](../slides/courseintroduction.pptx): This slide deck contains useful information about the course structure, grading policy, lab structure, etc. We will go over this on the first day of class.
 - [Schedule](./schedule.html): The lecture schedule for the course.
 - [Grading Policy](./grading.html): A summary of the somewhat non-conventional grading policy for this course.
