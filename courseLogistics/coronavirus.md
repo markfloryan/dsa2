@@ -21,7 +21,7 @@ Course lectures will be recorded ahead of time, and posted on Collab under the "
 
 Office hours will be held using [Zoom](https://zoom.us/). There is a link on our Collab page (the link is called **Online Meetings**). Floryan and the TAs will post a meeting room inside this tool for each individual OH session. By simply clicking on the link, you can access the meeting room, ask questions, get help, etc.
 
-I will be increasing my office hours a bit. Check the [main course logistics page](index.html) for details.
+I will be changing my office hours a bit. Check the [main course logistics page](index.html) for details. It appears that I am holding fewer OH but they are dedicated to dsa2 students only. Overall, I'm holding more OH than before if you include the ones for my other class.
 
 <a name="introduction"></a>Homeworks
 ---------------------------------------

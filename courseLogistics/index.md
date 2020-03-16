@@ -32,8 +32,8 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 ---------------------------------------
 
 - Rice 203
-	- Floryan: Mon and Tue 1-2:30pm
-		- **EDIT: My office hours will be 1-3pm on Mon and Tue while UVa remains online only.**
+	- Floryan: Mon and Tue 1-2:00pm
+		- **EDIT: My office hours will be 1-2pm on Mon and Tue while UVa remains online only. However, these OH are for DSA2 students ONLY.**
 
 - Rice 324
 	- Trey: Tue 11-12 and Thu 10-12.
