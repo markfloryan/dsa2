@@ -34,14 +34,17 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 <a name="TAs"></a>Office Hours
 ---------------------------------------
 
-- Rice 203
-	- Floryan: Mon and Tue 1-2:00pm
-		- **EDIT: My office hours will be 1-2pm on Mon and Tue while UVa remains online only. However, these OH are for DSA2 students ONLY.**
+- Rice 203 (**EDIT: Office Hours on Zoom (through Collab)**):
+	- Floryan: Mon and Wed 12:30-1:30pm
 
-- Rice 324
+
+
+- Rice 324 (**EDIT: Office Hours on Zoom (through Collab)**):
 	- Trey: Tue 11-12 and Thu 10-12.
 
-- Thornton Stacks:
+
+
+- Thornton Stacks (**EDIT: Office Hours on Zoom (through Collab)**):
 	- Annie: Wednesday 6:30-8:30pm; Sunday 7:00-9:00pm
 	- Cassie: Monday 6:00-9:00pm
 	- Gustavo: Mon, Tue, Wed, Fri 1:00-1:50pm
