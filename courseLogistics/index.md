@@ -52,3 +52,15 @@ CS2501 - Data Structures and Algorithms II Course Logistics
 	- George: Monday 3-5pm; Wednesday 3:00-5:30pm; Thursday 3:00-5:00pm
 	- Daniel Prohaska: Thu 11-12, Fri 1-2 and 3-4
 	- Brandon: Tue, Thu 6-8:30
+
+
+<a name="TAs"></a>Annoucements
+---------------------------------------
+
+- **Friday (3/20):**
+	- First lecture is posted on Panopto (access through Collab)
+	- Zoom office hours are happening. Let me know if you have any issues.
+	- Div. Con.: Trading and Seating now have a earlier timeout (8-16 secs)
+		- If you are getting "wrong answer", you might be timing out. Ask a TA!
+
+
