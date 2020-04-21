@@ -22,14 +22,14 @@ TIER 2 : Advanced Algorithms
 | Greedy Algorithms - Advanced | <a href="./greedy-advanced/daycare.pdf">Nursery</a> | <a href="./greedy-advanced/greedyProofs.pdf">Greedy Proofs</a> | |
 | Divide and Conquer - Advanced  | <a href="./divideconq-advanced/seating.pdf">Seating</a> | <a href="./divideconq-advanced/divConProofs.pdf">Written Problems</a> | | 
 | Dynamic Programming - Advanced | <a href="./dynamic-advanced/palindromes.pdf">Palindromes</a> | <a href="./dynamic-advanced/proofs.pdf">Written Problems</a> | |
-
+| Reductions  | <a href="./reductions/reductions.pdf">Written Problems</a> | | |
 
 <a name="other"></a>Upcoming Homeworks (feel free to get ahead if you'd like)
 ---------------------------------------
 
 | Module | Homework 1 | Homework 2 | Homework 3 | 
 |--------------|------------------|------------------|------------------| 
-| Reductions  | <a href="./reductions/reductions.pdf">Written Problems</a> | | |
+
 
 <a name="other"></a>Other Useful Stuff
 ---------------------------------------
