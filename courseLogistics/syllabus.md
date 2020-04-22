@@ -55,7 +55,7 @@ All assignments will be submitted through Collab under the assignments tool.
 
 **Honor Policy:** There have been a large number of honor violations in this class and other low-level CS courses recently.  Outside the normal UVa honor policy rules, we have these additional rules:
 
-1. If you are looking at another student's source code for ANY reason (including code from a student from a previous semester), you are in violation of the honor policy.  You may look at another student's source code after the program has been submitted by BOTH parties.
+1. If you are looking at another student's source code for ANY reason (including code from a student from a previous semester), you are in violation of the honor policy.
 2. There are multiple midterm periods where students take exams, with a break between the the individual section times.  Discussing the exam with a student who has not taken it is a violation of the honor policy.
 4. Releasing your homework online, including a public github repository, is an honor violation
 
