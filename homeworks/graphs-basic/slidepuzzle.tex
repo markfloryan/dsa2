@@ -1,0 +1,65 @@
+\documentclass[11pt]{article}
+%\usepackage{fancyheadings}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+\usepackage{hyperref}
+\setlength{\headheight}{0pt}
+%\setlength{\footheight}{0pt}
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7truein}
+\setlength{\textheight}{9truein}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\section*{Sliding Puzzle}
+
+%\subsection*{Description}
+
+\begin{wrapfigure}{r}{3in}
+\vspace{-10pt}
+\epsfig{figure=8puzzle,width=3in}
+\vspace{-30pt}
+\end{wrapfigure}
+
+The 8-piece sliding puzzle is a classic one in which nine slots on a board are filled with eight tiles containing the numbers 1-8 (this leaves one empty place on the board). The goal of the game is to take a jumbled set of tiles and manipulate them so that the numbers are ordered (as seen in the picture) by only sliding adjacent tiles into the empty slot repeatedly. You can try your hand at playing this game here \href{http://www.tilepuzzles.com/default.asp?p=12}{(LINK)}. Given an arbitrary sliding puzzle, print out the minimum number of moves necessary to solve it.
+
+\subsection*{Input}
+The input file will consist of exactly 3 rows with exactly 3 numbers in each row. Each number will be between 0 and 8 inclusive. The 0 represents the empty, open slot in the puzzle.
+
+\subsection*{Output}
+
+Output the minimum number of moves necessary to solve the puzzle, or "IMPOSSIBLE" if it is not possible to solve this particular permutation.
+
+\vspace{0.25in}\hspace{-0.3in}\begin{tabular}{ll}
+
+%\subsection*{Sample Input}
+\parbox{3in}{{\large\bf Sample Input}
+
+\vspace{0.15in}
+
+{\tt 
+
+1 2 3\linebreak
+4 5 6\linebreak
+0 7 8
+}
+}
+
+&
+
+\parbox{3in}{{\large\bf Sample Output}
+
+\vspace{0.15in}
+
+{\tt
+2
+}
+}
+
+\\
+\end{tabular}
+
+\end{document}

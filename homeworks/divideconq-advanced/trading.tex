@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+%\usepackage{fancyheadings}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+\usepackage{hyperref}
+\setlength{\headheight}{0pt}
+%\setlength{\footheight}{0pt}
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7truein}
+\setlength{\textheight}{9truein}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\section*{Galactic Trade Routes}
+
+%\subsection*{Description}
+
+\begin{wrapfigure}{r}{3in}
+\vspace{-10pt}
+\epsfig{figure=planets,width=3in}
+\vspace{-30pt}
+\end{wrapfigure}
+
+The time for an interstellar trade route has come! The plaque sent out on the Pioneer probes was decoded by an alien civilization, and they have imparted to us the secrets of interstellar travel. Your job is to find the two stars nearest to each other in our galaxy, and begin your trade route between these two star systems. We’ll assume that you can pick any two stars to begin your trade route; you don’t have to start at Earth. Being as our galaxy has a lot of stars (up to 400 billion), your algorithm will need to be efficient.
+
+The galaxy is 3-dimensional, so you'll need to handle star locations in 3D space. The coordinates will range from -50,000 to +50,000 (the Milky Way is 100,000 light years in diameter). Your trading ships cannot travel more than 10,000 light years, and any input case that has no stars closer than this will need to indicate such.
+
+
+\subsection*{Input}
+The input will consist of a number of test cases (more than one per file!). The first line of each test case will contain $n$, the number of stars for that case: $2 \leq n \leq 100,000$. The following $n$ lines will contain the (x,y,z) coordinates of successive stars. Each x, y, and z coordinate will be a real number with a minimum value of -50,000 and a mazimum value of 50,000. The coordinates will be given to two decimal places of accuracy. The input will terminate when n=0
+
+\subsection*{Output}
+For each test case, your output should contain a single line that is the minimum distance between two points, to four digits of accuracy after the decimal point. You should not print the stars that are closest; only the distance. If there are no points closer than a distance of 10,000, you should print out ’infinity’.
+
+
+
+\vspace{0.25in}\hspace{-0.3in}\begin{tabular}{ll}
+
+%\subsection*{Sample Input}
+\parbox{3in}{{\large\bf Sample Input}
+
+\vspace{0.15in}
+
+{\tt 
+5\linebreak
+-15.62 1.21 35.62\linebreak
+-33.73 -45.81 14.99\linebreak
+4.69 -13.63 -22.26\linebreak
+45.15 48.34 -23.18\linebreak
+-1.18 48.55 -2.50\linebreak
+5\linebreak
+43531.25 -31574.99 -20068.08\linebreak
+-12051.90 47237.90 5332.88\linebreak
+-18996.80 -26784.87 6468.10\linebreak
+5253.00 36084.02 7699.87\linebreak
+11730.99 -20225.86 819.38\linebreak
+0
+}
+}
+
+&
+
+\parbox{3in}{{\large\bf Sample Output}
+
+\vspace{0.15in}
+
+{\tt
+50.7363\linebreak
+infinity
+}
+}
+
+\vspace{0.2in}
+
+
+\\
+\end{tabular}
+
+\end{document}

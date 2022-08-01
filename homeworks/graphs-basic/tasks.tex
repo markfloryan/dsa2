@@ -1,0 +1,69 @@
+\documentclass[11pt]{article}
+%\usepackage{fancyheadings}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+\setlength{\headheight}{0pt}
+%\setlength{\footheight}{0pt}
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7truein}
+\setlength{\textheight}{9truein}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\section*{Organizing Tasks}
+
+%\subsection*{Description}
+
+\begin{wrapfigure}{r}{3in}
+\vspace{-10pt}
+\epsfig{figure=floryanbusy,width=3in}
+\vspace{-30pt}
+\end{wrapfigure}
+
+Floryan is a pretty busy, and he is always trying to manage his schedule. However, it becomes difficult when some items on his to-do list have dependencies. For example, he absolutely will NOT watch \emph{The Empire Strikes Back} with his kids before watching \emph{A New Hope} with them. Because of these dependencies, ordering tasks can be quite difficult. Given Floryan's tasks and the dependencies that exist, produce an order of performing those tasks that is valid.
+
+\subsection*{Input}
+The input file will consist of one test case. The first line will contain a two numbers $t \leq 10^4$ and $d \leq 10^6$, denoting the number tasks and the number of dependencies between them. The next $t$ lines will list each task as a string with no spaces. The $d$ lines after that will list the dependences, two per line. These lines indicate that task 1 (the first task listed) is required to be complete before task 2.
+
+\subsection*{Output}
+
+For each test case, output a possible ordering of the tasks that Floryan can use or the string "IMPOSSIBLE" if there are no such orderings. If there are multiple solutions, list the one that comes first lexicographically.
+
+\vspace{0.25in}\hspace{-0.3in}\begin{tabular}{ll}
+
+%\subsection*{Sample Input}
+\parbox{3in}{{\large\bf Sample Input}
+
+\vspace{0.15in}
+
+{\tt 
+
+4 3\linebreak
+groceryshopping\linebreak
+pickupkids\linebreak
+cookdinner\linebreak
+bedtime\linebreak
+groceryshopping cookdinner\linebreak
+pickupkids cookdinner\linebreak
+cookdinner bedtime
+}
+}
+
+&
+
+\parbox{3in}{{\large\bf Sample Output}
+
+\vspace{0.15in}
+
+{\tt
+groceryshopping pickupkids cookdinner bedtime
+}
+}
+
+\\
+\end{tabular}
+
+\end{document}

@@ -1,0 +1,194 @@
+\documentclass[12pt]{article}
+\usepackage[top=1in,bottom=1in,left=0.75in,right=0.75in,centering]{geometry}
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{palatino}
+\usepackage{wrapfig}
+\usepackage{lastpage}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{graphicx,type1cm,eso-pic,color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+
+\def\course{CS 4102: Algorithms}
+\def\homework{Module 6 - Graphs: Prim's and Dijkstra's}
+\def\semester{Fall 2021}
+
+\newboolean{solution}
+\setboolean{solution}{false}
+
+% add watermark if it's a solution exam
+% see http://jeanmartina.blogspot.com/2008/07/latex-goodie-how-to-watermark-things-in.html
+\makeatletter
+\AddToShipoutPicture{%
+\setlength{\@tempdimb}{.5\paperwidth}%
+\setlength{\@tempdimc}{.5\paperheight}%
+\setlength{\unitlength}{1pt}%
+\put(\strip@pt\@tempdimb,\strip@pt\@tempdimc){%
+\ifthenelse{\boolean{solution}}{
+\makebox(0,0){\rotatebox{45}{\textcolor[gray]{0.95}%
+{\fontsize{5cm}{3cm}\selectfont{\textsf{Solution}}}}}%
+}{}
+}}
+\makeatother
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\lhead{\course}
+\chead{Page \thepage\ of \pageref{LastPage}}
+\rhead{\semester}
+%\cfoot{\Large (the bubble footer is automatically inserted into this space)}
+
+\setlength{\headheight}{14.5pt}
+
+\newenvironment{itemlist}{
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{itemize}}
+
+\newenvironment{numlist}{
+\begin{enumerate}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{enumerate}}
+
+\newcounter{pagenum}
+\setcounter{pagenum}{1}
+\newcommand{\pageheader}[1]{
+\clearpage\vspace*{-0.4in}\noindent{\large\bf{Page \arabic{pagenum}: {#1}}}
+\addtocounter{pagenum}{1}
+\cfoot{}
+}
+
+\newcounter{quesnum}
+\setcounter{quesnum}{1}
+\newcommand{\question}[2][??]{
+\begin{list}{\labelitemi}{\leftmargin=2em}
+\item [\arabic{quesnum}.] {#2}
+\end{list}
+\addtocounter{quesnum}{1}
+}
+
+
+\definecolor{red}{rgb}{1.0,0.0,0.0}
+\newcommand{\answer}[2][??]{ 
+\ifthenelse{\boolean{solution}}{
+\color{red} #2 \color{black}}
+{\vspace*{#1}}
+}
+
+\definecolor{blue}{rgb}{0.0,0.0,1.0}
+
+\begin{document}
+
+\section*{\homework}
+
+
+
+
+\question[3]{
+Prove or give a counter-example for the following claim: If an undirected, connected graph $G$ has all unique integer edge weights, then the Minimum-Spanning Tree of $G$ must be unique as well.
+}
+
+\answer[0.15in]{...}
+
+
+
+\question[3]{
+\emph{This problem was in the slides but we didn't get to it in lecture.} Suppose Floryan is trying to schedule a flight from city $A$ to city $B$ and wants an itinerary that is as efficient as possible. However, instead of a traditional flight optimization (e.g., getting to destination in the least amount of total travel time), Floryan only cares about minimizes his layover time in airports. Floryan doesn't mind being on the plane for a long time, or having multiple legs to his trip. He dispises sitting in airports and not making any progress. Given a start city $A$, an end city $B$, and a list of flights (each flight contains the start city, end city, departure date/time, and arrival date/time), describe an algorithm that finds the itinerary with he minimum layover time possible.\\
+\\
+\emph{HINT: You don't need to develop a new algorithm here. One of the ones from class will work. However, you might need to alter how you structure the problem as a graph so that the algorithm works as intended.}
+}
+
+\answer[0.15in]{...}
+
+
+\question[1]{
+This problem is about robots that need to reach a particular destination. Suppose that you have an area represented by a graph $G = (V,E)$ and two robots with starting nodes $s_1, s_2 \in V$. Each robot also has a destination node $d_1,d_2 \in V$. Your task is to design a schedule of movements along edges in $G$ that move both robots to their respective destination nodes. You have the following constraints:
+
+\begin{enumerate}
+\item You must design a schedule for the robots. A schedule is a list of steps, where each step is an instruction for a single robot to move along a single edge.
+\item If the two robots ever get close, then they will interfere with one another (robot social distancing, you know!?). Thus, you must design a schedule so that the robots, at no point in time, exist on the same or adjacent nodes.
+\item You can assume that $s_1$ and $s_2$ are not the same or adjacent, and that the same is true for $d_1$ and $d_2$.
+\end{enumerate}
+
+Design an algorithm that produces an optimal schedule for the two robots. Make sure to address each of the following:
+
+\begin{itemize}
+	\item Describe your algorithm (\emph{HINT: Try changing the graph into a different one to remove the constraints of the Robots not being able to be on the same or adjacent nodes})
+	\item What is the worst-case runtime of your algorithm? Specifically, how big is the new graph you constructed as a function of the size of the original graph?
+	\item How would the runtime change as the number of robots grows? Does the algorithm get faster or slower?
+
+\end{itemize}
+}
+
+
+
+
+
+
+%----------------------------------------------------------------------
+
+
+
+
+% ------------------------------------------
+
+
+
+% ------------------------------------------
+
+
+
+% ------------------------------------------
+
+
+
+\iffalse
+
+\question[1]{
+In the CLRS code for {\em DFS-Visit} at line 8,  we have completed recursively visiting all then un-visited vertices adjacent to vertex $u$, so we change $u$'s color to black.  For this problem, consider what happens if instead we change the color of $u$ to {\em white} at this line.
+
+Explore what this causes to happen by tracing this altered algorithm on a small connected undirected graph.  After you have done that, submit answers to the following questions.
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\Alph{enumi}}
+\item In no more than a few sentences, clearly describe what the ``DFS'' tree from an initial node $s$ found by this algorithm represents.  (Note:  we put DFS in quotes here because with this change this algorithm is no longer DFS!)
+\item Give a mathematical formula (not just an order class) for the number of leaves in this tree for a worst-case input graph.  Describe this worst-case input graph.  (Again, tracing this algorithm on small connected graphs may help you find the answer more quickly.)
+\end{enumerate}
+
+}
+
+\question[1]{
+The textbook describes two variables that can be associated with each node in a graph $G$ during the execution of \emph{Depth-First Search}: discovery time ($v.d$) and finish time ($v.f$). These are integer values that are unique. Every time a node is discovered (i.e., DFS sees the node for the first time) that node's $v.d$ is set to the next available integer. When DFS is finished exploring ALL of this node's children, $v.f$ is set to the next available integer.
+
+For this question, consider a single edge in a graph $G$ after DFS finishes executing. You might need to reference the textbook or slides for definitions of tree edge, forward edge, back edge, and cross edge. Argue that each edge $e=(u,v)$ is:
+
+\begin{enumerate}
+\item A tree edge or forward edge if and only if $u.d < v.d < v.f < u.f$
+\item A back edge if and only if $v.d \leq u.d < u.f \leq v.f$
+\item A cross edge if and only if $v.d < v.f < u.d < u.f$
+\end{enumerate}
+
+You can describe your answers intuitively, but your answers must be clearly articulated.
+}
+
+
+
+\question[1]{
+Given an undirected graph $G$, the {\em eccentricity} of a node $v$ is the largest of the shortest possible distances from $v$ to any other node in the graph. The minimum eccentricity in the graph is called the  {\em graph radius} for $G$. All the nodes in $G$ that have eccentricity equal to the graph radius form a set called the {\em graph center} of G.
+
+Describe (using pseudo-code or a very clea rtext explanation) an efficient algorithm to find the graph center of a graph $G$ and describe its complexity.  (Note: you must make use of algorithms studied in this module, and not  re-invent the wheel.)
+}
+\fi
+
+
+\end{document}

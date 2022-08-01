@@ -1,0 +1,77 @@
+\documentclass[11pt]{article}
+%\usepackage{fancyheadings}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+\setlength{\headheight}{0pt}
+%\setlength{\footheight}{0pt}
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7truein}
+\setlength{\textheight}{9truein}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\section*{Creating Palindromes}
+%\subsection*{Description}
+
+\begin{wrapfigure}{r}{3in}
+\vspace{-10pt}
+\epsfig{figure=palindrome,width=3in}
+\vspace{-30pt}
+\end{wrapfigure}
+
+While adventuring for treasure, you and a colleague stumble upon an ancient safe with a surprisingly complex security system. "This safe must contain the most wonderful treasure!", you exclaim. "Let's figure out how to open it!". The safe contains a row of dials, each of which is circular and can be rotated to one of ten digits (0-9). The safe also contains a cryptic clue:
+
+\emph{Turn these wheels right to uncover the treasures. Just to the right, and do it just right, so the numbers read forwards and backwards. Beware of the overflow, which doesn't feel right, it flows not to the right.}
+
+After thinking careful about this clue, you discover the solution! You've deciphered the text in the following way:
+
+\begin{enumerate}
+\item \emph{so the numbers read forwards and backwards} must mean that the final combination is a palindrome: a number that reads the same forwards and backwards.
+\item \emph{Just to the right...} means that the wheels can only be turned to the right (increasing the number on a dial OR wrapping from 9 to 0), not to the left.
+\item \emph{do it just right} means that you must make a palindrome by turning wheels the minimum number of total times (one increase in value equals one "action").
+\item This last part is a bit tough, but you figure out that \emph{beware of the overflow, which doesn't feel right, it flows not to the right.} means that when a wheel increases from 9 and wraps to 0, it will automatically increase the wheel to its left by 1, but only counts as one total action.
+\end{enumerate}
+
+With this in mind, you realize that to get the treasure, you must turn the wheels using a minimum number of actions and turn the current number sequence into a palindrome. Can you figure out how to do it?
+
+\subsection*{Input}
+
+The input will consist of a single line containing an integer of 1 to 40 digits. The number of digits in the input is the number of wheels on the safe. Numbers might contain leading zeros.
+
+\subsection*{Output}
+
+Print a single line of output containing the minimum number of wheel actions required to produce a palindrome and access the treasure!
+
+
+\vspace{0.25in}\hspace{-0.3in}\begin{tabular}{ll}
+
+%\subsection*{Sample Input}
+\parbox{3in}{{\large\bf Sample Input}
+
+\vspace{0.15in}
+
+{\tt 
+29998
+}
+}
+
+&
+
+\parbox{3in}{{\large\bf Sample Output}
+
+\vspace{0.15in}
+
+{\tt
+5
+}
+
+
+}
+
+\\
+\end{tabular}
+
+\end{document}

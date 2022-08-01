@@ -1,0 +1,169 @@
+\documentclass[12pt]{article}
+\usepackage[top=1in,bottom=1in,left=0.75in,right=0.75in,centering]{geometry}
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{palatino}
+\usepackage{wrapfig}
+\usepackage{lastpage}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{graphicx,type1cm,eso-pic,color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{latexsym}
+\usepackage{amssymb}
+
+\def\course{CS 4102: Algorithms}
+\def\homework{Module 2 - Graphs: Basic Written HW}
+\def\semester{Spring 2021}
+
+\newboolean{solution}
+\setboolean{solution}{false}
+
+% add watermark if it's a solution exam
+% see http://jeanmartina.blogspot.com/2008/07/latex-goodie-how-to-watermark-things-in.html
+\makeatletter
+\AddToShipoutPicture{%
+\setlength{\@tempdimb}{.5\paperwidth}%
+\setlength{\@tempdimc}{.5\paperheight}%
+\setlength{\unitlength}{1pt}%
+\put(\strip@pt\@tempdimb,\strip@pt\@tempdimc){%
+\ifthenelse{\boolean{solution}}{
+\makebox(0,0){\rotatebox{45}{\textcolor[gray]{0.95}%
+{\fontsize{5cm}{3cm}\selectfont{\textsf{Solution}}}}}%
+}{}
+}}
+\makeatother
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\lhead{\course}
+\chead{Page \thepage\ of \pageref{LastPage}}
+\rhead{\semester}
+%\cfoot{\Large (the bubble footer is automatically inserted into this space)}
+
+\setlength{\headheight}{14.5pt}
+
+\newenvironment{itemlist}{
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{itemize}}
+
+\newenvironment{numlist}{
+\begin{enumerate}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{enumerate}}
+
+\newcounter{pagenum}
+\setcounter{pagenum}{1}
+\newcommand{\pageheader}[1]{
+\clearpage\vspace*{-0.4in}\noindent{\large\bf{Page \arabic{pagenum}: {#1}}}
+\addtocounter{pagenum}{1}
+\cfoot{}
+}
+
+\newcounter{quesnum}
+\setcounter{quesnum}{1}
+\newcommand{\question}[2][??]{
+\begin{list}{\labelitemi}{\leftmargin=2em}
+\item [\arabic{quesnum}.] {#2}
+\end{list}
+\addtocounter{quesnum}{1}
+}
+
+
+\definecolor{red}{rgb}{1.0,0.0,0.0}
+\newcommand{\answer}[2][??]{ 
+\ifthenelse{\boolean{solution}}{
+\color{red} #2 \color{black}}
+{\vspace*{#1}}
+}
+
+\definecolor{blue}{rgb}{0.0,0.0,1.0}
+
+\begin{document}
+
+\section*{\homework}
+
+
+%----------------------------------------------------------------------
+\question[3]{
+Describe an algorithm that, given a directed graph G represented as an \emph{adjacency matrix}, returns whether or not the graph contains vertex with in-degree $|V| - 1$ and out-degree $0$. In other words, does the graph have a node such that every other node points to it, but it does not point to any other node. Your algorithm must be $O(V)$. Note that there are $\Theta(V^2)$ cells in your adjacency matrix so you'll need to be clever here.
+}
+
+\answer[0.5in]{...}
+
+\question[1]{
+Let's say a graph $G$'s {\em circumference} is the number of edges in the shortest cycle in $G$. Describe an efficient algorithm to find the circumference of a graph in $\Theta(V \times E)$.  (Note: you must make use of algorithms studied in this module, and not  re-invent the wheel.)
+}
+
+\answer[0.5in]{...}
+
+\question[3]{
+Let $G$ be an undirected graph with $n$ nodes (let's assume $n$ is even). Prove or provide a counterexample for the following claim: If every node of $G$ has a degree of at least $\frac{n}{2}$, then $G$ must be connected.
+}
+
+\answer[0.5in]{...}
+
+\question[1]{
+ For a given undirected graph $G$, prove that the depth of a DFS tree cannot be smaller than the depth of the BFS tree.  (Clearly state your proof strategy or technique.)
+}
+
+% ------------------------------------------
+
+
+
+% ------------------------------------------
+
+
+
+% ------------------------------------------
+
+
+
+\iffalse
+
+\question[1]{
+In the CLRS code for {\em DFS-Visit} at line 8,  we have completed recursively visiting all then un-visited vertices adjacent to vertex $u$, so we change $u$'s color to black.  For this problem, consider what happens if instead we change the color of $u$ to {\em white} at this line.
+
+Explore what this causes to happen by tracing this altered algorithm on a small connected undirected graph.  After you have done that, submit answers to the following questions.
+
+\begin{enumerate}
+\renewcommand{\theenumi}{\Alph{enumi}}
+\item In no more than a few sentences, clearly describe what the ``DFS'' tree from an initial node $s$ found by this algorithm represents.  (Note:  we put DFS in quotes here because with this change this algorithm is no longer DFS!)
+\item Give a mathematical formula (not just an order class) for the number of leaves in this tree for a worst-case input graph.  Describe this worst-case input graph.  (Again, tracing this algorithm on small connected graphs may help you find the answer more quickly.)
+\end{enumerate}
+
+}
+
+\question[1]{
+The textbook describes two variables that can be associated with each node in a graph $G$ during the execution of \emph{Depth-First Search}: discovery time ($v.d$) and finish time ($v.f$). These are integer values that are unique. Every time a node is discovered (i.e., DFS sees the node for the first time) that node's $v.d$ is set to the next available integer. When DFS is finished exploring ALL of this node's children, $v.f$ is set to the next available integer.
+
+For this question, consider a single edge in a graph $G$ after DFS finishes executing. You might need to reference the textbook or slides for definitions of tree edge, forward edge, back edge, and cross edge. Argue that each edge $e=(u,v)$ is:
+
+\begin{enumerate}
+\item A tree edge or forward edge if and only if $u.d < v.d < v.f < u.f$
+\item A back edge if and only if $v.d \leq u.d < u.f \leq v.f$
+\item A cross edge if and only if $v.d < v.f < u.d < u.f$
+\end{enumerate}
+
+You can describe your answers intuitively, but your answers must be clearly articulated.
+}
+
+
+
+\question[1]{
+Given an undirected graph $G$, the {\em eccentricity} of a node $v$ is the largest of the shortest possible distances from $v$ to any other node in the graph. The minimum eccentricity in the graph is called the  {\em graph radius} for $G$. All the nodes in $G$ that have eccentricity equal to the graph radius form a set called the {\em graph center} of G.
+
+Describe (using pseudo-code or a very clea rtext explanation) an efficient algorithm to find the graph center of a graph $G$ and describe its complexity.  (Note: you must make use of algorithms studied in this module, and not  re-invent the wheel.)
+}
+\fi
+
+
+\end{document}

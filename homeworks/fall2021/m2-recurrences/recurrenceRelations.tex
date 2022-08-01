@@ -1,0 +1,177 @@
+\documentclass[12pt]{article}
+\usepackage[top=1in,bottom=1in,left=0.75in,right=0.75in,centering]{geometry}
+\usepackage{fancyhdr}
+\usepackage{epsfig}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{palatino}
+\usepackage{wrapfig}
+\usepackage{lastpage}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{graphicx,type1cm,eso-pic,color}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{wasysym}
+
+\def\course{CS 4102: Algorithms}
+\def\homework{M2: Divide and Conquer - Recurrence Relations}
+\def\semester{Fall 2021}
+
+\newboolean{solution}
+\setboolean{solution}{false}
+
+% add watermark if it's a solution exam
+% see http://jeanmartina.blogspot.com/2008/07/latex-goodie-how-to-watermark-things-in.html
+\makeatletter
+\AddToShipoutPicture{%
+\setlength{\@tempdimb}{.5\paperwidth}%
+\setlength{\@tempdimc}{.5\paperheight}%
+\setlength{\unitlength}{1pt}%
+\put(\strip@pt\@tempdimb,\strip@pt\@tempdimc){%
+\ifthenelse{\boolean{solution}}{
+\makebox(0,0){\rotatebox{45}{\textcolor[gray]{0.95}%
+{\fontsize{5cm}{3cm}\selectfont{\textsf{Solution}}}}}%
+}{}
+}}
+\makeatother
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\lhead{\course}
+\chead{Page \thepage\ of \pageref{LastPage}}
+\rhead{\semester}
+%\cfoot{\Large (the bubble footer is automatically inserted into this space)}
+
+\setlength{\headheight}{14.5pt}
+
+\newenvironment{itemlist}{
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{itemize}}
+
+\newenvironment{numlist}{
+\begin{enumerate}
+\setlength{\itemsep}{0pt}
+\setlength{\parskip}{0pt}}
+{\end{enumerate}}
+
+\newcounter{pagenum}
+\setcounter{pagenum}{1}
+\newcommand{\pageheader}[1]{
+\clearpage\vspace*{-0.4in}\noindent{\large\bf{Page \arabic{pagenum}: {#1}}}
+\addtocounter{pagenum}{1}
+\cfoot{}
+}
+
+\newcounter{quesnum}
+\setcounter{quesnum}{1}
+\newcommand{\question}[2][??]{
+\begin{list}{\labelitemi}{\leftmargin=2em}
+\item [\arabic{quesnum}.] {} {#2}
+\end{list}
+\addtocounter{quesnum}{1}
+}
+
+
+\definecolor{red}{rgb}{1.0,0.0,0.0}
+\newcommand{\answer}[2][??]{
+\ifthenelse{\boolean{solution}}{
+\color{red} #2 \color{black}}
+{\vspace*{#1}}
+}
+
+\definecolor{blue}{rgb}{0.0,0.0,1.0}
+
+\begin{document}
+
+\section*{\homework}
+
+This homework will ask you to think about Divide and Conquer Algorithms with a focus on recurrence relations (this is module 2 after all!). Please try to follow the guidelines below when writing up your solutions to these problems:
+
+\begin{itemize}
+	\item Algorithm descriptions should be about 1 paragraph long. If you are writing more than one paragraph to describe your algorithm, then it is TOO long. 
+	\item There should be enough detail that I could implement the algorithm if I wanted to, but we don't need to see code. If you want to add pseudo-code for clarity, that would be fine.
+	\item For the recurrence relation problems below, make sure to show your work clearly!
+\end{itemize}
+
+\vspace{14pt}
+
+\question[3]{
+You are a hacker, trying to gain information on a secret array of size $n$. This array contains $n-1$ ones and exactly $1$ two; you want to determine the index of the two in the array.\\
+\\
+Unfortunately, you don't have access to the array directly; instead, you have access to a function $f(l1, l2)$ that compares the sum of the elements of the secret array whose indices are in $l1$ to those in $l2$. This function returns $-1$ if the $l1$ sum is larger, $0$ if they are equal, and $1$ if the sum corresponding to $l2$ is larger.\\
+\\
+For example, if the array is $a=[1,1,1,2,1,1]$ and you call $f([0,2,4],[1,3,5])$ then the return value is $1$ because $a[0]+a[2]+a[4]=3<4=a[1]+a[3]+a[5]$. Design an algorithm to find the index of the $2$ in the array using the least number of calls to $f()$. Then, answer the following questions:
+
+\begin{itemize}
+	\item Describe your algorithm clearly (in a paragraph or so)
+	\item Give the recurrence relation for the runtime of your algorithm. Make sure to write this in terms of $f_r$, which we will use to represent the runtime of $f()$.
+	\item Suppose you discover that $f()$ runs in $\Theta(max(|l1|,|l2|))$, what is the overall runtime of your algorithm in this case? 
+\end{itemize}
+}
+
+\vspace{12pt}
+
+
+%----------------------------------------------------------------------
+\noindent Directly solve, by unrolling the recurrence, the following relation to find its exact solution. Make sure to show your work.
+
+\question[2]{
+$T(n) = T(n-1) + n$
+}
+
+\vspace{12pt}
+
+%----------------------------------------------------------------------
+
+\noindent Use induction to show bounds on the following recurrence relations.
+
+\question[2]{
+Show that $T(n)=4T(\frac{n}{3})+n \in O(n^{log_3(4)})$. You'll need to subtract off a lower-order term to make the induction work here.
+}
+
+\answer[0 in]{
+...
+}
+
+\vspace{12pt}
+
+%----------------------------------------------------------------------
+
+\noindent Use the master theorem to solve the following recurrence relations. State which case of the theorem you are using and why.
+
+\question[2]{
+$T(n)=2T(\frac{n}{4})+1$
+}
+
+\answer[0 in]{
+...
+}
+
+\question[2]{
+$T(n)=2T(\frac{n}{4})+\sqrt{n}$
+}
+
+\answer[0 in]{
+...
+}
+
+\question[2]{
+$T(n)=2T(\frac{n}{4})+n$
+}
+
+\answer[0 in]{
+...
+}
+
+\question[2]{
+$T(n)=2T(\frac{n}{4})+n^2$
+}
+
+\answer[0 in]{
+...
+}
+\end{document}

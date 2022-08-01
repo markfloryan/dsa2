@@ -1,0 +1,68 @@
+\documentclass[11pt]{article}
+%\usepackage{fancyheadings}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+\usepackage{hyperref}
+\setlength{\headheight}{0pt}
+%\setlength{\footheight}{0pt}
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7truein}
+\setlength{\textheight}{9truein}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\section*{Hunting for an Apartment}
+
+%\subsection*{Description}
+
+\begin{wrapfigure}{r}{3in}
+\vspace{-10pt}
+\epsfig{figure=park,width=3in}
+\vspace{-30pt}
+\end{wrapfigure}
+
+Professor Horton is looking for a new apartment. He wants to live somewhere affordable, but he also doesn't want to live in the absolute cheapest apartment he can find. Given a list of monthly rents for apartments in his area, can you compute the second cheapest apartment that he can rent?
+
+\subsection*{Input}
+The input file will begin with one line containing $2 \leq n \leq 20$, the number of apartments available. The following $n$ lines will each contain a single integer $l_i \leq 1000$ describing monthly price of apartment $i$.
+
+\subsection*{Output}
+Output the second cheapest apartment price of the ones provided.
+
+
+
+\vspace{0.25in}\hspace{-0.3in}\begin{tabular}{ll}
+
+%\subsection*{Sample Input}
+\parbox{3in}{{\large\bf Sample Input}
+
+\vspace{0.15in}
+
+{\tt 
+5\linebreak
+100\linebreak
+150\linebreak
+90\linebreak
+80\linebreak
+3500
+}
+}
+
+&
+
+\parbox{3in}{{\large\bf Sample Output}
+
+\vspace{0.15in}
+
+{\tt
+90
+}
+}
+
+\\
+\end{tabular}
+
+\end{document}

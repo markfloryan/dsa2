@@ -1,0 +1,76 @@
+\documentclass[11pt]{article}
+%\usepackage{fancyheadings}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+\usepackage{hyperref}
+\setlength{\headheight}{0pt}
+%\setlength{\footheight}{0pt}
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7truein}
+\setlength{\textheight}{9truein}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\section*{Security Clearance}
+
+%\subsection*{Description}
+
+\begin{wrapfigure}{r}{3in}
+\vspace{-10pt}
+\epsfig{figure=security,width=3in}
+\vspace{-30pt}
+\end{wrapfigure}
+
+The office you work in, Super Top Secret Stuff LLC, is implementing a new security system. The office contains many rooms with doors linking them together. However, every employee is only allowed to enter certain rooms. To provide security, each door has been outfitted with a badge reader that will only allow authorized employees through the door. For simplicity, your firm decided that each door would be coded with a range of valid badge numbers (e.g., 25-29 would allow badge numbers 25,26,27,28, and 29 through). Complicating matters, the lock on each side of the door is different, so it might be the case that employees can enter a room, and then not leave (of course, this is and unintended consequence).
+
+A significant problem for the company is this: Given a new employee, what badge number should they get so that they can actually get from the front door to their work station. Write a program that, given the badge numbers permitting passage between each room, returns a list of badge numbers that will get someone from a given start room to a given destination room.
+
+\emph{This problem is difficult because of the size of the input constraints. You'll need it to run efficiently. Consider the following hints: First, it might be useful to store the badges that can be used to reach a room as a field of the room. Second, although there are many ways to solve this, bit fiddling is a very elegant approach. Third, notice that there are up to $10^9$ (which is very large) badge numbers but only 5000 locks. Maybe there is a way to get that number of badges to be a bit smaller?}
+
+\subsection*{Input}
+The first line of input will contain integers $N$, $L$, and $B$, denoting the number of rooms, of locks, and of badge numbers, respectively. $2 \leq N \leq 1000$, $1 \leq L \leq 5000$, $1 \leq B \leq 10^9$
+
+The next line of input will contain two integers, $S$ and $D$, $1 \leq S \leq N$, $1 \leq D \leq N$, $S \neq D$, denoting the starting and destination rooms that we are interested in.
+
+This is followed by $L$ lines, each describing a lock as four integers: $a$, $b$, $x$, $y$ indicating that a lock permits passage from room $a$ to room $b$ (but not from $b$ to $a$) for badges numbered from $x$ to $y$, inclusive. It is guaranteed that $1 \leq a,b \leq N$, $a \neq b$, $1 \leq x \leq B$, $1 \leq y \leq B$, $x \leq y$, and no ($a$, $b$) pair will occur more than once, although both ($a$, $b$) and ($b$, $a$) may occur within separate lines.
+
+\subsection*{Output}
+
+Output a single line showing the number of badge numbers that allow passage from room $S$ to room $D$.
+
+\vspace{0.25in}\hspace{-0.3in}\begin{tabular}{ll}
+
+%\subsection*{Sample Input}
+\parbox{3in}{{\large\bf Sample Input}
+
+\vspace{0.15in}
+
+{\tt 
+4 5 10\linebreak
+3 2\linebreak
+1 2 4 7\linebreak
+3 1 1 6\linebreak
+3 4 7 10\linebreak
+2 4 3 5\linebreak
+4 2 8 9
+}
+}
+
+&
+
+\parbox{3in}{{\large\bf Sample Output}
+
+\vspace{0.15in}
+
+{\tt
+5
+}
+}
+
+\\
+\end{tabular}
+
+\end{document}

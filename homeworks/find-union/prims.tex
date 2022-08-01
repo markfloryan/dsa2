@@ -1,0 +1,94 @@
+\documentclass[11pt]{article}
+%\usepackage{fancyheadings}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+\usepackage{hyperref}
+\setlength{\headheight}{0pt}
+%\setlength{\footheight}{0pt}
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7truein}
+\setlength{\textheight}{9truein}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\section*{Wiring the house}
+
+%\subsection*{Description}
+
+\begin{wrapfigure}{r}{3in}
+\vspace{-10pt}
+\epsfig{figure=house,width=3in}
+\vspace{-30pt}
+\end{wrapfigure}
+
+You have decided to build a new house, but you are hoping to save costs by doing some of the work yourself. Specifically, you think you are able to do the electrical wiring. The wiring works by using different types of junction points and running electrical wires between these junction points. Complicating things slightly, there are several types of junction points:
+
+\begin{itemize}
+	\item \textbf{Breaker Box:} This is a special node in from which the electricity is sourced. There will only be one breaker box.
+	\item \textbf{Switch:} A switch is a special node that cannot affect the current coming in on a path from the breaker box, but can be turned off to not allow current to continue past the switch onward.
+	\item \textbf{Light:} A light is a node that is controlled by a switch. Thus, there MUST be exactly one switch between the light and the breaker box. Each light has a specific switch you want to control it with, and thus that particular switch must be the one between the light and breaker box.
+	\item \textbf{Electrical Outlet:} You want your outlets to be active all of the time. Thus, an outlet must have a path directly to the breaker box with NO switches in between.
+	\item \textbf{Junction Box:} A junction box is simply a location that can connect multiply wires together. For example, one wire from the breaker can go into a junction box, and three wires can fan out of the box to distribute electricity to the house.
+\end{itemize}
+
+Given the layout of the different junction points and the cost of wiring them to each other, can you figure out the cheapest way to wire your house? Consider the following when implementing your solution:
+
+\begin{itemize}
+	\item Your solution MUST use Prim's algorithm from class. The purpose of this assignment is to practice with this algorithm, though you may need to adjust the strategy very slightly.
+	\item Your wired house must be a spanning tree (there can be no cycles)
+	\item Lights can be wired to one another if they have the same desired switch, as long as the switch is between both of them and the breaker.
+	\item Every type of junction point (breaker, switch, boxes, etc.) must be connected into your wiring. 
+	\item junction boxes (and outlets) should never be behind switches in your spanning tree. Thus, once your spanning tree reaches a switch, only lights (though many of them potentially) will be behind the switch.
+\end{itemize}
+
+\subsection*{Input}
+The input file will begin with one line containing integers $J$ and $C$, the number of junction points and the number of possible connections respectively. The next $J$ lines will each specify the name of a junction point along with the type (breaker, switch, light, outlet, box). When a switch is listed, the lights that need to be behind that switch will be always listed next to indicate this dependency. There will only be one breaker box. The next $C$ lines specify the connections by providing the name of two junction points and the cost between them.
+
+\subsection*{Output}
+
+Output the cost of the minimum wiring for the house that adheres to all of the constraints
+
+\vspace{0.25in}\hspace{-0.3in}\begin{tabular}{ll}
+
+%\subsection*{Sample Input}
+\parbox{3in}{{\large\bf Sample Input}
+
+\vspace{0.15in}
+
+{\tt 
+6 8\linebreak
+b1 breaker\linebreak
+j1 box\linebreak
+s1 switch\linebreak
+l1 light\linebreak
+l2 light\linebreak
+o1 outlet\linebreak
+b1 j1 5\linebreak
+b1 o1 1\linebreak
+j1 s1 1\linebreak
+j1 o1 2\linebreak
+o1 l1 1\linebreak
+l1 l2 2\linebreak
+s1 l1 6\linebreak
+s1 l2 1\linebreak
+}
+}
+
+&
+
+\parbox{3in}{{\large\bf Sample Output}
+
+\vspace{0.15in}
+
+{\tt
+7
+}
+}
+
+\\
+\end{tabular}
+
+\end{document}

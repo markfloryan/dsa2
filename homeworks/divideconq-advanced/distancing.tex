@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+%\usepackage{fancyheadings}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+\usepackage{hyperref}
+\setlength{\headheight}{0pt}
+%\setlength{\footheight}{0pt}
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7truein}
+\setlength{\textheight}{9truein}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\section*{Social Distancing}
+
+%\subsection*{Description}
+
+\begin{wrapfigure}{r}{3in}
+\vspace{-10pt}
+\epsfig{figure=park,width=3in}
+\vspace{-30pt}
+\end{wrapfigure}
+
+During these difficult Covid times, it is important to balance getting fresh air and maintaining social distancing standards to keep everyone safe. You work for the local government and help run a local park. You want your park visitors to be as happy and safe as possible. You have picnic tables at the park and many visitors arriving. Your job is to assign picnic tables to your visitors to try and spread the visitors out as much as possible (each visitor must hang out at one of the tables).
+
+Your park is very peculiar. It is a very long, narrow park. The picnic tables are spread out in a straight line through this long narrow park, and the distance between picnic tables varies (they are not uniformly positioned across the park). In addition, the tables are WAY too heavy to move. Given a list of the positions of the picnic tables in the park, and the number of visitors that wish to use the park, return the maximum social distancing value that can be achieved by assigning visitors to tables. By maximum, we mean the arrangement of visitors that maximizes the distance between the closest two patrons in the park.
+
+\subsection*{Input}
+The input file will begin with one line containing $ 2 \leq n \leq 10^6$ and $p \leq n \leq 10^6$, the number of picnic tables in your park and the number of visitors respectively. The following $n$ lines will each contain a single integer $l_i \leq 10^8$ describing the integer position of table $i$. These positions will be sorted in increasing order. All positions will be unique.
+
+\subsection*{Output}
+Output the largest possible value of the minimum distance between visitors after being seated in the optimal arrangement at the picnic tables.
+
+
+
+\vspace{0.25in}\hspace{-0.3in}\begin{tabular}{ll}
+
+%\subsection*{Sample Input}
+\parbox{3in}{{\large\bf Sample Input}
+
+\vspace{0.15in}
+
+{\tt 
+5 3\linebreak
+1\linebreak
+2\linebreak
+4\linebreak
+8\linebreak
+9
+}
+}
+
+&
+
+\parbox{3in}{{\large\bf Sample Output}
+
+\vspace{0.15in}
+
+{\tt
+3
+}
+}
+
+\\
+\end{tabular}
+
+\end{document}
