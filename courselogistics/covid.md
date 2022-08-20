@@ -1,26 +1,24 @@
 CS4102 - Covid Policies and FAQ
 ===============================
 
-Last updated: 8/23/2021
+Last updated: 8/20/2022
 
 Q: I am worried about the virus: will I know if there is an unvaccinated student in the class?
 -----------
 
-In this message https://coronavirus.virginia.edu/updates/important-information-about-fall-2021 , the University announced that all students who live, learn, or work in person at the University during the next academic year must be fully vaccinated before returning to Grounds unless they have obtained a medical or religious exemption from the University. Therefore, you can expect that students in your class are vaccinated. A very small number of students have received vaccination exemptions, so the likelihood that an unvaccinated student is in your class is slight.
+In [this message](https://coronavirus.virginia.edu/updates/important-information-about-fall-2021) from 2021, the University announced that all students who live, learn, or work in person at the University during the next academic year must be fully vaccinated before returning to Grounds unless they have obtained a medical or religious exemption from the University. This rule is still in effect in 2022. Therefore, you can expect that students in your class are vaccinated. A very small number of students have received vaccination exemptions, so the likelihood that an unvaccinated student is in your class is slight.
 
 Q: What if there is an un-masked student in class?
 ------------
 
-If everyone follows the rules, this person should be someone who has a justified exemption from the university. The professor may ask the student if they need a mask, and if a student answers "no" then this student is stating on their Honor that they are exempt.
+In 2022, University policy states that wearing masks in class is now optional. There will very likely be unmasked students in class. If you are unconcerned about this, you can wear a high-quality mask, attempt to keep some distance from others, and we will provide lecture recordings for those who do not feel comfortable attending in-person.
 
 Q: Do I have to wear a mask in class?
 ------------------
 
-Our class will diligently follow all University regulations in effect. If masks are required during a certain period, then they are absolutely required for class. If policy changes, then we will adjust accordingly. Failure to mask if a regulation is in effect can result in reporting to UJC.
+Our class will diligently follow all University regulations in effect. If masks are required during a certain period, then they are absolutely required for class. If policy changes, then we will adjust accordingly. Failure to mask if a regulation is in effect can result in reporting to UJC. At the time of writing, mask wearing in classes at UVa is optional.
 
 While mask regulations are in effect, we ask that while you are in class that you remain masked the entire time. This means no food or drink in the classroom. Additionally, all in-person office hours will require masking, regardless of location.
-
-If regulations change, we'll discuss changes in the policy. Some members of the staff and class may continue to mask for the entire semester for various reasons. They also may request that you remain distant as well. 
 
 Please be kind to each other! Masking is a lot about how you may impact others, and some faculty and students are in situations that put them at more risk than you. This is an easy way to show we care about each other!
 
