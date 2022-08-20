@@ -1,4 +1,4 @@
-CS4102 - Algorithms
+CS3100 - Data Structures and Algorithms II
 ===============================
 
 [Introduction](#introduction) | [Repository contents](#contents) | [Contributing to this repository](#contributing) | [Course description](#description) | [License](#license)
@@ -6,7 +6,7 @@ CS4102 - Algorithms
 <a name="introduction"></a>Introduction
 ---------------------------------------
 
-The repository contains content for CS4102 - Algorithms at [the University of Virginia](https://virginia.edu).
+The repository contains content for CS3100 - Data Structures and Algorithms II at [the University of Virginia](https://virginia.edu).
 
 
 <a name="contents"></a>Repository Contents
@@ -29,7 +29,7 @@ repository first**
 
 Office hours are held in various locations throughout the week and are of varying type. Information can be found below. There are two possible locations for office hours:
 
-- **In-Person OH**: Some OH will be held in-person (location TBD). See the chart below for details. These will function as *traditional* office hours.
+- **In-Person OH**: Some OH will be held in-person (in Thornton Stacks). See the chart below for details. These will function as *traditional* office hours.
 
 - **Discord OH**: Some OH will be held on our **Discord Server**. To attend office hours, simply join the office hours queue voice channel and you will be added to the office hours queue. When you are taken off the queue you will be automatically moved to a staging room to wait (it is called *oh-up-next* or similar). Soon after, a TA will manually pull you off that staging room into their office hours to help you.
 
@@ -48,14 +48,12 @@ In addition, there are **three types of office hours**. These are described belo
 
 | Day | Time | Type (Location) | 
 |---|-----|------|
-| Monday | 11:00 - noon | Horton (Rice 401) |
-| Tuesday | 10:30 - 11:30 am | Horton (Rice 401) |
-| Tuesday | 11:00am - 12:30pm | Floryan (Discord) |
-| Wednesday | 3:30 - 4:30 pm | Horton (Rice 401) |
-| Thursday | 10:30 - 11:30 am | Horton (Rice 401) |
-| Friday | 2:00 - 3:00 pm | Horton (Rice 401) |
+| Tuesday | 10:00am - 12:00pm | Floryan (Rice 203) |
+| Wednesday | 9:00am - 10:30 am | Floryan (Rice 203) |
 
 #### TA Office Hours 
+
+**NOTE: THESE ARE OUT OF DATE AND WILL UPDATED SOON**
 
 | Day | Time | Type (Location) | Type (Location) | Type (Location) |
 |---|-----|------|--------|--------|
@@ -94,7 +92,7 @@ When you want to bring in the updates from the main dsa1 github repository into 
 <a name="description"></a>Course Description
 --------------------------------------------
 
-Introduces the analysis of algorithms and the effects of data structures on them. Algorithms selected from areas such as sorting, searching, shortest paths, greedy algorithms, backtracking, divide-and-conquer, and dynamic programming. Data structures include heaps and search, splay, and spanning trees. Analysis techniques include asymptotic worst-case, expected time, amortized analysis, and reductions between problems.
+Builds upon previous analysis of algorithms and the effects of data structures on them. Algorithms selected from areas such as searching, shortest paths, greedy algorithms, backtracking, divide-and-conquer, dynamic programming, and machine learning. Analysis techniques include asymptotic worst case, expected time, amortized analysis, and reductions.
 
 
 <a name="license"></a>License

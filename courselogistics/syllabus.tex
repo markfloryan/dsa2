@@ -30,17 +30,17 @@
 \begin{document}
 
 %\textbf{\Large UNDER CONSTRUCTION!!!}\\
-\textbf{\Large CS 4102: Algorithms} \hfill \textbf{\Large Fall 2021}
+\textbf{\Large CS 3100: DSA2} \hfill \textbf{\Large Fall 2022}
 
 \vskip 0.5in 
 
 \makebox[\textwidth][c]{
 \begin{tabular}{p{2.6in}p{2.6in}}
-    \textbf{Tu/Th 12:30 am--1:45 pm } & \textbf{Tu/Th 2:00--3:15 pm}\\
-    \textbf{Instructor:} Mark Floryan & \textbf{Instructor:} Tom Horton\\
-    Email: \url{mfloryan@cs.virginia.edu} & Email: \url{horton@virginia.edu}\\
-    Office: Rice Hall 203 & Office: Rice Hall 402\\
-   Office Hours: TBD. See course website & Office Hours: TBD. See course website\\
+    \textbf{MWF 12:00 pm--12:50 pm } & \textbf{MWF 1:00 pm--1:50 pm}\\
+    \textbf{Instructor:} Mark Floryan & \\
+    Email: \url{mfloryan@cs.virginia.edu} & \\
+    Office: Rice Hall 203 & \\
+   Office Hours: TBD. See course website & \\
 %   &  \hskip 0.2in  Mo/We 1:30--2:30 pm; and,\\
 %   &  \hskip 0.2in Tu noon--12:45 pm; and,\\
 %   &  \hskip 0.2in  Fr 11:00--noon\\
@@ -53,19 +53,18 @@
 \end{tabular}}
 
 \vskip 0.1in
-\textbf{Teaching Assistants:} See course website.  Office hours will be done in-person and using Discord. Join the course's ``server:''  {\tt https://discord.gg/GqqakWbs} 
-
+\textbf{Teaching Assistants:} See course website.  Office hours will be done in-person.
 
 \vskip 0.1in
-\textbf{Course website:} {\tt https://uva-cs.github.io/cs4102-f21/}   (We will also use Collab.)
+\textbf{Course website:} {\tt https://markfloryan.github.io/dsa2/} (We will also use Collab.)
 
-\textbf{Prerequisites:} CS 2102 and 2150 with grades of C- or higher, and math knowledge from APMA 1090 or MATH 1210 or MATH 1310. (Prerequisites are important to this course and will be enforced!)
+\textbf{Prerequisites:} CS 2120 (or equivalent) and CS 2100 (or equivalent) with grades of C- or higher, and math knowledge from APMA 1090 or MATH 1210 or MATH 1310. (Prerequisites are important to this course and will be enforced!)
 
 \section*{Overview}
 
-\textbf{Course Description:} Introduces the analysis of algorithms and the effects of data structures on them. Algorithms selected from areas such as sorting, searching, shortest paths, greedy algorithms, backtracking, divide-and-conquer, and dynamic programming. Data structures include heaps and search, splay, and spanning trees. Analysis techniques include asymptotic worst-case, expected time, amortized analysis, and reductions between problems
+\textbf{Course Description:} Builds upon previous analysis of algorithms and the effects of data structures on them. Algorithms selected from areas such as searching, shortest paths, greedy algorithms, backtracking, divide-and-conquer, dynamic programming, and machine learning. Analysis techniques include asymptotic worst case, expected time, amortized analysis, and reductions.
 
-\textbf{Availability:} It is important to us to be available to our students, and to address their concerns.  If you cannot meet with either of us during our office hours, e-mail us and we will find the time to meet. That being said, like everybody else we are quite busy, so it may take a day or more to find a time to meet. And if you have any comments on the course---what is working, what is not working, what can be done better, etc.---we are very interested in hearing about them.  Please send Prof.\ Floryan, Prof.\ Horton, or one of the TAs an e-mail or post privately on Piazza to the instructors.  When sending email, include ``CS4102'' in the subjecdt line. If your question could be answered by either professor or even a TA, a post on Piazza to "instructors" may get a faster response.
+\textbf{Availability:} It is important to us to be available to our students, and to address their concerns.  If you cannot meet with either of us during our office hours, e-mail us and we will find the time to meet. That being said, like everybody else we are quite busy, so it may take a day or more to find a time to meet. And if you have any comments on the course---what is working, what is not working, what can be done better, etc.---we are very interested in hearing about them.  Please send Prof.\ Floryan or one of the TAs an e-mail or post privately on Piazza to the instructors.  When sending email, include ``CS3100'' in the subjecdt line. If your question could be answered by either professor or even a TA, a post on Piazza to "instructors" may get a faster response.
 
 
 \textbf{Course Objectives:} Students who complete the course will:
@@ -99,46 +98,44 @@ We will follow the university's guidance on dealing with Covid, including wearin
 
 \section*{Coursework and Grading}
 
-The course is divided into 10 {\bf modules}:
+The course is divided into 8 {\bf modules}:
 \begin{itemize}
-    \item  Divide \& Conquer: Insertion Sort, Mergesort, Quicksort
-    \item Divide \& Conquer: Recurrence Relations
-    \item Divide \& Conquer: Advanced Topics
-    \item Graphs: Breadth-first Search (BFS) \& Depth Search (DFS)
-    \item Graphs: Kruskal’s and Find-Union 
-    \item Graphs: Prim’s \& Dijkstra’s
+    \item Graphs - Introduction
+    \item Graqphs - Advanced
+    \item Divide and Conquer Algorithms
     \item Greedy Algorithms
     \item Dynamic Programming
-    \item Network Flow and Ford-Fulkerson
-    \item Bi-Partite Matching \& Reductions
+    \item Network Flow \& Bi-Partite Matching
+    \item NP-Completeness
+    \item Machine Learning
 \end{itemize}
-Most modules are 2 lectures worth of content (but a few are 3 or 4). The schedule is shown on the website. 
+Most modules are 5 lectures worth of content (but a few are 4 or 6). The schedule is shown on the website. 
 For each module, there will be:
 \begin{itemize}
-    \item 1 homework (written or programming)
+    \item 1 or 2 homeworks (written or programming)
     \item 1 quiz
 \end{itemize}
 
-\textbf{Quizzes:}  Each quiz is a short assessment of your knowledge of a module. So quizzes are meant to ensure you clearly demonstrate competence regarding the individual topics for that module.  You will have multiple opportunities to take each quiz (3 attempts for the first eight, but only 2 chances to take the last two quizzes).
+\textbf{Quizzes:}  Each quiz is a short assessment of your knowledge of a module. So quizzes are meant to ensure you clearly demonstrate competence regarding the individual topics for that module.  You will have multiple opportunities to take each quiz (3 attempts for most, but later quizzes may only have 2 attempts).
 
 Quizzes will be given in-person in your scheduled lecture time as follows:\\
 \begin{tabular}{ll}
-Tue, Sep. 21	&	Mod 1-3 (first attempts) \\
-Thu, Oct. 7	&	Mod 1-3 (second attempt), 4-5 (first attempt) \\
-Tue, Nov. 16	&	Mod 4-5 (second attempt), 6-8 (first attempt) \\
-Thu, Dec. 2	&	Mod 6-8 (second attempt), 9-10 (first attempt) \\
-Final Exam period, Tue, Dec 14, 7:00 pm 	&	Mod 1-10 (final attempts) \\
+Mon, Sep. 26	&	Mod 1-2 (first attempts) \\
+Mon, Oct. 24	&	Mod 1-2 (second attempt), 3-4 (first attempt) \\
+Fri, Nov. 18	&	Mod 3-4 (second attempt), 5-6 (first attempt) \\
+Mon, Dec. 5	    &	Mod 5-6 (second attempt), 7-8 (first attempt) \\
+Final Exam period, TBD 	&	Mod 1-8 (final attempts) \\
 \end{tabular}
 
-\textbf{Homeworks:} Homeworks fall into two categories:  ``written'' and ``programming.'' Programming homeworks can use Python, Java or C++. Some assignments will require a write-up in addition to code.  Written homeworks may include small problems, runtime analysis, proofs, etc.   See section about \LaTeX{} below.
+\textbf{Homeworks:} Homeworks fall into two categories:  ``written'' and ``programming.'' Programming homeworks can use Python, Java or C++. Some assignments may require a write-up in addition to code.  Written homeworks may include small problems, runtime analysis, proofs, etc.   See section about \LaTeX{} below.
 
 \textbf{Grading:} This course has a system for determining grades that is unlike many courses, and is fully explained on the course website under ``Course Logistics.'' Full details are explained there, but here are the major points.
 \begin{itemize}
-    \item We will use a grading approach based on a an approach called {\it masterry learning\/}. Our approach tries to model the CS department's official policy on what course grades should mean, found at {\tt http://ugrads.cs.virginia.edu/grading-guidelines.html}
+    \item We will use a grading approach based on a an approach called {\it mastery learning\/}. Our approach tries to model the CS department's official policy on what course grades should mean, found at {\tt http://ugrads.cs.virginia.edu/grading-guidelines.html}
     \item Quizzes are scored at one of three levels:  incomplete, pass, or high-pass.
     \item Homeworks are scored at one of two levels:  incomplete or pass.
     \item With some limitations, a quiz can be re-taken or homework can be re-submitted to earn a higher score.
-    \item To pass a module, you must pass the module's homework and get a pass or high-pass on its quiz.
+    \item To pass a module, you must pass the module's homework (all of them) and get a pass or high-pass on its quiz.
     \item Your final letter grade is determined by how many modules you pass. Also, earning high-passes on module quizzes can raise your grade a bit more.
     \item The website has a table showing what you need to achieve to reach a particular letter grade.
 \end{itemize}
@@ -148,7 +145,7 @@ This system is unlike that of most courses in CS you've taken, and we expect you
 \textbf{\LaTeX:} Written assignments must be typeset with \LaTeX, a professional formatting system. Tutorials on how to use \LaTeX{} will be made available when the first written problem set is released. \LaTeX{} is easily installable on many computers: 
 \begin{itemize}
     \item Overleaf, \url{http://overleaf.com}: a Web-hosted \LaTeX{} editor which behaves much like Google Docs.
-    \item Cygwin (which you saw in CS 2150) has \LaTeX{} packages that can be installed
+    \item Cygwin has \LaTeX{} packages that can be installed
     \item MiKTeX provides a stand-alone installer for Windows and Mac, \url{miktex.org}
     \item Ubuntu and CentOS provide TeXLive packages in their repos
     \item LyX, TexShop, TeXworks, and TeXStudio are GUI editors available either through the MiKTeX and TeXLive repos or available as separate downloads.
