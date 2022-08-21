@@ -20,7 +20,6 @@ repository first**
 - [Homeworks](homeworks/index.html) ([md](homeworks/index.md)): The homeworks for the course, along with due dates and related things.
 - [Gradescope Info](./homeworks/gradescope.html): Information on submitting programming assignments to Gradescope.
 - [Schedule and Slides](slides/index.html) ([md](slides/index.md)): Contains the slides used in the course.
-- [Quiz Grade Info](./quiz/index.html): Information on quiz grades, passing thresholds, etc.
 - [Sample Exams](./exams/index.html): Some sample old exams.
 
 
