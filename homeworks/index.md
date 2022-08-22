@@ -1,4 +1,4 @@
-CS4102 - Algorithms: Homework Assignments
+CS3100 - Data Structures and Algorithms II: Homework Assignments
 ===============================
 
 [Back to Main Page](../readme.html)
@@ -16,12 +16,12 @@ That page also explains how the score reported by Gradescope translates to the t
 
 | Module Number | Module Name | Homework 1 | Homework 2 (If Applicable) |
 |----------|------------------------|------------------------|------------------------|
-| Module 1 | Graphs - Intro | Taks | Board Games |
-| Module 2 | Graphs - Advanced | Wiring | Graph Written Problems |
-| Module 3 | Divide and Conquer | Trading | Recurrence Relations |
-| Module 4 | Greedy Algorithms | Moving Boxes | Daycare |
-| Module 5 | Dynamic Programming | Drainage | DP Written Problems |
-| Module 6 | Network Flow / Bi-Partite Matching | Scheduling | - |
+| Module 1 | Graphs - Intro | [Tasks](./fall2022/01-graphsintro/tasks.pdf) | [Board Games](./fall2022/01-graphsintro/boardGames.pdf) |
+| Module 2 | Graphs - Advanced | [Wiring](./fall2022/02-graphsadvanced/wiring.pdf) | Graph Written Problems |
+| Module 3 | Divide and Conquer | [Trading](./fall2022/03-divideandconquer/trading.pdf) | [Recurrence Relations](./fall2022/03-divideandconquer/recurrenceRelations.pdf) |
+| Module 4 | Greedy Algorithms | [Moving Boxes](./fall2022/04-greedy/movingBoxes.pdf) | [Daycare](./fall2022/04-greedy/daycare.pdf) |
+| Module 5 | Dynamic Programming | [Drainage](./fall2022/05-dynamicprogramming/drainage.pdf) | DP Written Problems |
+| Module 6 | Network Flow / Bi-Partite Matching | [Scheduling](./fall2022/06-networkflow/scheduling.pdf) | - |
 | Module 7 | NP-Completeness | Written Reductions | - |
 | Module 8 | Machine Learning | K-Means Clustering | - |
 

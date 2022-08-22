@@ -1,0 +1,124 @@
+\documentclass[11pt]{article}
+%\usepackage{fancyheadings}
+\usepackage{wrapfig}
+\usepackage{epsfig}
+\usepackage{hyperref}
+\setlength{\headheight}{0pt}
+%\setlength{\footheight}{0pt}
+\setlength{\topmargin}{-.5in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+\setlength{\textwidth}{7truein}
+\setlength{\textheight}{9truein}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+\section*{Galactic Trade Routes}
+
+%\subsection*{Description}
+
+\begin{wrapfigure}{r}{3in}
+\vspace{-10pt}
+\epsfig{figure=planets,width=3in}
+\vspace{-30pt}
+\end{wrapfigure}
+
+The time for an interstellar trade route has come! The plaque sent out on the Pioneer probes was decoded by an alien civilization, and they have imparted to us the secrets of interstellar travel. Your job is to find the two stars nearest to each other in our galaxy, and begin your trade route between these two star systems. We’ll assume that you can pick any two stars to begin your trade route; you don’t have to start at Earth. Being as our galaxy has a lot of stars (up to 400 billion), your algorithm will need to be efficient.
+
+For this assignment, we'll assume that our galaxy is 2-dimensional, so you'll need to handle star locations in 2D space. The coordinates will range from -50,000 to +50,000 (the Milky Way is 100,000 light years in diameter). Your trading ships cannot travel more than 10,000 light years, and any input case that has no stars closer than this will need to indicate such.
+
+
+\subsection*{Input}
+The input will consist of a number of test cases (more than one per file!). The first line of each test case will contain $n$, the number of stars for that case: $2 \leq n \leq 100,000$. The following $n$ lines will contain the (x,y) coordinates of successive stars. Each x and y coordinate will be a real number with a minimum value of -50,000 and a maximum value of 50,000. The coordinates will be given to two decimal places of accuracy. The input will terminate when n=0
+
+\subsection*{Output}
+For each test case, your output should contain a single line that is the minimum distance between two points, to four digits of accuracy after the decimal point. You should not print the stars that are closest; only the distance. If there are no points closer than a distance of 10,000, you should print out ’infinity’.
+
+\subsection*{Activities and a Report}
+
+Submit a PDF file with a brief but clear report that addresses the following:
+
+\begin{enumerate}
+
+\item A brute-force solution to this problem is very straight-forward (and very little code):  compare all possible pairs of stars, and remember the smallest distance. Like you did in the sorting HW, use a brute-force algorithm on an input of some reasonably large size X, then something that's size 2X, and something that's size 3X.  Write down the time it took to find the closest-pair for each run, and in a short sentence explain whether or not the run-times match what you expect, based on the time-complexity of the brute-force approach.  (Important: don't include the cost of reading data from the input file in your run-times. You may also cut the brute-force short if it takes too long and report the time as greater than threshold, e.g., $> 60$ seconds)
+
+\item When programming the divide and conquer solution to this problem, it's fairly easy to fail to properly handle the ``strip'' part of the solution, and instead end up with a quadratic solution.  Repeat what you did in the previous step for your divide and conquer solution and report the run-times, and argue that these results show that your algorithm is $o(n^2)$ and not $\Theta(n^2)$.  (Note: a typo here was updated on 9/30/2021. It incorrectly said $o(n)$ before and not $o(n^2)$.)
+
+\item {\em NOTE: This report can be very short. Just report a few times executing your code and write a paragraph or so discussing the times that you saw and what they imply. You do not need to use \LaTeX\ for this report, but the submission must be a PDF file.}
+
+\end{enumerate}
+
+\subsection*{Grading}
+
+You will pass this assignment if you pass enough test cases AND submit an acceptable report. You must have the following:
+
+\begin{enumerate}
+
+\item Submitted code that uses divide-and-conquer and passes at least 8 out of 10 of the test cases.
+
+\item Submitted a PDF file that lists run-times for your code and contains at least one paragraph describing the results you found.
+
+\end{enumerate} 
+
+
+\vspace{0.25in}\hspace{-0.3in}\begin{tabular}{ll}
+
+%\subsection*{Sample Input}
+\parbox{3in}{{\large\bf Sample Input}
+
+\vspace{0.15in}
+
+{\tt 
+2\linebreak
+1.25 6.11\linebreak
+1.64 1.50\linebreak
+2\linebreak
+0 0\linebreak
+0 10001\linebreak
+3\linebreak
+-6.47 2.24\linebreak
+8.90 6.53\linebreak
+-1.45 5.05\linebreak
+4\linebreak
+2.77 -9.81\linebreak
+-0.19 4.85\linebreak
+1.38 9.05\linebreak
+-4.95 3.93\linebreak
+10\linebreak
+8.15 6.21\linebreak
+-5.64 -4.31\linebreak
+-0.03 7.05\linebreak
+5.98 -4.64\linebreak
+1.49 -1.59\linebreak
+4.34 0.67\linebreak
+-2.79 -0.93\linebreak
+-7.41 2.89\linebreak
+-1.79 -6.22\linebreak
+-0.98 1.74\linebreak
+0
+}
+}
+
+&
+
+\parbox{3in}{{\large\bf Sample Output}
+
+\vspace{0.15in}
+
+{\tt
+4.6265\linebreak
+infinity\linebreak
+5.7530\linebreak
+4.4838\linebreak
+3.2257
+}
+}
+
+\vspace{0.2in}
+
+
+\\
+\end{tabular}
+
+\end{document}
