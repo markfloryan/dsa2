@@ -10,8 +10,8 @@ CS3100 - Algorithms (Schedule and Slides)
 
 |Module Num|Module Name|Slides|
 |-|-------------------------|-----------|
-|0|Course Introduction|[PPTX](./courseintroduction.pptx)
-
+|0|Course Introduction|[Course Introduction](./courseintroduction.pptx)
+|1|01 - Graphs Introduction|[Graphs Intro and BFS](./01-01-GraphsIntroBFS.pptx)|
 
 <a name="schedule"></a>Schedule
 --------------------------------------- 
