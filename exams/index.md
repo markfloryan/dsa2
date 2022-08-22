@@ -1,4 +1,4 @@
-CS4102 - Algorithms: Exams
+CS3100 - Algorithms: Exams
 ===============================
 
 [Back to Main Page](../readme.html)
@@ -11,5 +11,3 @@ Here are a few sample exams from old semesters if you'd like to peruse. Note tha
 - [DSA2: Exam 1](./exam1.pdf)
 - [DSA2: Exam 2](./exam2_Spring2020.pdf)
 - [CS4102: Exam 3](./exam3.pdf)
-- [DSA2: Final Part 1](./FinalExam_Part1.pdf)
-- [DSA2: Final Part 2](./FinalExam_Part2.pdf)

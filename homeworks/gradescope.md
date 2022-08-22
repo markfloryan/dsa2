@@ -1,4 +1,4 @@
-CS4102 - Information about Gradescope and Submitting Assignments
+CS3100 - Information about Gradescope and Submitting Assignments
 ===============================
 
 [Back to Homeworks](./index.html)
