@@ -10,7 +10,7 @@ CS3100 - Algorithms (Schedule and Slides)
 
 |Module Num|Module Name|Slides|
 |-|-------------------------|-----------|
-|0|Course Introduction|[Course Introduction](./courseintroduction.pptx)
+|0|Course Introduction|[Course Introduction](./00-courseintroduction.pptx)
 |1|01 - Graphs Introduction|[Graphs Intro and BFS](./01-01-GraphsIntroBFS.pptx)|
 |||[DFS, Topological Sort, SCCs](./01-02-GraphsDFSTopoSCC.pptx)|
 
