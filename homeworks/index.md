@@ -16,7 +16,7 @@ That page also explains how the score reported by Gradescope translates to the t
 
 | Module Number | Module Name | Homework 1 | Homework 2 (If Applicable) |
 |----------|------------------------|------------------------|------------------------|
-| Module 1 | Graphs - Intro | [Tasks](./fall2022/01-graphsintro/tasks.pdf) | [Board Games](./fall2022/01-graphsintro/boardGames.pdf) |
+| Module 1 | Graphs - Intro | [Tasks](./fall2022/01-graphsIntro/tasks.pdf) | [Board Games](./fall2022/01-graphsintro/boardGames.pdf) |
 | Module 2 | Graphs - Advanced | [Wiring](./fall2022/02-graphsadvanced/wiring.pdf) | Graph Written Problems |
 | Module 3 | Divide and Conquer | [Trading](./fall2022/03-divideandconquer/trading.pdf) | [Recurrence Relations](./fall2022/03-divideandconquer/recurrenceRelations.pdf) |
 | Module 4 | Greedy Algorithms | [Moving Boxes](./fall2022/04-greedy/movingBoxes.pdf) | [Daycare](./fall2022/04-greedy/daycare.pdf) |
