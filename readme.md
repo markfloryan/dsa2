@@ -30,15 +30,9 @@ Office hours are held in various locations throughout the week and are of varyin
 
 - **In-Person OH**: Some OH will be held in-person (in Thornton Stacks). See the chart below for details. These will function as *traditional* office hours.
 
-- **Discord OH**: Some OH will be held on our **Discord Server**. To attend office hours, simply join the office hours queue voice channel and you will be added to the office hours queue. When you are taken off the queue you will be automatically moved to a staging room to wait (it is called *oh-up-next* or similar). Soon after, a TA will manually pull you off that staging room into their office hours to help you.
+- **Online (Discord) OH**: Some OH will be held on our **Discord Server**. To attend office hours, simply join the office hours queue voice channel and you will be added to the office hours queue. When you are taken off the queue you will be automatically moved to a staging room to wait (it is called *oh-up-next* or similar). Soon after, a TA will manually pull you off that staging room into their office hours to help you.
 
-In addition, there are **three types of office hours**. These are described below:
-
-- **General OH**: TAs will be available to help with the topic of the week, each week throughout the semester. These function as *traditional* office hours you would likely have in any other class.
-
-- **Topic-Focused OH**: Office hours dedicated to one of the ten topics of the course. The TA for these topics will focus on helping students with that topic ONLY all semester. Their goal is to be the best resource for their specific topic (as much as possible). These are meant for students who are ahead in the course or who fall behing in the course and get can't help at general office hours.
-
-- **Group OH**: These are two weekly discussion sections where a TA will answer general questions regarding homeworks, quizzes, algorithm intution, etc. to larger groups of attendees.
+- **Group OH**: These are weekly discussion sections where a TA will answer general questions regarding homeworks, quizzes, algorithm intution, etc. to larger groups of attendees. **These are not yet scheduled, please stay tuned...**
 
 
 ### Office Hours Schedule:
@@ -47,28 +41,29 @@ In addition, there are **three types of office hours**. These are described belo
 
 | Day | Time | Type (Location) | 
 |---|-----|------|
-| Tuesday | 10:00am - 12:00pm | Floryan (Rice 203) |
+| Tuesday | 10:00am - 11:45am | Floryan (Rice 203) |
 | Wednesday | 9:00am - 10:30 am | Floryan (Rice 203) |
 
 #### TA Office Hours 
 
-**NOTE: THESE ARE OUT OF DATE AND WILL UPDATED SOON**
+| Day | Time | In-Person (Location) | Online (Location) |
+|---|-----|------|--------|
+| Sunday | 6pm - 8pm | In-Person (Thn. Stacks) | Online (Discord) |
+| - | 8pm - 10pm | In-Person (Thn. Stacks) | Online (Discord) |
+| Monday | 6pm - 8pm | In-Person (Thn. Stacks) | Online (Discord) |
+| - | 8pm - 10pm | In-Person (Thn. Stacks) | Online (Discord) |
+| Tuesday | 6pm - 8pm | In-Person (Thn. Stacks) | - |
+| - | 8pm - 10pm | In-Person (Thn. Stacks) | Online (Discord) |
+| Wednesday | 6pm - 8pm | In-Person (Thn. Stacks) | - |
+| - | 8pm - 10pm | In-Person (Thn. Stacks) | - |
+| Thursday | 6pm - 8pm | - | - |
+| - | 8pm - 10pm | In-Person (Thn. Stacks) | - |
 
-| Day | Time | Type (Location) | Type (Location) | Type (Location) |
-|---|-----|------|--------|--------|
-| Sunday | 7pm - 10pm | General OH (OLS 001) | Module 1 Topic-Focused (Discord) | Module 6 Topic-Focused (Discord) |
-| Monday | 7pm - 10pm | General OH (OLS 001) | Module 2 Topic-Focused (Discord) | Module 7 Topic-Focused (Discord) |
-| Tuesday | 7pm - 10pm | General OH (OLS 001) | Module 3 Topic-Focused (Discord) | Module 8 Topic-Focused (Discord) |
-| Wednesday | 7pm - 10pm | General OH (OLS 011 classroom) | Module 4 Topic-Focused (Discord) | Module 9 Topic-Focused (Discord) |
-| Thursday | 7pm - 10pm | General OH (OLS 001) | Module 5 Topic-Focused (Discord) | Module 10 Topic-Focused (Discord) |
-
-\ \ \ 
+####Group Discussion OH
 
 | Day | Time | Type (Location) |
 |-----|------|--------|
-| Monday | 8pm - 10pm | Group OH (Discord) |
-| Tuesday | 8pm - 10pm | Group OH (OLS 120) |
-| Thursday | 8pm - 10pm | Group OH (Discord) |
+| Coming | Soon | ... |
 
 
 
