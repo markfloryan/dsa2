@@ -38,14 +38,14 @@ Given the layout of the different junction points and the cost of wiring them to
 
 \begin{itemize}
 	\item Your solution MUST use Kruskal's algorithm from class. The purpose of this assignment is to practice with this algorithm, though you may need to adjust the strategy very slightly.
-	\item You must implement your OWN custom find-union data structure for this assignment. Though you can pass the test cases with other approaches, a human will sight check this when awarding you your "pdf point".
+	\item You should implement your OWN custom find-union data structure for this assignment. Though you can pass the test cases with other approaches, this is the easier method.
 	\item Your wired house must be a spanning tree (there can be no cycles)
-	\item Lights can be wired to one another if they have the same desired switch, as long as the switch is between both of them and the breaker.
+	\item Lights can be wired to one another if they have the same desired switch, as long as the switch is between all those lights and the breaker.
 	\item Every type of junction point (breaker, switch, boxes, etc.) must be connected into your wiring. 
 	\item junction boxes (and outlets) should never be behind switches in your spanning tree. Thus, once your spanning tree reaches a switch, only lights (though many of them potentially) will be behind the switch.
 \end{itemize}
 
-{\bf Update!}  We have posted a help document with some advice and hints at this link: \\
+{\bf Attention!}  In past semesters, we posted a help document with some advice and hints at this link (you are welcome to take a look at it): \\
 \begin{verb}
 https://bit.ly/3iwXrEL
 \end{verb}
@@ -97,14 +97,6 @@ s1 l2 1\linebreak
 \\
 \end{tabular}
 
-\subsection*{Grading}
-
-You will pass this assignment if you fulfill the following:
-
-\begin{enumerate}
-	\item Your code passes at least 80 percent of the test cases
-	\item You code uses a custom implementation of the find-union data structure and Kruskal's algorithm. A human will check this to ensure you aren't using a different algorithm.
-\end{enumerate}
 
 
 
