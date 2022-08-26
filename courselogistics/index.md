@@ -46,7 +46,7 @@ The course is divided into **8 modules**, each which lasts for about 5 lectures 
 The course contains exactly **8 quizzes** (one per module). Each quiz can be taken multiple times, and each quiz can be in one of 3 states:
 
 - **Incomplete**: The quiz has not been passed to any level of satisfaction yet.
-- **Pass**: The student has shown sufficient knowledge in this topic area. The grade on this quiz was at least 65 percent.
+- **Pass**: The student has shown sufficient knowledge in this topic area. The grade on this quiz was at least 70 percent.
 - **High Pass**: The student has shown significant or near perfect knowledge in this topic area. The grade on this quiz was at least 90 percent.
 
 You will always earn your **highest mark** on any quiz across all attempts. So, there is never any reason not to attempt a quiz if you are unsatisfied with your grade (your grade can never decrease).
