@@ -1,7 +1,7 @@
 CS3100 - Data Structures and Algorithms II
 ===============================
 
-[Introduction](#introduction) | [Repository contents](#contents) | [Contributing to this repository](#contributing) | [Course description](#description) | [License](#license)
+[Introduction](#introduction) | [Repository contents](#contents) | [Head TAs](#headtas) | [Office Hours](#officehours) | [Contributing to this repository](#contributing) | [Course description](#description) | [License](#license)
 
 <a name="introduction"></a>Introduction
 ---------------------------------------
@@ -22,8 +22,22 @@ repository first**
 - [Schedule and Slides](slides/index.html) ([md](slides/index.md)): Contains the slides used in the course.
 - [Sample Exams](./exams/index.html): Some sample old exams.
 
+<a name="headtas"></a>Instructor and Head TAs
+------------------------------------------
 
-<a name="contents"></a>Office Hours Description and Schedule
+We have one instructor and three **Head TAs** for this course. Their names and emails are shown in the table below. Each head TA is responsible for a specific category (e.g., grading, office hours, etc.). Students should always **contact the relevant head ta first**, as the primary point of contact regarding issues in each category. Instructors are often slow at responding and the head TAs can more quickly address your concern or escalate the situation to an instructor if necessary.
+
+### Instructors / Head TAs
+
+| Name | Head TA / Inst. | TA Category | Email |
+|---|--|--|---|
+| Mark Floryan | Instructor | - | [mrf8t@virginia.edu](mailto:mrf8t@virginia.edu) |
+| Ethan Blaser | Graduate/Head TA | Grading and Regrades | [ehb2bf@virginia.edu](mailto:ehb2bf@virginia.edu) |
+| Geetanjali Gandhe | Head TA | Office Hours | [gpg9vqe@virginia.edu](mailto:gpg9vqe@virginia.edu) |
+| Samuel Buxbaum | Head TA | Homework | [smb8xc@virginia.edu](mailto:smb8xc@virginia.edu) |
+
+
+<a name="officehours"></a>Office Hours Description and Schedule
 ------------------------------------------
 
 Office hours are held in various locations throughout the week and are of varying type. Information can be found below. There are two possible locations for office hours:
@@ -41,8 +55,8 @@ Office hours are held in various locations throughout the week and are of varyin
 
 | Day | Time | Type (Location) | 
 |---|-----|------|
-| Tuesday | 10:00am - 11:45am | Floryan (Rice 203) |
-| Wednesday | 9:00am - 10:30 am | Floryan (Rice 203) |
+| Monday | 10:00am - 11:45am | Floryan (Rice 203) |
+| Tuesday | 9:00am - 10:30 am | Floryan (Rice 203) |
 
 #### TA Office Hours 
 
@@ -59,7 +73,7 @@ Office hours are held in various locations throughout the week and are of varyin
 | Thursday | 6pm - 8pm | - | - |
 | - | 8pm - 10pm | In-Person (Thn. Stacks) | - |
 
-####Group Discussion OH
+#### Group Discussion OH
 
 | Day | Time | Type (Location) |
 |-----|------|--------|
