@@ -14,9 +14,9 @@
 \usepackage{amsmath}
 \usepackage{wasysym}
 
-\def\course{CS 4102: Algorithms}
-\def\homework{M2: Divide and Conquer - Recurrence Relations}
-\def\semester{Fall 2021}
+\def\course{CS 3100: DSA2}
+\def\homework{Module 3: Divide and Conquer}
+\def\semester{Fall 2022}
 
 \newboolean{solution}
 \setboolean{solution}{false}
@@ -89,7 +89,7 @@
 
 \section*{\homework}
 
-This homework will ask you to think about Divide and Conquer Algorithms with a focus on recurrence relations (this is module 2 after all!). Please try to follow the guidelines below when writing up your solutions to these problems:
+This homework will ask you to think about Divide and Conquer Algorithms with a focus on recurrence relations. Please try to follow the guidelines below when writing up your solutions to these problems:
 
 \begin{itemize}
 	\item Algorithm descriptions should be about 1 paragraph long. If you are writing more than one paragraph to describe your algorithm, then it is TOO long. 
@@ -127,7 +127,7 @@ $T(n) = T(n-1) + n$
 
 %----------------------------------------------------------------------
 
-\noindent Use induction to show bounds on the following recurrence relations.
+\noindent Use induction to show bounds on the following recurrence relation.
 
 \question[2]{
 Show that $T(n)=4T(\frac{n}{3})+n \in O(n^{log_3(4)})$. You'll need to subtract off a lower-order term to make the induction work here.
