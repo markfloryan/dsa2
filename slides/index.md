@@ -13,6 +13,8 @@ CS3100 - Algorithms (Schedule and Slides)
 |0|Course Introduction|[Course Introduction](./00-courseintroduction.pptx)|-|
 |1|01 - Graphs Introduction|[Graphs Intro and BFS](./01-01-GraphsIntroBFS.pptx)|CLRS Ch. 22.1-22.2|
 |||[DFS, Topological Sort, SCCs](./01-02-GraphsDFSTopoSCC.pptx)|CLRS 22.3-22.5|
+|2|02 - Graphs Advanced|[Dijkstra and Prim's](./02-DijkstraAndPrim.pptx)|CLRS 23.2, 24.2, 24.3|
+|||[Kruskal and Find-Union](./02-Kruskal.pptx)|CLRS 21.1-21.4, 23.2|
 
 <a name="schedule"></a>Schedule
 --------------------------------------- 

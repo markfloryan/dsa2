@@ -29,12 +29,12 @@ We have one instructor and three **Head TAs** for this course. Their names and e
 
 ### Instructors / Head TAs
 
-| Name | Head TA / Inst. | TA Category | Email |
-|---|--|--|---|
-| Mark Floryan | Instructor | - | [mrf8t@virginia.edu](mailto:mrf8t@virginia.edu) |
-| Ethan Blaser | Graduate/Head TA | Grading and Regrades | [ehb2bf@virginia.edu](mailto:ehb2bf@virginia.edu) |
-| Geetanjali Gandhe | Head TA | Office Hours | [gpg9vqe@virginia.edu](mailto:gpg9vqe@virginia.edu) |
-| Samuel Buxbaum | Head TA | Homework | [smb8xc@virginia.edu](mailto:smb8xc@virginia.edu) |
+| Name | Head TA / Inst. | TA Category | Email | Discord ID |
+|-|-|-|-|-|
+| Mark Floryan | Instructor | - | [mrf8t@virginia.edu](mailto:mrf8t@virginia.edu) | - |
+| Ethan Blaser | Graduate/Head TA | Grading and Regrades | [ehb2bf@virginia.edu](mailto:ehb2bf@virginia.edu) | ethanblaser#6372 |
+| Geetanjali Gandhe | Head TA | Office Hours | [gpg9vqe@virginia.edu](mailto:gpg9vqe@virginia.edu) | geetanjali#7547 |
+| Samuel Buxbaum | Head TA | Homework | [smb8xc@virginia.edu](mailto:smb8xc@virginia.edu) | Sam Buxbaum#4107 |
 
 
 <a name="officehours"></a>Office Hours Description and Schedule
