@@ -58,6 +58,14 @@ Office hours are held in various locations throughout the week and are of varyin
 | Monday | 10:00am - 11:45am | Floryan (Rice 203) |
 | Tuesday | 9:00am - 10:30 am | Floryan (Rice 203) |
 
+#### Group Discussion / Grad TA OH
+
+| Day | Time | Type (Location) |
+|-----|------|--------|
+| Tuesday | 3-4pm | Group Discussion (Rice 442) |
+| - | 4-5pm | Regrades / Grad TA OH (Rice 442) |
+
+
 #### TA Office Hours 
 
 | Day | Time | In-Person (Location) | Online (Location) |
@@ -73,11 +81,6 @@ Office hours are held in various locations throughout the week and are of varyin
 | Thursday | 6pm - 8pm | - | - |
 | - | 8pm - 10pm | In-Person (Thn. Stacks) | - |
 
-#### Group Discussion OH
-
-| Day | Time | Type (Location) |
-|-----|------|--------|
-| Coming | Soon | ... |
 
 
 
