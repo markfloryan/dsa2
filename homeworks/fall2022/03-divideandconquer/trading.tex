@@ -35,20 +35,6 @@ The input will consist of a number of test cases (more than one per file!). The 
 \subsection*{Output}
 For each test case, your output should contain a single line that is the minimum distance between two points, to four digits of accuracy after the decimal point. You should not print the stars that are closest; only the distance. If there are no points closer than a distance of 10,000, you should print out ’infinity’.
 
-\subsection*{Activities and a Report}
-
-Submit a PDF file with a brief but clear report that addresses the following:
-
-\begin{enumerate}
-
-\item A brute-force solution to this problem is very straight-forward (and very little code):  compare all possible pairs of stars, and remember the smallest distance. Like you did in the sorting HW, use a brute-force algorithm on an input of some reasonably large size X, then something that's size 2X, and something that's size 3X.  Write down the time it took to find the closest-pair for each run, and in a short sentence explain whether or not the run-times match what you expect, based on the time-complexity of the brute-force approach.  (Important: don't include the cost of reading data from the input file in your run-times. You may also cut the brute-force short if it takes too long and report the time as greater than threshold, e.g., $> 60$ seconds)
-
-\item When programming the divide and conquer solution to this problem, it's fairly easy to fail to properly handle the ``strip'' part of the solution, and instead end up with a quadratic solution.  Repeat what you did in the previous step for your divide and conquer solution and report the run-times, and argue that these results show that your algorithm is $o(n^2)$ and not $\Theta(n^2)$.  (Note: a typo here was updated on 9/30/2021. It incorrectly said $o(n)$ before and not $o(n^2)$.)
-
-\item {\em NOTE: This report can be very short. Just report a few times executing your code and write a paragraph or so discussing the times that you saw and what they imply. You do not need to use \LaTeX\ for this report, but the submission must be a PDF file.}
-
-\end{enumerate}
-
 \subsection*{Grading}
 
 You will pass this assignment if you pass enough test cases AND submit an acceptable report. You must have the following:
@@ -57,7 +43,6 @@ You will pass this assignment if you pass enough test cases AND submit an accept
 
 \item Submitted code that uses divide-and-conquer and passes at least 8 out of 10 of the test cases.
 
-\item Submitted a PDF file that lists run-times for your code and contains at least one paragraph describing the results you found.
 
 \end{enumerate} 
 
