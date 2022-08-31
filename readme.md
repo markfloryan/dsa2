@@ -74,12 +74,12 @@ Office hours are held in various locations throughout the week and are of varyin
 | - | 8pm - 10pm | In-Person (Thn. Stacks) | Online (Discord) |
 | Monday | 6pm - 8pm | In-Person (Thn. Stacks) | Online (Discord) |
 | - | 8pm - 10pm | In-Person (Thn. Stacks) | Online (Discord) |
-| Tuesday | 6pm - 8pm | In-Person (Thn. Stacks) | - |
+| Tuesday | 6pm - 8pm | In-Person (Thn. Stacks) | Online (Discord) |
 | - | 8pm - 10pm | In-Person (Thn. Stacks) | Online (Discord) |
-| Wednesday | 6pm - 8pm | In-Person (Thn. Stacks) | - |
-| - | 8pm - 10pm | In-Person (Thn. Stacks) | - |
-| Thursday | 6pm - 8pm | - | - |
-| - | 8pm - 10pm | In-Person (Thn. Stacks) | - |
+| Wednesday | 6pm - 8pm | In-Person (Thn. Stacks) | Online (Discord) |
+| - | 8pm - 10pm | In-Person (Thn. Stacks) | Online (Discord) |
+| Thursday | 6pm - 8pm | In-Person (Thn. Stacks)  | Online (Discord) |
+
 
 
 
