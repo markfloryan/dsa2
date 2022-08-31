@@ -15,6 +15,8 @@ CS3100 - Algorithms (Schedule and Slides)
 |||[DFS, Topological Sort, SCCs](./01-02-GraphsDFSTopoSCC.pptx)|CLRS 22.3-22.5|
 |2|02 - Graphs Advanced|[Dijkstra and Prim's](./02-DijkstraAndPrim.pptx)|CLRS 23.2, 24.2, 24.3|
 |||[Kruskal and Find-Union](./02-Kruskal.pptx)|CLRS 21.1-21.4, 23.2|
+|3|03 - Divide and Conquer|[Divide and Conquer Intro](./03-DivConIntro.pptx)||
+|||[Recurrence Relations](./03-Recurrences.pptx)||
 
 <a name="schedule"></a>Schedule
 --------------------------------------- 
