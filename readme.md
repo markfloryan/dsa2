@@ -97,7 +97,7 @@ Updates to the repository are restricted to approved individuals only, to preven
 
 At that point, we will receive a notice that a change has been submitted, and I'll look at it and hopefully accept it into the main repository.
 
-When you want to bring in the updates from the main dsa1 github repository into your forked repository, you will need to follow the instructions [here](https://help.github.com/articles/syncing-a-fork).
+When you want to bring in the updates from the main dsa2 github repository into your forked repository, you will need to follow the instructions [here](https://help.github.com/articles/syncing-a-fork).
 
 
 <a name="description"></a>Course Description
