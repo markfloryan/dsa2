@@ -20,7 +20,7 @@ That page also explains how the score reported by Gradescope translates to the t
 | Module 2 | Graphs - Advanced | [Wiring](./fall2022/02-graphsadvanced/wiring.pdf) | [Graph Written Problems](./fall2022/02-graphsadvanced/graphsWritten.pdf) |
 | Module 3 | Divide and Conquer | [Trading](./fall2022/03-divideandconquer/trading.pdf) | [Recurrence Relations](./fall2022/03-divideandconquer/recurrenceRelations.pdf) |
 | Module 4 | Greedy Algorithms | [Moving Boxes](./fall2022/04-greedy/movingBoxes.pdf) | [Daycare](./fall2022/04-greedy/daycare.pdf) |
-| Module 5 | Dynamic Programming | [Drainage](./fall2022/05-dynamicprogramming/drainage.pdf) | DP Written Problems |
+| Module 5 | Dynamic Programming | [Drainage](./fall2022/05-dynamicprogramming/drainage.pdf) | [DP Written Problems](./fall2022/05-dynamicprogramming/dpwritten.pdf) |
 | Module 6 | Network Flow / Bi-Partite Matching | [Scheduling](./fall2022/06-networkflow/scheduling.pdf) | - |
 | Module 7 | NP-Completeness | Written Reductions | - |
 | Module 8 | Machine Learning | K-Means Clustering | - |
