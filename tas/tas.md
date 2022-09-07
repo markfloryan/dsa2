@@ -6,7 +6,7 @@ CS 3100 (DSA2) Teaching Assistants
 <link rel="stylesheet" type="text/css" href="tas.css" />
 
 ## Ethan Blaser
-[![Ethan Blaser](http://hotcake.cs.virginia.edu/dsa2/tas/EthanBlaser.png)](http://hotcake.cs.virginia.edu/dsa2/tas/EthanBlaser.png)
+[![Ethan Blaser](//hotcake.cs.virginia.edu/dsa2/tas/EthanBlaser.png)](//hotcake.cs.virginia.edu/dsa2/tas/EthanBlaser.png)
 Hey everyone, I’m Ethan and I’m the Graduate TA for the course and Head TA for grading. I’m a second year PhD student in CS and former UVA undergrad (Physics and CS). My current research efforts focus on federated learning systems and bandit algorithms (advised by Prof. Hongning Wang). I’ve also had industry experiences at SpaceX and NASA JPL.
 <br clear='all'>
 
