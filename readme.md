@@ -46,7 +46,7 @@ Office hours are held in various locations throughout the week and are of varyin
 
 - **Online (Discord) OH**: Some OH will be held on our **Discord Server**. To attend office hours, simply join the office hours queue voice channel and you will be added to the office hours queue. When you are taken off the queue you will be automatically moved to a staging room to wait (it is called *oh-up-next* or similar). Soon after, a TA will manually pull you off that staging room into their office hours to help you.
 
-- **Group OH**: These are weekly discussion sections where a TA will answer general questions regarding homeworks, quizzes, algorithm intution, etc. to larger groups of attendees. **These are not yet scheduled, please stay tuned...**
+- **Group OH**: These are weekly discussion sections where a TA will answer general questions regarding homeworks, quizzes, algorithm intution, etc. to larger groups of attendees.
 
 
 ### Office Hours Schedule:
