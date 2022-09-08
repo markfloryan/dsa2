@@ -20,6 +20,7 @@ repository first**
 - [Homeworks](homeworks/index.html) ([md](homeworks/index.md)): The homeworks for the course, along with due dates and related things.
 - [Gradescope Info](./homeworks/gradescope.html): Information on submitting programming assignments to Gradescope.
 - [Schedule and Slides](slides/index.html) ([md](slides/index.md)): Contains the slides used in the course.
+- [Meet your TAs](./tas/tas.html) ([md](./tas/tas.md)): Meet the teaching assistants who will be helping out with the course!
 - [Sample Exams](./exams/index.html): Some sample old exams.
 
 <a name="headtas"></a>Instructor and Head TAs

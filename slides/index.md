@@ -29,7 +29,9 @@ CS3100 - Algorithms (Schedule and Slides)
 |||[0/1 Knapsack Problem](./05-Knapsack.pptx)||
 |||[Coin Change Problem](./05-CoinChange.pptx)||
 |||[Sequences](./05-Sequences.pptx)|CLRS 15.4|
-
+|6|06 - Network Flow / Bipartite Matching|[Flow Networks](./06-MaxFlow.pptx)|CLRS 26.1-26.2|
+|||[Max-Flow Proof and Min-Cut](./06-MaxFlow-2.pptx)||
+|||[Intro to Reductions](./06-ReductionsIntro.pptx)||
 
 <a name="schedule"></a>Schedule
 --------------------------------------- 
