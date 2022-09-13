@@ -37,8 +37,8 @@ You have decided to build a new house, but you are hoping to save costs by doing
 Given the layout of the different junction points and the cost of wiring them to each other, can you figure out the cheapest way to wire your house? Consider the following when implementing your solution:
 
 \begin{itemize}
-	\item Your solution MUST use Kruskal's algorithm from class. The purpose of this assignment is to practice with this algorithm, though you may need to adjust the strategy very slightly.
-	\item You should implement your OWN custom find-union data structure for this assignment. Though you can pass the test cases with other approaches, this is the easier method.
+	\item Your solution can use either Prim's or Kruskal's algorithm. You may need to custom build the associated data structure for each algorithm, so consider this choice 
+carefully.
 	\item Your wired house must be a spanning tree (there can be no cycles)
 	\item Lights can be wired to one another if they have the same desired switch, as long as the switch is between all those lights and the breaker.
 	\item Every type of junction point (breaker, switch, boxes, etc.) must be connected into your wiring. 
