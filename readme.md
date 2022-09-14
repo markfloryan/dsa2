@@ -63,8 +63,8 @@ Office hours are held in various locations throughout the week and are of varyin
 
 | Day | Time | Type (Location) |
 |-----|------|--------|
-| Tuesday | 3-4pm | Group Discussion (Rice 442) |
-| - | 4-5pm | Regrades / Grad TA OH (Rice 442) |
+| Tuesday | 3-4pm | Group Discussion (Rice 540) |
+| - | 4-5pm | Regrades / Grad TA OH (Rice 540) |
 
 
 #### TA Office Hours 
