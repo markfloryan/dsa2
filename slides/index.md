@@ -32,6 +32,8 @@ CS3100 - Algorithms (Schedule and Slides)
 |6|06 - Network Flow / Bipartite Matching|[Flow Networks](./06-MaxFlow.pptx)|CLRS 26.1-26.2|
 |||[Max-Flow Proof and Min-Cut](./06-MaxFlow-2.pptx)||
 |||[Intro to Reductions](./06-ReductionsIntro.pptx)||
+|7|07 - NP-Completeness|[Intro to NP-Completeness](./07-NPCIntro.pptx)|CLRS Ch. 34|
+|||[Example Reductions](./07-Reductions.pptx)||
 
 <a name="schedule"></a>Schedule
 --------------------------------------- 
