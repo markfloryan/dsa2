@@ -46,8 +46,8 @@ The course is divided into **8 modules**, each which lasts for about 5 lectures 
 The course contains exactly **8 quizzes** (one per module). Each quiz can be taken multiple times, and each quiz can be in one of 3 states:
 
 - **Incomplete**: The quiz has not been passed to any level of satisfaction yet.
-- **Pass**: The student has shown sufficient knowledge in this topic area. The grade on this quiz was at least 70 percent.
-- **High Pass**: The student has shown significant or near perfect knowledge in this topic area. The grade on this quiz was at least 90 percent.
+- **Pass**: The student has shown sufficient knowledge in this topic area. The grade on this quiz was at least **70 percent**.
+- **High Pass**: The student has shown significant or near perfect knowledge in this topic area. The grade on this quiz was at least **90 percent**.
 
 You will always earn your **highest mark** on any quiz across all attempts. So, there is never any reason not to attempt a quiz if you are unsatisfied with your grade (your grade can never decrease).
 
@@ -69,7 +69,7 @@ There are **one or two homework assignments per module (depending on the module)
 For these reasons the homework in this course is required, with recommended deadlines (with automatic extensions), and can be submitted as many times as required. The grading state for each assignment is one of the following:
 
 - **Incomplete**: The student has not yet shown clear effort and engagement with the assignment. The homework is not at a passing level yet.
-- **Pass**: The assignment is at a passing level, though may not be perfect or mastered yet. The student is encouraged to continue engaging with perfecting the assignment even though they have passed (if applicable).
+- **Pass**: The assignment is at a passing level, though may not be perfect or mastered yet. The student is encouraged to continue engaging with perfecting the assignment even though they have passed (if applicable). The correlates to an **80% or higher score on a homework assignment**.
 
 
 <a name="passing"></a>Passing a Module
