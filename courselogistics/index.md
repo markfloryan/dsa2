@@ -46,8 +46,8 @@ The course is divided into **8 modules**, each which lasts for about 5 lectures 
 The course contains exactly **8 quizzes** (one per module). Each quiz can be taken multiple times, and each quiz can be in one of 3 states:
 
 - **Incomplete**: The quiz has not been passed to any level of satisfaction yet.
-- **Pass**: The student has shown sufficient knowledge in this topic area. The grade on this quiz was at least **70 percent**.
-- **High Pass**: The student has shown significant or near perfect knowledge in this topic area. The grade on this quiz was at least **90 percent**.
+- **Pass**: The student has shown sufficient knowledge in this topic area. The grade on this quiz was at least **70 percent (e.g., 14/20)**.
+- **High Pass**: The student has shown significant or near perfect knowledge in this topic area. The grade on this quiz was at least **90 percent (e.g., 18/20)**.
 
 You will always earn your **highest mark** on any quiz across all attempts. So, there is never any reason not to attempt a quiz if you are unsatisfied with your grade (your grade can never decrease).
 
@@ -62,7 +62,7 @@ There is no traditional final exam in this course. During the final exam time, y
 
 There are **one or two homework assignments per module (depending on the module)**, that must be completed in order to pass that module (more on passing modules in a moment). The homeworks in this course were designed with the following goals / principles in mind:
 
-- **Goal 1**: Homework should be low-stress to pass, but provide opportunity for deep, reflective practice with the material.
+- **Goal 1**: Homework should be somewhat low-stress to pass, but provide opportunity for deep, reflective practice with the material.
 - **Goal 2**: Every student should be required to show effort / progress on homework. Essentially, a student should provide evidence of engaging with the homework even if the quality of the work is not yet perfect.
 - **Goal 3**: Homeworks should be submittable at any time during the semester.
 
@@ -78,7 +78,9 @@ For these reasons the homework in this course is required, with recommended dead
 As stated earlier, the course contains **8 modules**. Each module, at any time, is always in one of the following states:
 
 - **Incomplete**: At least one of the homeworks or quiz for this module is still incomplete.
-- **Pass**: All homeworks AND the quiz have both been passed. The quiz is NOT at the high pass level.
+- **Pass**: There are two ways to pass a module. One of the following must be true:
+	- All homeworks AND the quiz have both been passed. The quiz is NOT at the high pass level.
+	- One or more homework is Incomplete AND the quiz has been high-passed. 
 - **High Pass**: The homeworks are all passed AND the quiz is passed at the *high-pass level*.
 
 <a name="lettergrades"></a>Final Letter Grades
