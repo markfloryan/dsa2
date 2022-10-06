@@ -20,7 +20,6 @@ CS3100 - Algorithms (Schedule and Slides)
 |||[Recurrence Relations](./03-Recurrences.pptx)|CLRS 4.3-4.5|
 |||[Closest Pair of Points](./03-ClosestPair.pptx)|CLRS 33.4|
 |||[QuickSelect](./03-Quickselect.pptx)|CLRS 9.1-9.3|
-|||[Strassen's and Trominos](./03-StrassensTrom.pptx)||
 |4|04 - Greedy Algorithms|[Introduction / Making Change](./04-GreedyIntroChange.pptx)|CLRS Ch. 16|
 |||Generic Proof of Correctness (TBD)||
 |||[Knapsack Problem](./04-Knapsack.pptx)|CLRS 16.2|
