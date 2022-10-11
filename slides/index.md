@@ -21,7 +21,6 @@ CS3100 - Algorithms (Schedule and Slides)
 |||[Closest Pair of Points](./03-ClosestPair.pptx)|CLRS 33.4|
 |||[QuickSelect](./03-Quickselect.pptx)|CLRS 9.1-9.3|
 |4|04 - Greedy Algorithms|[Introduction / Making Change](./04-GreedyIntroChange.pptx)|CLRS Ch. 16|
-|||Generic Proof of Correctness (TBD)||
 |||[Knapsack Problem](./04-Knapsack.pptx)|CLRS 16.2|
 |||[Activity Selection and Bridge Problem](./04-ActivitySelect.pptx)|CLRS 16.1|
 |5|05 - Dynamic Programming|[Introduction / Rod Cutting](./05-DPRodCut.pptx)|CLRS 15.1|
