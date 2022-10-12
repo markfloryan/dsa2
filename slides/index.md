@@ -22,7 +22,8 @@ CS3100 - Algorithms (Schedule and Slides)
 |||[QuickSelect](./03-Quickselect.pptx)|CLRS 9.1-9.3|
 |4|04 - Greedy Algorithms|[Introduction / Making Change](./04-GreedyIntroChange.pptx)|CLRS Ch. 16|
 |||[Knapsack Problem](./04-Knapsack.pptx)|CLRS 16.2|
-|||[Activity Selection and Bridge Problem](./04-ActivitySelect.pptx)|CLRS 16.1|
+|||[Activity Selection](./04-ActivitySelect.pptx)|CLRS 16.1|
+|||[Bridge Problem](./04-BridgeCrossing.pptx)||
 |5|05 - Dynamic Programming|[Introduction / Rod Cutting](./05-DPRodCut.pptx)|CLRS 15.1|
 |||[Weighted Activity Selection](./05-ActivitySelect.pptx)||
 |||[0/1 Knapsack Problem](./05-Knapsack.pptx)||
