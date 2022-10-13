@@ -34,6 +34,10 @@ CS3100 - Algorithms (Schedule and Slides)
 |||[Intro to Reductions](./06-ReductionsIntro.pptx)||
 |7|07 - NP-Completeness|[Intro to NP-Completeness](./07-NPCIntro.pptx)|CLRS Ch. 34|
 |||[Example Reductions](./07-Reductions.pptx)||
+|8|08 - Machine Learning|[Introduction / Logistic Regression](./08-ML-Regressions.pptx)||
+|||[Unsupervised Learning](./08-ML-Clustering.pptx)||
+|||[Supervised Learning: Decision Trees](./08-ML-DecisionTrees.pptx)||
+|||[Supervised Learning: Artificial NNs](./08-ML-NN.pptx)||
 
 <a name="schedule"></a>Schedule
 --------------------------------------- 
