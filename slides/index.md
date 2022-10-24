@@ -24,6 +24,7 @@ CS3100 - Algorithms (Schedule and Slides)
 |||[Knapsack Problem](./04-Knapsack.pptx)|CLRS 16.2|
 |||[Activity Selection](./04-ActivitySelect.pptx)|CLRS 16.1|
 |||[Bridge Problem](./04-BridgeCrossing.pptx)||
+|||[Resource Division](./04-DividingResources.pptx)||
 |5|05 - Dynamic Programming|[Introduction / Rod Cutting](./05-DPRodCut.pptx)|CLRS 15.1|
 |||[Weighted Activity Selection](./05-ActivitySelect.pptx)||
 |||[0/1 Knapsack Problem](./05-Knapsack.pptx)||
