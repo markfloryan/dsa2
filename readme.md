@@ -45,7 +45,7 @@ Office hours are held in various locations throughout the week and are of varyin
 
 - **In-Person OH**: Some OH will be held in-person (in Thornton Stacks). See the chart below for details. These will function as *traditional* office hours.
 
-- **Online (Discord) OH**: Some OH will be held on our **Discord Server**. To attend office hours, simply join the office hours queue voice channel and you will be added to the office hours queue. When you are taken off the queue you will be automatically moved to a staging room to wait (it is called *oh-up-next* or similar). Soon after, a TA will manually pull you off that staging room into their office hours to help you.
+- **Online (Discord) OH**: Some OH will be held on our [Discord Server](https://discord.gg/XyTUaEYdkv). To attend office hours, simply join the office hours queue voice channel and you will be added to the office hours queue. When you are taken off the queue you will be automatically moved to a staging room to wait (it is called *oh-up-next* or similar). Soon after, a TA will manually pull you off that staging room into their office hours to help you.
 
 - **Group OH**: These are weekly discussion sections where a TA will answer general questions regarding homeworks, quizzes, algorithm intution, etc. to larger groups of attendees.
 
@@ -98,7 +98,7 @@ Updates to the repository are restricted to approved individuals only, to preven
 
 At that point, we will receive a notice that a change has been submitted, and I'll look at it and hopefully accept it into the main repository.
 
-When you want to bring in the updates from the main dsa1 github repository into your forked repository, you will need to follow the instructions [here](https://help.github.com/articles/syncing-a-fork).
+When you want to bring in the updates from the main dsa2 github repository into your forked repository, you will need to follow the instructions [here](https://help.github.com/articles/syncing-a-fork).
 
 
 <a name="description"></a>Course Description
