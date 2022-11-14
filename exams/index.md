@@ -3,7 +3,17 @@ CS3100 - Algorithms: Exams
 
 [Back to Main Page](../readme.html)
 
-<a name="introduction"></a>Exams
+<a name="introduction"></a>Our Past Quizzes
+--------------------------------------- 
+
+Past quizzes from this semester for your reference
+
+- [Quiz Day 1](./QuizDay1.pdf)
+- [Quiz Day 2](./QuizDay2.pdf)
+
+
+
+<a name="introduction"></a>Former Exams and Things
 --------------------------------------- 
 
 Here are a few sample exams from old semesters if you'd like to peruse. Note that the material in DSA2 is very similar to that in 4102.
