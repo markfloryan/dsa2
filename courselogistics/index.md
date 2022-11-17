@@ -41,7 +41,7 @@ The course is divided into **8 modules**, each which lasts for about 5 lectures 
 - **Module 5: Dynamic Programming** 
 - **Module 6: Network Flow / Bi-Partite Matching** 
 - **Module 7: NP-Completeness** 
-- **Module 8: Machine Learning Algorithms** 
+- **~~Module 8: Machine Learning Algorithms~~** (NOTE: Canceled! Everyone earns free high pass)
 
 The course contains exactly **8 quizzes** (one per module). Each quiz can be taken multiple times, and each quiz can be in one of 3 states:
 
@@ -90,6 +90,7 @@ Your letter grade in this course corresponds to the number **MODULES you have pa
 
 - **Breadth matters more than depth**: Note that passing MORE modules is amost always better than increasing a passing module from *pass* to *high pass*. For example, if you have 7 modules passed (2 of which are high-pass). Then passing a new module will raise your grade to a *B-*, while raising an old module to high-pass will raise your grade to only a *C+*.
 - **Depth starts to matter more once you reach a B-**: Once you reach a grade of *B-*, getting the modules to the high-pass level matters more.
+- **UPDATE: 11/15/22** - Everybody earns one free high-pass (module 8). Make sure to take this into account when calculating your grade.
 
 | Letter Grade | Modules Passed | Modules High-Pass |
 |:--------------:|:---:|:---:|
