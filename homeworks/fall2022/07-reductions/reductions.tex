@@ -91,29 +91,10 @@
 
 \section*{\homework}
 
-%----------------------------------------------------------------------
-
-\question[3]{
-In class, we saw that the problem of satisfying a boolean formula in 3-conjunctive normal form (i.e., the \emph{3-SAT} problem) is \emph{NP-Complete}. Consider the problem of satisfying a boolean formula in 3-disjunctive normal form (e.g., $(x \land \neg y \land y) \lor (\neg x \land y \land z)$...). Is this problem also NP-Complete? If so, prove it. If not, find an algorithm that efficiently solves it and describe it.
-}
-
-\answer[0in]{...}
+\noindent
+\textbf{UPDATE (11/17/22): This homework assignment will be reduced dramatically. You only have to work on the first problem shown below. Please do your best to answer the problem and submit your pdf to Gradescope. In addition, this homework is graded on EFFORT ONLY. If you submit a reasonable answer and we can tell you made a serious attempt at the problem, you will pass this homework.}
 
 %----------------------------------------------------------------------
-
-
-\question[3]{
-Suppose you are designing a \emph{flow network} to model a situation in which you assign work to different employees to assign tasks for a large project. You want to use \emph{Ford-Fulkerson} to efficiently match workers to tasks using an algorithm. However, a problem emerges. You are modeling \emph{flow} as time (minutes spent working). The max number of minutes working is sent into nodes representing the workers, and then these minutes are distributed to tasks. You realize though, that it is required that an edge from a worker to a task always be at \emph{maximum capacity} (because a worker always needs to fully work the given task and work all the minutes.\\
-\\
-You realize your problem is a little different from normal \emph{flow networks}. You can describe it as such: Given a flow network, find the maximum flow such that every edge is either at exactly 0 flow, or exactly at max capacity flow.\\
-\\
-It turns out this problem is \emph{NP-Complete}. Prove a reduction from the \emph{3-SAT} problem to this new instance of max-flow (\emph{FYI, I was actually working on this exact problem a few years ago before realizing it was NP-Complete, forcing me to start over and re-work my approach.}).
-}
-
-\answer[0in]{...}
-
-%----------------------------------------------------------------------
-
 
 \question[3]{
 Consider the \emph{Lecture Planning} problem (described below). For this question, you will prove that the \emph{Lecture Planning} problem is NP-Complete.\\
@@ -129,6 +110,32 @@ First, prove that this problem is in $NP$ by describing a verification algorithm
 ...
 }
 
+
+%----------------------------------------------------------------------
+
+\vspace{0.2in}
+\line(1,0){500}
+\\
+\noindent
+\textbf{The following problems are NO LONGER REQUIRED for this homework assignment. I have left them here for your convenience in case you would like to use them as practice. They are fun and interesting challenges, but are not required to pass this homework assignment.}
+
+%----------------------------------------------------------------------
+
+\question[3]{
+In class, we saw that the problem of satisfying a boolean formula in 3-conjunctive normal form (i.e., the \emph{3-SAT} problem) is \emph{NP-Complete}. Consider the problem of satisfying a boolean formula in 3-disjunctive normal form (e.g., $(x \land \neg y \land y) \lor (\neg x \land y \land z)$...). Is this problem also NP-Complete? If so, prove it. If not, find an algorithm that efficiently solves it and describe it.
+}
+
+\answer[0in]{...}
+
+\question[3]{
+Suppose you are designing a \emph{flow network} to model a situation in which you assign work to different employees to assign tasks for a large project. You want to use \emph{Ford-Fulkerson} to efficiently match workers to tasks using an algorithm. However, a problem emerges. You are modeling \emph{flow} as time (minutes spent working). The max number of minutes working is sent into nodes representing the workers, and then these minutes are distributed to tasks. You realize though, that it is required that an edge from a worker to a task always be at \emph{maximum capacity} (because a worker always needs to fully work the given task and work all the minutes.\\
+\\
+You realize your problem is a little different from normal \emph{flow networks}. You can describe it as such: Given a flow network, find the maximum flow such that every edge is either at exactly 0 flow, or exactly at max capacity flow.\\
+\\
+It turns out this problem is \emph{NP-Complete}. Prove a reduction from the \emph{3-SAT} problem to this new instance of max-flow (\emph{FYI, I was actually working on this exact problem a few years ago before realizing it was NP-Complete, forcing me to start over and re-work my approach.}).
+}
+
+\answer[0in]{...}
 
 %----------------------------------------------------------------------
 
