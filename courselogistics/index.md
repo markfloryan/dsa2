@@ -40,7 +40,7 @@ The course is divided into **8 modules**, each which lasts for about 5 lectures 
 - **Module 4: Greedy Algorithms** 
 - **Module 5: Dynamic Programming** 
 - **Module 6: Network Flow / Bi-Partite Matching** 
-- **Module 7: NP-Completeness** 
+- **~~Module 7: NP-Completeness~~** (NOTE: Canceled! Everyone earns free high pass)
 - **~~Module 8: Machine Learning Algorithms~~** (NOTE: Canceled! Everyone earns free high pass)
 
 The course contains exactly **8 quizzes** (one per module). Each quiz can be taken multiple times, and each quiz can be in one of 3 states:
@@ -54,7 +54,7 @@ You will always earn your **highest mark** on any quiz across all attempts. So, 
 <a name="final"></a>Final Exam
 ----------------------------------------------------------
 
-There is no traditional final exam in this course. During the final exam time, you will be given one last attempt at all 8 of the course quizzes. This is your last chance to pass any quizzes that are still outstanding. If you have passed all topics (or are already happy with your final grade), then you may choose not to take the final.
+There is no traditional final exam in this course. During the final exam time, you will be given one last attempt at all ~~8~~ (6) of the course quizzes. This is your last chance to pass any quizzes that are still outstanding. If you have passed all topics (or are already happy with your final grade), then you may choose not to take the final.
 
 
 <a name="homeworks"></a>Homeworks
@@ -90,7 +90,10 @@ Your letter grade in this course corresponds to the number **MODULES you have pa
 
 - **Breadth matters more than depth**: Note that passing MORE modules is amost always better than increasing a passing module from *pass* to *high pass*. For example, if you have 7 modules passed (2 of which are high-pass). Then passing a new module will raise your grade to a *B-*, while raising an old module to high-pass will raise your grade to only a *C+*.
 - **Depth starts to matter more once you reach a B-**: Once you reach a grade of *B-*, getting the modules to the high-pass level matters more.
-- **UPDATE: 11/15/22** - Everybody earns one free high-pass (module 8). Make sure to take this into account when calculating your grade.
+
+**UPDATE: 11/15/22 - Everybody earns one free high-pass (module 8). Make sure to take this into account when calculating your grade.**
+
+**UPDATE: 11/18/22 - Everybody will earn a free high-pass on module 7 as well. Remember to account for this when calculating your grade (everyone has 2 modules passed, 2 of them high-pass BEFORE considering hw and quizzes passed during the semester.**
 
 | Letter Grade | Modules Passed | Modules High-Pass |
 |:--------------:|:---:|:---:|
