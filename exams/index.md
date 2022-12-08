@@ -10,7 +10,8 @@ Past quizzes from this semester for your reference
 
 - [Quiz Day 1](./QuizDay1.pdf)
 - [Quiz Day 2](./QuizDay2.pdf)
-
+- [Quiz Day 3](./QuizDay3.pdf)
+- [Quiz Day 4](./QuizDay4.pdf)
 
 
 <a name="introduction"></a>Former Exams and Things
