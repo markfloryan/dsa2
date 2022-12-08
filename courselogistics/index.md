@@ -115,5 +115,44 @@ Your letter grade in this course corresponds to the number **MODULES you have pa
 - A **blank row** translates to *No change from the row above*. This makes the table easier to read.
 - The number of modules at **high pass** is NOT summative. For example, the row for **B** says 8 modules passed, and 3 of those 8 must be at the high-pass level (It is NOT the case that you need 3 additional modules at the high-pass level)
 
+<a name="lettergrades"></a>Policy on NC / GC / CR
+----------------------------------------------------------
+
+As most of you know, the University is allowing students to translate their grades from **letter grades** to **pass/fail** grades AFTER you see your final grade. The process for requesting and making this change will be handled by the registrar and not by instructors. This section highlights some general issues regarding this that you should be aware of.
+
+### Grade Translation
+
+The grade translation works as scene in the chart below:
+
+| Letter Grade | Pass/Fail Grade |
+|:--------------:|:---:|
+| F | NC |
+| D- | GC |
+| D | GC |
+| D+ | GC |
+| C- | GC |
+| C | CR |
+| C+ | CR |
+| B- | CR |
+| B | CR |
+| B+ | CR |
+| A- | CR |
+| A | CR |
+
+We will **not be making any alterations to our grading policy** and your grade will be submitted as specified in the previous section.
+
+### Prerequisites
+
+In CS, we require a **C- or better** OR **CR** to meet prerequisites for future CS courses. This means that if you earn a grade of C-, you need to be deliberate about whether you choose to convert that C- into a GC or not. We have a separate recommendation depending on which curriculum track you are on (see below).
+
+### If you are on the OLD curriculum (i.e., you took CS2150)
+
+If you took CS2150 and are on the old curriculum, then DSA2 is **not a prerequisite for any future CS course**. This means that if you earn a C-, you can safely change it into a GC if you'd like without disrupting your graduation.
+
+### If you are on the NEW curriculum (i.e., you took DSA1)
+
+If you are on the new curriculum then DSA1 **IS a prerequisite for future CS courses**. If you earn a C-, then you have a (possibly difficult) choice to make. Your C- will allow you to continue to work towards the major, but will hurt your GPA. A GC will help your GPA, but will mean you need to retake that class to meet the prerequisite requirement. This is, of course, up to you. 
+
+
 
 
