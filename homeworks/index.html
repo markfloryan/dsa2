@@ -8,16 +8,21 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="../markdown.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <h1
@@ -42,7 +47,7 @@ is used in this course.</p>
 <col style="width: 29%" />
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Module Number</th>
 <th>Module Name</th>
 <th>Homework 1</th>
@@ -50,21 +55,21 @@ is used in this course.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Module 1</td>
 <td>Graphs - Intro</td>
 <td><a href="./fall2022/01-graphsIntro/tasks.pdf">Tasks</a></td>
 <td><a href="./fall2022/01-graphsIntro/boardGames.pdf">Board
 Games</a></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 2</td>
 <td>Graphs - Advanced</td>
 <td><a href="./fall2022/02-graphsadvanced/wiring.pdf">Wiring</a></td>
 <td><a href="./fall2022/02-graphsadvanced/graphsWritten.pdf">Graph
 Written Problems</a></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Module 3</td>
 <td>Divide and Conquer</td>
 <td><a
@@ -73,14 +78,14 @@ href="./fall2022/03-divideandconquer/trading.pdf">Trading</a></td>
 href="./fall2022/03-divideandconquer/recurrenceRelations.pdf">Recurrence
 Relations</a></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 4</td>
 <td>Greedy Algorithms</td>
 <td><a href="./fall2022/04-greedy/movingBoxes.pdf">Moving Boxes</a></td>
 <td><del><a
 href="./fall2022/04-greedy/daycare.pdf">Daycare</a></del></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Module 5</td>
 <td>Dynamic Programming</td>
 <td><a
@@ -88,21 +93,21 @@ href="./fall2022/05-dynamicprogramming/drainage.pdf">Drainage</a></td>
 <td><del><a href="./fall2022/05-dynamicprogramming/dpwritten.pdf">DP
 Written Problems</a></del></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 6</td>
 <td>Network Flow / Bi-Partite Matching</td>
 <td><a
 href="./fall2022/06-networkflow/scheduling.pdf">Scheduling</a></td>
 <td>-</td>
 </tr>
-<tr class="odd">
+<tr>
 <td><del>Module 7</del></td>
 <td><del>NP-Completeness</del></td>
 <td><del><a href="./fall2022/07-reductions/reductions.pdf">Written
 Reductions</a></del></td>
 <td>-</td>
 </tr>
-<tr class="even">
+<tr>
 <td><del>Module 8</del></td>
 <td><del>Machine Learning</del></td>
 <td><del><a href="./fall2022/08-machinelearning/kmeans.pdf">K-Means

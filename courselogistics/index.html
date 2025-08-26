@@ -8,16 +8,21 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="../markdown.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <h1
@@ -169,69 +174,69 @@ grade (everyone has 2 modules passed, 2 of them high-pass BEFORE
 considering hw and quizzes passed during the semester.</strong></p>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th style="text-align: center;">Letter Grade</th>
 <th style="text-align: center;">Modules Passed</th>
 <th style="text-align: center;">Modules High-Pass</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">F</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">-</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">D-</td>
 <td style="text-align: center;">5</td>
 <td style="text-align: center;">0</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">D</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">1</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">D+</td>
 <td style="text-align: center;">6</td>
 <td style="text-align: center;">0</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">C-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">2</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">C</td>
 <td style="text-align: center;">7</td>
 <td style="text-align: center;">0</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">C+</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">B-</td>
 <td style="text-align: center;">8</td>
 <td style="text-align: center;">0</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">B</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">3</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">B+</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">5</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">A-</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">7</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">A</td>
 <td style="text-align: center;">-</td>
 <td style="text-align: center;">8</td>
@@ -259,57 +264,57 @@ issues regarding this that you should be aware of.</p>
 <p>The grade translation works as scene in the chart below:</p>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th style="text-align: center;">Letter Grade</th>
 <th style="text-align: center;">Pass/Fail Grade</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">F</td>
 <td style="text-align: center;">NC</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">D-</td>
 <td style="text-align: center;">GC</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">D</td>
 <td style="text-align: center;">GC</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">D+</td>
 <td style="text-align: center;">GC</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">C-</td>
 <td style="text-align: center;">GC</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">C</td>
 <td style="text-align: center;">CR</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">C+</td>
 <td style="text-align: center;">CR</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">B-</td>
 <td style="text-align: center;">CR</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">B</td>
 <td style="text-align: center;">CR</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">B+</td>
 <td style="text-align: center;">CR</td>
 </tr>
-<tr class="odd">
+<tr>
 <td style="text-align: center;">A-</td>
 <td style="text-align: center;">CR</td>
 </tr>
-<tr class="even">
+<tr>
 <td style="text-align: center;">A</td>
 <td style="text-align: center;">CR</td>
 </tr>

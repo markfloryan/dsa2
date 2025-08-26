@@ -8,16 +8,21 @@
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <link rel="stylesheet" href="../markdown.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
 </head>
 <body>
 <h1 id="cs4102---algorithms-exams">CS4102 - Algorithms: Exams</h1>
@@ -51,7 +56,7 @@ below.</p>
 <col style="width: 12%" />
 </colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Quiz</th>
 <th>Attempt</th>
 <th>Max Points</th>
@@ -63,7 +68,7 @@ below.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Module 1</td>
 <td>1</td>
 <td>20</td>
@@ -73,7 +78,7 @@ below.</p>
 <td>17(85%)</td>
 <td>18(90%)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 2</td>
 <td>1</td>
 <td>15</td>
@@ -83,7 +88,7 @@ below.</p>
 <td>12.5(83%)</td>
 <td>13.5(90%)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Module 3</td>
 <td>1</td>
 <td>16</td>
@@ -93,7 +98,7 @@ below.</p>
 <td>13.5(84%)</td>
 <td>14.5(91%)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 1</td>
 <td>2</td>
 <td>18</td>
@@ -103,7 +108,7 @@ below.</p>
 <td>15.5(86%)</td>
 <td>16.5(92%)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Module 2</td>
 <td>2</td>
 <td>16</td>
@@ -113,7 +118,7 @@ below.</p>
 <td>13.5(84%)</td>
 <td>14.5(91%)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 3</td>
 <td>2</td>
 <td>15</td>
@@ -123,7 +128,7 @@ below.</p>
 <td>12.5(83%)</td>
 <td>13.5(90%)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Module 4</td>
 <td>1</td>
 <td>21</td>
@@ -133,7 +138,7 @@ below.</p>
 <td>19(91%)</td>
 <td>19(91%)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 5</td>
 <td>1</td>
 <td>18</td>
@@ -143,7 +148,7 @@ below.</p>
 <td>15.5(86%)</td>
 <td>16.5(92%)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Module 4</td>
 <td>2</td>
 <td>23</td>
@@ -153,7 +158,7 @@ below.</p>
 <td>21(91%)</td>
 <td>21(91%)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 5</td>
 <td>2</td>
 <td>17</td>
@@ -163,7 +168,7 @@ below.</p>
 <td>14.5(85%)</td>
 <td>15.5(91%)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Module 6</td>
 <td>1</td>
 <td>20</td>
@@ -173,7 +178,7 @@ below.</p>
 <td>17(85%)</td>
 <td>18(90%)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 7</td>
 <td>1</td>
 <td>18</td>
@@ -183,7 +188,7 @@ below.</p>
 <td>15.5(86%)</td>
 <td>16.5(92%)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Module 8</td>
 <td>1</td>
 <td>21</td>
@@ -193,7 +198,7 @@ below.</p>
 <td>17.5(83%)</td>
 <td>19(90.5%)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 6</td>
 <td>2</td>
 <td>22</td>
@@ -203,7 +208,7 @@ below.</p>
 <td>18.5(84.1%)</td>
 <td>20(90.9%)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Module 7</td>
 <td>2</td>
 <td>19</td>
@@ -213,7 +218,7 @@ below.</p>
 <td>16(84%)</td>
 <td>17.5(92%)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 8</td>
 <td>2</td>
 <td>19</td>
@@ -223,7 +228,7 @@ below.</p>
 <td>16(84%)</td>
 <td>17.5(92%)</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>Module 9</td>
 <td>1</td>
 <td>18</td>
@@ -233,7 +238,7 @@ below.</p>
 <td>15(83%)</td>
 <td>16.5(91%)</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Module 10</td>
 <td>1</td>
 <td>18.5</td>
