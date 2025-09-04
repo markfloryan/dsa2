@@ -14,6 +14,7 @@ CS3100 - Algorithms (Schedule and Slides)
 |0|Review|[Review](./00-Review.pptx)|-|
 |1|01 - Graphs Introduction|[Graphs Intro and BFS](./01-1-GraphsIntroBFS.pptx)||
 |||[DFS, Topological Sort, SCCs](./01-2-GraphsDFSTopoSCC.pptx)||
+|||[Dijkstra and Prim](./02-1-DijkstraAndPrim.pptx)||
 
 <a name="schedule"></a>Schedule
 --------------------------------------- 
