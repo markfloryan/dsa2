@@ -15,6 +15,14 @@ CS3100 - Algorithms (Schedule and Slides)
 |1|01 - Graphs Introduction|[Graphs Intro and BFS](./01-1-GraphsIntroBFS.pptx)||
 |||[DFS, Topological Sort, SCCs](./01-2-GraphsDFSTopoSCC.pptx)||
 |||[Dijkstra and Prim](./02-1-DijkstraAndPrim.pptx)||
+|||[Kruskal's](./02-3-Kruskals.pptx)||
+|2|02 - Divide and Conquer|[Div. Con. Intro](./03-1-DivConIntro.pptx)||
+|||[Recurrence Relations](./03-2-Recurrences.pptx)||
+|||[Kartsuba Multiplication](./03-3-Karatsuba.pptx)||
+|||[Closest Pair of Points](./03-4-ClosestPair.pptx)||
+|||[Quickselect](./03-5-Quickselect.pptx)||
+
+
 
 <a name="schedule"></a>Schedule
 --------------------------------------- 
