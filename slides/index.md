@@ -21,6 +21,11 @@ CS3100 - Algorithms (Schedule and Slides)
 |||[Kartsuba Multiplication](./03-3-Karatsuba.pptx)||
 |||[Closest Pair of Points](./03-4-ClosestPair.pptx)||
 |||[Quickselect](./03-5-Quickselect.pptx)||
+|3|03 - Greedy|[Greedy Intro, Change](./04-1-GreedyIntroChange.pptx)||
+|||[Bridge Crossing](./04-2-BridgeCrossing.pptx)||
+|||[Activity Selection](./04-3-ActivitySelect.pptx)||
+|||[Dividing Resources](./04-4-DividingResources.pptx)||
+|||[Knapsack Problems](./04-5-KnapsackGreedy.pptx)||
 
 
 
