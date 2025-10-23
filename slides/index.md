@@ -24,8 +24,14 @@ CS3100 - Algorithms (Schedule and Slides)
 |3|03 - Greedy|[Greedy Intro, Change](./04-1-GreedyIntroChange.pptx)||
 |||[Activity Selection](./04-2-ActivitySelect.pptx)||
 |||[Bridge Crossing](./04-3-BridgeCrossing.pptx)||
-|||[Dividing Resources](./04-4-DividingResources.pptx)||
-|||[Knapsack Problems](./04-5-KnapsackGreedy.pptx)||
+|||[Knapsack Problems](./04-4-KnapsackGreedy.pptx)||
+|||[Dividing Resources](./04-5-DividingResources.pptx)||
+|4|04 - Dynamic Programming|[Intro, log cutting](./05-1-DPIntroRodCut.pptx)||
+|||[Activity Selection](./05-2-ActivitySelection.pptx)||
+|||[Coint Change](./05-3-CoinChange.pptx)||
+|||[DPKnapsack](./05-4-DPKnapsack.pptx)||
+|||[Sequences](./05-5-Sequences.pptx)||
+|||[Seam Carving](./05-6-SeamCarving.pptx)||
 
 
 
