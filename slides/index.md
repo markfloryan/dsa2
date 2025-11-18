@@ -32,7 +32,9 @@ CS3100 - Algorithms (Schedule and Slides)
 |||[DPKnapsack](./05-4-DPKnapsack.pptx)||
 |||[Sequences](./05-5-Sequences.pptx)||
 |||[Seam Carving](./05-6-SeamCarving.pptx)||
-
+|5|05 - Flow Networks and Reductions|[Max Flow](./06-1-MaxFlow.pptx)||
+|||[Reductions](./06-2-Reductions.pptx)||
+|||[Hardness](./06-3-Hardness.pptx)||
 
 
 <a name="schedule"></a>Schedule
