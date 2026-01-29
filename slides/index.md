@@ -14,28 +14,28 @@ CS3100 - Algorithms (Schedule and Slides)
 |0|Review|[Review](./00-Review.pptx)|-|
 |1|01 - Graphs Introduction|[Graphs Intro and BFS](./01-1-GraphsIntroBFS.pptx)||
 |||[DFS, Topological Sort, SCCs](./01-2-GraphsDFSTopoSCC.pptx)||
-|||[Dijkstra and Prim](./02-1-DijkstraAndPrim.pptx)||
-|||[Kruskal's](./02-3-Kruskals.pptx)||
-|2|02 - Divide and Conquer|[Div. Con. Intro](./03-1-DivConIntro.pptx)||
-|||[Recurrence Relations](./03-2-Recurrences.pptx)||
-|||[Kartsuba Multiplication](./03-3-Karatsuba.pptx)||
-|||[Closest Pair of Points](./03-4-ClosestPair.pptx)||
-|||[Quickselect](./03-5-Quickselect.pptx)||
-|3|03 - Greedy|[Greedy Intro, Change](./04-1-GreedyIntroChange.pptx)||
-|||[Activity Selection](./04-2-ActivitySelect.pptx)||
-|||[Bridge Crossing](./04-3-BridgeCrossing.pptx)||
-|||[Knapsack Problems](./04-4-KnapsackGreedy.pptx)||
-|||[Dividing Resources](./04-5-DividingResources.pptx)||
-|4|04 - Dynamic Programming|[Intro, log cutting](./05-1-DPIntroRodCut.pptx)||
-|||[Activity Selection](./05-2-ActivitySelection.pptx)||
-|||[Coint Change](./05-3-CoinChange.pptx)||
-|||[DPKnapsack](./05-4-DPKnapsack.pptx)||
-|||[Sequences](./05-5-Sequences.pptx)||
-|||[Seam Carving](./05-6-SeamCarving.pptx)||
-|5|05 - Flow Networks and Reductions|[Max Flow](./06-1-MaxFlow.pptx)||
-|||[Reductions](./06-2-Reductions.pptx)||
-|||[Hardness](./06-3-Hardness.pptx)||
-
+|2|02 - Divide and Conquer|[Div. Con. Intro](./02-1-DivConIntro.pptx)||
+|||[Recurrence Relations](./02-2-Recurrences.pptx)||
+|||[Kartsuba Multiplication](./02-3-Karatsuba.pptx)||
+|||[Closest Pair of Points](./02-4-ClosestPair.pptx)||
+|||[Quickselect](./02-5-Quickselect.pptx)||
+|3|03 - Greedy|[Greedy Intro, Change](./03-1-GreedyIntroChange.pptx)||
+|||[Dijkstra and Prim](./03-2-DijkstraAndPrim.pptx)||
+|||[Kruskal's](./03-3-Kruskals.pptx)||
+|||[Activity Selection](./03-4-ActivitySelect.pptx)||
+|||[Knapsack Problems](./03-5-KnapsackGreedy.pptx)||
+|||[Bridge Crossing](./03-6-BridgeCrossing.pptx)||
+|||[Dividing Resources](./03-7-DividingResources.pptx)||
+|4|04 - Dynamic Programming|[Intro, log cutting](./04-1-DPIntroRodCut.pptx)||
+|||[Activity Selection](./04-2-ActivitySelection.pptx)||
+|||[Coint Change](./04-3-CoinChange.pptx)||
+|||[DPKnapsack](./04-4-DPKnapsack.pptx)||
+|||[Sequences](./04-5-Sequences.pptx)||
+|||[Seam Carving](./04-6-SeamCarving.pptx)||
+|5|05 - Flow Networks and Reductions|[Max Flow](./05-1-MaxFlow.pptx)||
+|||[Reductions](./05-2-Reductions.pptx)||
+|||[Hardness](./05-3-Hardness.pptx)||
+|6|06 - Machine Learning|[ML](./06-1-MachineLearning.pptx)||
 
 <a name="schedule"></a>Schedule
 --------------------------------------- 
